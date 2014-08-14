@@ -20,6 +20,9 @@
 		<font name="youvix-b" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-b.ttf" scale="100" />
 		<font name="youvix-r" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-r.ttf" scale="100" />
 		<font name="youvix-l" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-l.ttf" scale="100" />
+		<alias name="ChoiceList" font="youvix-r" size="28" height="50" />
+		<alias name="Body" font="youvix-r" size="28" height="50" />
+		<alias name="TextNormal" font="youvix-r" size="28" height="50" />
 	</fonts>
 	
 	<colors>
