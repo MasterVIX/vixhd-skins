@@ -1812,7 +1812,7 @@
 	
 	<!-- ## Restart Screen ## -->	
 	<screen name="QuitMainloopScreen" flags="wfNoBorder" position="0,0" size="1920,1080" backgroundColor="menubackground">
-		<ePixmap pixmap="YouVix-Common/screens/backdrop.png" position="0,0" size="1920,1080" alphatest="blend" zPosition="-1"/>
+		<ePixmap pixmap="YouViX-Common/screens/backdrop.png" position="0,0" size="1920,1080" alphatest="blend" zPosition="-1"/>
 		<widget name="text" position="center,650" size="720,100" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" />
 	</screen>
 	
