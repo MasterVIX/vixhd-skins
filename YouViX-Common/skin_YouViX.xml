@@ -486,6 +486,14 @@
 		<panel name="MenuMyInfoText" />
 		<panel name="MenuListLogWidget" />
 	</screen>
+	<screen name="BackupSelection" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget name="checkList" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+	    <panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+		<panel name="MenuButtonYellowSource" />
+	</screen>
 	
 	<!-- ## Cable Scan ## -->
 	<screen name="CableScanScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Cable Scan">
