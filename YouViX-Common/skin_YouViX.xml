@@ -848,12 +848,12 @@
 	<screen name="Devices" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="InfoPanel" />
 		<panel name="MenuMyInfoText" />
-		<widget source="TunerHeader" render="Label" position="900,237" size="628,38" font="youvix-b;26" transparent="1" halign="left" zPosition="1" />
-		<widget source="nims" render="Label" position="900,267" size="628,186" font="youvix-r;24" transparent="1" halign="left" zPosition="1" enableWrapAround="0"/>
-		<widget source="HDDHeader" render="Label" position="900,461" size="628,38" font="youvix-b;26" transparent="1" halign="left" zPosition="1" />
-		<widget source="hdd" render="Label" position="900,489" size="628,120" font="youvix-r;24" transparent="1" halign="left" zPosition="1" enableWrapAround="0"/>
-		<widget source="MountsHeader" render="Label" position="900,630" size="628,38" font="youvix-b;26" transparent="1" halign="left" zPosition="1" />
-		<widget source="mounts" render="Label" position="900,660" size="628,143" font="youvix-r;24" transparent="1" halign="left" zPosition="1" enableWrapAround="0"/>
+		<widget source="TunerHeader" render="Label" position="900,237" size="628,38" font="youvix-b;26" transparent="0" halign="left" zPosition="1" />
+		<widget source="nims" render="Label" position="900,267" size="628,186" font="youvix-r;24" transparent="0" halign="left" zPosition="1" enableWrapAround="0"/>
+		<widget source="HDDHeader" render="Label" position="900,461" size="628,38" font="youvix-b;26" transparent="0" halign="left" zPosition="1" />
+		<widget source="hdd" render="Label" position="900,489" size="628,120" font="youvix-r;24" transparent="0" halign="left" zPosition="1" enableWrapAround="0"/>
+		<widget source="MountsHeader" render="Label" position="900,630" size="628,38" font="youvix-b;26" transparent="0" halign="left" zPosition="1" />
+		<widget source="mounts" render="Label" position="900,660" size="628,143" font="youvix-r;24" transparent="0" halign="left" zPosition="1" enableWrapAround="0"/>
 	</screen>
 	
 	<!-- ## Event View ## -->
