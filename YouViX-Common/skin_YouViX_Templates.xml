@@ -26,7 +26,7 @@
 	
 	<!-- CROSSEPG TEMPLATES -->
 	<screen name="CrossEPGDownloadBar">
-		<ePixmap pixmap="infobars/2ndinfobar.png" position="center,965" size="1000,115" zPosition="-1"/>
+		<ePixmap pixmap="YouViX-Common/infobars/2ndinfobar.png" position="center,965" size="1000,115" zPosition="-1"/>
 		<widget name="action" position="center,975" size="520,30" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="1" />
 		<widget name="status" position="center,1010" size="520,30" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="1" />
 		<ePixmap position="center,1050" size="600,10" pixmap="selectionbars/activitysliderbackground.png" alphatest="blend" zPosition="-1"/> 
