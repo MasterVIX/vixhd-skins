@@ -914,7 +914,7 @@
 	</screen>
 	
 	<!-- ## Gigablue LED Setup ## -->
-	<screen name="VFD_GigaSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Giga LED Setup" >
+	<screen name="LED_GigaSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Giga LED Setup" >
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuConfigWidget" />
