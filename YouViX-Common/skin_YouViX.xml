@@ -1175,7 +1175,7 @@
 		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="250,210" size="256,256" alphatest="blend" zPosition="1" />
 		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="250,210" size="256,256" alphatest="blend" zPosition="1" />
 		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="250,210" size="256,256" alphatest="blend" zPosition="1" />
-		<widget name="text" position="680,165" size="960,540" font="youvix-r;30" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<widget name="text" position="680,165" size="1160,540" font="youvix-r;30" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
 		<widget name="list" position="680,715" size="1160,200" font="youvix-r;32" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="MessageBoxSimple" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
