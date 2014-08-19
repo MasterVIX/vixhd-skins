@@ -36,8 +36,8 @@
 		<color name="white" value="#00ffffff" />
 		<color name="black" value="#00000000" />
 		<color name="grey" value="#00b3b3b3" />
-		<color name="lightcolour" value="#00fb2a2a" />
-		<color name="darkcolour" value="#009c0404" />
+		<color name="lightcolour" value="#00ff1919" />
+		<color name="darkcolour" value="#00710000" />
 		<color name="window-sel-bg" value="#00acacac" />
 	</colors>
 	
