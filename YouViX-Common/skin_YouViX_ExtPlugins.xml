@@ -149,6 +149,21 @@
 		<panel name="MenuListLogWidget" />
 	</screen>
 	
+	<!-- ## GB IPBox Client ## -->
+	<!-- <screen name="GBImport" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="GigaBlue IPBox Client">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuListWidget" />
+		<panel name="MenuConfigWidget" />
+		<widget name="activityslider" position="550,580" size="592,5" foregroundColor="white" backgroundColor="menubackground" transparent="1" />
+		<widget name="description" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
+		<widget name="found" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="bottom" zPosition="1" />
+	    <panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+		<panel name="MenuButtonYellowSource" />
+		<panel name="MenuButtonBlueSource" />
+	</screen> -->
+	
 	<!-- ## IPTV List Updater ## --> 
 	<screen name="Start" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="IPTV List Updater" >
 		<panel name="BigMenuPanel" />
