@@ -421,6 +421,48 @@
 		<panel name="OnDemandThumbsCommon" />
 	</screen>
 	
+	<!-- ## Picture Player FS ## -->
+	<screen name ="PictureCenterFS_Filemenue" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="PictureCenterFS" >
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuListWidget" />
+	</screen>
+	<screen name="PictureCenterFS_Edit" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="PictureCenterFS - edit">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget name="balken" position="0,0" zPosition="-1" size="560,35" backgroundColor="#4e5a74" transparent="0" />
+		<panel name="MenuConfigWidget" />
+		<widget name="pic_red" pixmap="YouViX-Common/buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="pic_green" pixmap="YouViX-Common/buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="pic_yellow" pixmap="YouViX-Common/buttons/yellow.png" position="635,986" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="pic_blue" pixmap="YouViX-Common/buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
+		<widget name="key_green" position="120,1033" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
+		<widget name="key_yellow" position="363,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1" />
+		<widget name="key_blue" position="363,1031" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1" />
+	</screen>
+	<screen name="PictureCenterFS" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="PictureCenterFS" >
+        <panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget name="bgr2" position="0,0" size="880,504" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/pictures/bgr.png" transparent="0" alphatest="on"/> 
+        <widget name="pc_list" position="10,5" size="570,455" scrollbarMode="showOnDemand" /> 
+        <eLabel position="585,0"  size="2,463" backgroundColor="#D3D3D3"/>
+        <eLabel position="0,464"  size="880,2" backgroundColor="#D3D3D3"/>			
+	    <eLabel position="0,466" size="880,38" zPosition="-10" backgroundColor="#000000"  />
+        <widget name="thumb" position="610,5" zPosition="2" size="240,240" alphatest="blend" />
+        <widget name="button_menu" pixmap="buttons/key_menu.png" position="1857,160" size="53,38" alphatest="blend" transparent="1" zPosition="1" />
+        <widget name="button_help" pixmap="buttons/key_help.png" position="1857,280" size="53,38" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="button_epg" pixmap="buttons/key_help.png" position="1857,320" size="53,38" alphatest="blend" transparent="1" zPosition="1" />
+        <widget name="key_ok" position="80,474" zPosition="1" size="300,30" font="Regular;20" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" noWrap="1"/>
+        <widget name="button_ok" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/key_ok.png" position="40,474" size="40,30" zPosition="1" alphatest="blend" />
+		<widget name="key_0" position="450,474" size="270,30" font="Regular;20" foregroundColor="white" backgroundColor="menubackground" transparent="1" zPosition="1" />
+        <widget name="button_0" pixmap="buttons/key_0.png" position="410,474" size="53,38" zPosition="1" alphatest="blend" />
+	    <panel name="MenuButtonRed" />
+		<panel name="MenuButtonGreen" />
+		<panel name="MenuButtonYellow" />
+		<panel name="MenuButtonBlue" />
+	</screen> 
+	
 	<!-- ## Sat Keys Updater by rossi2000## -->
 	<screen name="KeyUpdate" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
         <panel name="BigMenuPanel" />
@@ -491,7 +533,7 @@
         <widget name="auto" position="170,40" size="50,30" alphatest="blend" />
                 <!--play files end-->
     </screen>
-	<screen name="wbrScreenSaver_10" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="#00000000" title="" zPosition="10" >
+	<screen name="wbrScreenSaver_12" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="#00000000" title="" zPosition="10" >
         <widget name="background1" position="0,0" size="1920,1080" backgroundColor="menubackground2" transparent="0" zPosition="11" />
         <widget name="display_station" position="255,342" size="400,30" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground2" halign="left" valign="center" transparent="1" noWrap="1" zPosition="12" />
         <widget name="display_time" position="255,282" size="400,90" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground2" halign="left" valign="center" transparent="1" zPosition="12" />
