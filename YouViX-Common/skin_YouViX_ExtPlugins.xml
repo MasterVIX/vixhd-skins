@@ -277,6 +277,80 @@
 		<widget name="name" position="125,55" size="540,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1" />
 	</screen> -->
 	
+	<!-- ## Merlin ## -->
+	<screen name="iDreamMerlin" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuInfoButton" />
+		<widget name="headertext" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1"/>
+		<panel name="MenuListWidget" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+		<panel name="MenuButtonYellowSource" />
+		<panel name="MenuButtonBlueSource" />
+	</screen>
+	<screen name="iDreamAddToDatabase" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget name="output" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+	</screen>
+	<screen name="MerlinMusicPlayerFileList" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget name="headertext" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1"/>
+		<panel name="MenuListWidget" />
+	</screen>
+	<screen name="MerlinMusicPlayerScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyAudioText" />
+		<widget name="title" position="680,165" size="1160,35" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" valign="center"/>
+		<widget name="coverArt" position="1130,210" size="250,250" pixmap="no_coverArt.png" transparent="1" alphatest="blend"/>
+		<widget name="album" position="680,470" size="1160,38" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" valign="center"/>
+		<widget name="artist" position="680,510" size="1160,38" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" valign="center"/>
+		<widget name="genre" position="680,550" size="1160,38" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" valign="center"/>
+		<ePixmap position="960,630" size="600,10" pixmap="selectionbars/activitysliderbackground.png" alphatest="blend" zPosition="-1"/>
+		<widget source="session.CurrentService" render="Progress" position="960,630" size="600,10" pixmap="selectionbars/activityslider.png" transparent="1" zPosition="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="960,640" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1305,640" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+		<eLabel text="/" font="youvix-r;26" position="1465,640" size="25,38" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1"/>
+		<widget source="session.CurrentService" render="Label" position="1490,640" size="150,38" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<eLabel text="Next" position="680,770" size="70,38" font="youvix-r;28" foregroundColor="lightcolour" backgroundColor="menubackground" halign="left" valign="top" transparent="1"/>
+		<widget name="nextTitle" position="760,770" size="980,76" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="top" transparent="1"/>
+		<!-- <ePixmap pixmap="/dvr/dvr.png" position="943,459" size="324,60" transparent="1" zPosition="1" alphatest="blend"/>
+		<widget name="dvrStatus" position="853,440" size="324,60" transparent="1" pixmaps="dvr/dvr_pl.png,dvr/dvr_pau.png" alphatest="blend"/>
+		<widget name="shuffle" position="630,120" size="50,25" pixmaps="dvr/placeholder1.png,dvr/shuffle.png" alphatest="blend"/>
+		<widget name="repeat" position="700,120" size="50,25" pixmaps="dvr/placeholder1.png,dvr/repeat.png" alphatest="blend"/> -->
+		<panel name="MenuMenuButton" />
+		<panel name="MenuInfoButton" />
+	</screen>
+	<screen name="MerlinMusicPlayerLyrics" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyAudioText" />
+		<widget name="headertext" position="125,55" size="540,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
+		<widget name="resulttext" position="680,165" size="1160,38" font="youvix-r;28" foregroundColor="lightcolour" backgroundColor="menubackground" halign="left" valign="center" zPosition="1" transparent="1"/>
+		<widget name="lyric_text" position="680,210" size="1160,715" font="youvix-r;28" itemHeight="50" foregroundColor="white" backgroundColor="menubackground" transparent="1" zPosition="1"/>
+	</screen>
+	<screen name="MerlinMusicPlayerSongList" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyAudioText" />
+		<widget name="headertext" position="125,55" size="540,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
+		<panel name="MenuListWidget" />
+	</screen>
+	<screen name="MerlinMusicPlayerScreenSaver" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="coverArt" position="1130,210" size="250,250" pixmap="no_coverArt.png" transparent="1" alphatest="blend"/>
+		<widget name="display" position="100,315" size="1100,120" font="youvix-r;55" foregroundColor="white" backgroundColor="menubackground" zPosition="1" transparent="1"/>
+	</screen>
+	
 	<!-- ## OnDemand ## -->
 	<screen name="OnDemand_Screen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
