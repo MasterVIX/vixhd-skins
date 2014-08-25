@@ -149,6 +149,44 @@
 		<panel name="MenuListLogWidget" />
 	</screen>
 	
+	<!-- ## Dream Explorer ## -->
+	<screen name="DreamExplorerII" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Dream Explorer">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget name="filelist" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+		<panel name="MenuMenuButton" />
+		<panel name="MenuInfoButton" />
+		<panel name="MenuButtonRed" />
+		<eLabel text="Delete" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1"/>
+		<panel name="MenuButtonGreen" />
+		<eLabel text="Rename" position="120,1033" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1"/>
+		<panel name="MenuButtonYellow" />
+		<eLabel text="Move/Copy" position="363,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1"/>
+		<panel name="MenuButtonBlue" />
+		<eLabel text="Bookmarks" position="363,1031" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1"/>
+	</screen>
+	<screen name="vEditor" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="File Explorer">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget name="filedata" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+	</screen>
+	<screen name="vInputBox" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Input...">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget name="input" position="680,165" size="1160,100" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+		<widget name="text" position="680,300" size="1160,500" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2"/>
+	</screen>
+	<screen name="CPmaniger" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Select Copy/Move location...">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuButtonRed" />
+		<eLabel text="MOVE" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1"/>
+		<panel name="MenuButtonYellow" />
+		<eLabel text="COPY" position="363,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1"/>
+		<widget name="File" position="680,165" size="1160,200" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="1"/>
+		<widget name="CPto" position="680,370" size="1160,500" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+	</screen>
+	
 	<!-- ## GB IPBox Client ## -->
 	<!-- <screen name="GBImport" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="GigaBlue IPBox Client">
 		<panel name="BigMenuPanel" />
