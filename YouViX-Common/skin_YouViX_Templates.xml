@@ -101,12 +101,24 @@
 		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_hd.png" position="774,988" size="46,22" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
-		</widget> 
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_dolby.png" position="818,988" size="40,22" zPosition="1" alphatest="blend">
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_43.png" position="828,988" size="46,22" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_169.png" position="823,988" size="62,22" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsSDAndWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_169.png" position="823,988" size="62,22" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_dolby.png" position="890,988" size="40,22" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_crypt.png" position="867,987" size="27,22" zPosition="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_crypt.png" position="930,987" size="27,22" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget> 
