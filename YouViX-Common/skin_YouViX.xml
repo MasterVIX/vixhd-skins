@@ -343,7 +343,7 @@
 	<!-- ## Audio Selection ## -->
 	<screen name="AudioSelection" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
-		<panel name="MenuMyAudioText" />
+		<panel name="MenuMySetupText" />
 		<widget name="config" position="1025,165" size="545,250" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x545.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" scrollbarMode="showOnDemand" />
 		<widget source="key_red" render="Pixmap" pixmap="YouViX-Common/buttons/red.png" position="980,172" size="35,35" alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
@@ -2032,6 +2032,12 @@
 		<panel name="MenuIntroductionWidget" />
 	</screen>
 	
+	<!-- ## Screensaver ## -->
+	<screen name="Screensaver" position="fill" flags="wfNoBorder">
+		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
+		<widget name="picture" pixmap="distro-logo.png" position="0,0" size="500,500" alphatest="on" zPosition="1"/>
+	</screen>
+	
 	<!-- ## Service Scan ## -->
 	<screen name="DefaultServiceScan" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="ServiceScan" />
@@ -2069,6 +2075,12 @@
 		<panel name="MenuConfigWidget" />
 	</screen>
 	<screen name="SubtitleDisplay" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" zPosition="-1" />
+	<screen name="QuickSubtitlesConfigMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Subtitle settings">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuConfigWidget" />
+		<widget name="videofps" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1"/>
+	</screen>
 	
 	<!-- ## Timeshift ## -->
 	<screen name="TimeshiftState" position="center,center" size="244,328" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">

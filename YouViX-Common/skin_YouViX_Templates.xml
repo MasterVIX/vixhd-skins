@@ -18,8 +18,13 @@
 			</convert>
 		</widget>
 	</screen>
+	<screen name="ChannelSelectionPiconProvider">
+		<widget source="session.CurrentService" render="Picon" position="100,793" size="220,132" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
+			<convert type="ServiceName">Provider</convert>
+		</widget>
+	</screen>
 	<screen name="ChannelSelectionPicon">
-		<widget source="Service" render="Picon" position="215,700" size="330,198" transparent="1" zPosition="1" alphatest="blend">
+		<widget source="Service" render="Picon" position="460,793" size="220,132" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
