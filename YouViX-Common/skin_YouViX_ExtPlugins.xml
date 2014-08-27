@@ -599,18 +599,18 @@
 	
 	<!-- ## Quickbutton ## -->
 	<screen name="QuickbuttonSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Quickbutton Setup">
-        <panel name="BigMenuPanel" />
+		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
-        <panel name="MenuConfigWidget" />
+		<panel name="MenuConfigWidget" />
 		<panel name="MenuButtonRed" />
 		<panel name="MenuButtonGreen" />
 	</screen>
 	
 	<!-- ## Sat Keys Updater by rossi2000 ## -->
 	<screen name="KeyUpdate" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
-        <panel name="BigMenuPanel" />
+		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
-        <widget name="myMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<widget name="myMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
 	
 	<!-- ## Transmission ## -->
