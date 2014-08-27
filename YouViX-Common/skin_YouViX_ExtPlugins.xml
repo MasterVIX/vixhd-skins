@@ -556,24 +556,46 @@
 	<screen name="PictureCenterFS" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="PictureCenterFS" >
         <panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
-		<widget name="bgr2" position="0,0" size="880,504" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/pictures/bgr.png" transparent="0" alphatest="on"/> 
-        <widget name="pc_list" position="10,5" size="570,455" scrollbarMode="showOnDemand" /> 
-        <eLabel position="585,0"  size="2,463" backgroundColor="#D3D3D3"/>
-        <eLabel position="0,464"  size="880,2" backgroundColor="#D3D3D3"/>			
-	    <eLabel position="0,466" size="880,38" zPosition="-10" backgroundColor="#000000"  />
-        <widget name="thumb" position="610,5" zPosition="2" size="240,240" alphatest="blend" />
+        <widget name="pc_list" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" /> 
+        <widget name="thumb" position="200,180" size="360,360" alphatest="blend" zPosition="2" />
         <widget name="button_menu" pixmap="buttons/key_menu.png" position="1857,160" size="53,38" alphatest="blend" transparent="1" zPosition="1" />
         <widget name="button_help" pixmap="buttons/key_help.png" position="1857,280" size="53,38" alphatest="blend" transparent="1" zPosition="1" />
-		<widget name="button_epg" pixmap="buttons/key_help.png" position="1857,320" size="53,38" alphatest="blend" transparent="1" zPosition="1" />
-        <widget name="key_ok" position="80,474" zPosition="1" size="300,30" font="Regular;20" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" noWrap="1"/>
-        <widget name="button_ok" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/key_ok.png" position="40,474" size="40,30" zPosition="1" alphatest="blend" />
-		<widget name="key_0" position="450,474" size="270,30" font="Regular;20" foregroundColor="white" backgroundColor="menubackground" transparent="1" zPosition="1" />
-        <widget name="button_0" pixmap="buttons/key_0.png" position="410,474" size="53,38" zPosition="1" alphatest="blend" />
+		<widget name="button_epg" pixmap="buttons/key_epg.png" position="1857,320" size="53,38" alphatest="blend" transparent="1" zPosition="1" />
+        <widget name="button_ok" pixmap="buttons/key_ok.png" position="90,834" size="53,38" zPosition="1" alphatest="blend" />
+		<widget name="key_ok" position="153,834" size="300,38" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground2" halign="left" valign="center" transparent="1" noWrap="1" zPosition="1"/>
+        <widget name="button_0" pixmap="buttons/key_0.png" position="90,874" size="53,38" zPosition="1" alphatest="blend" />
+		<widget name="key_0" position="153,874" size="300,38" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground2" halign="left" valign="center" transparent="1" zPosition="1" />
 	    <panel name="MenuButtonRed" />
 		<panel name="MenuButtonGreen" />
 		<panel name="MenuButtonYellow" />
 		<panel name="MenuButtonBlue" />
-	</screen> 
+	</screen>
+	<screen name="Show_Exif" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Info">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget name="scrolltext" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
+        <widget source="menu" render="Listbox" position="680,165" size="1160,750" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [ 
+                        MultiContentEntryText(pos = (305, 5), size = (960, 38), flags = RT_HALIGN_LEFT, text = 1),
+                        MultiContentEntryText(pos = (5, 5), size = (300, 38), flags = RT_HALIGN_LEFT, color= 0xffb340, text = 0)
+                        ], 
+				"fonts": [gFont("youvix-r", 28)],
+				"itemHeight": 50
+			}
+			</convert>
+		</widget>
+		<panel name="MenuButtonRed" />
+	</screen>
+	<screen name="Pic_Full_View3" position="0,0" size="1600,1200" flags="wfNoBorder" backgroundColor="transparent"> 
+        <widget name="bgr2" position="0,0" size="2000,2000" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/pictures/bgr.png" transparent="1" alphatest="on" zPosition="0"/> 
+        <widget name="pic" position="60,60" size="600,400" backgroundColor="transparent" zPosition="1" alphatest="on" />
+        <widget name="pic2" position="0,0" size="600,400" backgroundColor="#000000" zPosition="1" alphatest="on" />  
+        <widget name="backline" position="0,0" size="1000,25" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/pictures/bgr.png" transparent="0" alphatest="off"/> 
+		<widget name="play_icon" position="35,20" size="25,25" zPosition="3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/PictureCenterFS/skin/pictures/pcfs_play.png"  alphatest="on" /> 
+		<widget name="playline" position="10,300" size="400,20" zPosition="2" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="#20224f"><convert type="ServicePosition">Gauge</convert></widget> 
+        <widget name="txt_zeile" position="100,20" size="1000,35" zPosition="4" halign="left" valign="center" foregroundColor="#000000" transparent="1" noWrap="1"/> 
+	</screen>
 	
 	<!-- ## Sat Keys Updater by rossi2000## -->
 	<screen name="KeyUpdate" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
