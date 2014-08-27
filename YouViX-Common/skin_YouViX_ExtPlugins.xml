@@ -597,7 +597,16 @@
         <widget name="txt_zeile" position="100,20" size="1000,35" zPosition="4" halign="left" valign="center" foregroundColor="#000000" transparent="1" noWrap="1"/> 
 	</screen>
 	
-	<!-- ## Sat Keys Updater by rossi2000## -->
+	<!-- ## Quickbutton ## -->
+	<screen name="QuickbuttonSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Quickbutton Setup">
+        <panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+        <panel name="MenuConfigWidget" />
+		<panel name="MenuButtonRed" />
+		<panel name="MenuButtonGreen" />
+	</screen>
+	
+	<!-- ## Sat Keys Updater by rossi2000 ## -->
 	<screen name="KeyUpdate" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
         <panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
