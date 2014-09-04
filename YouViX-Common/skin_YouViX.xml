@@ -1449,13 +1449,13 @@
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryPixmapAlphaBlend(pos = (10, 2), size = (68, 68), png = 0), # index 0 is the isMounted pixmap
-				MultiContentEntryText(pos = (100, 3), size = (300, 35), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the sharename
-				MultiContentEntryText(pos = (500, 8), size = (250, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the IPdescription
+				MultiContentEntryText(pos = (100, 0), size = (300, 35), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the sharename
+				MultiContentEntryText(pos = (500, 5), size = (250, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the IPdescription
 				MultiContentEntryText(pos = (100, 37), size = (450, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # index 3 is the DIRdescription
-				MultiContentEntryPixmapAlphaBlend(pos = (990, 2), size = (68, 68), png = 4), # index 4 is the activepng pixmap
+				MultiContentEntryPixmapAlphaBlend(pos = (990, 20), size = (68, 68), png = 4), # index 4 is the activepng pixmap
 				MultiContentEntryPixmapAlphaBlend(pos = (1060, 2), size = (68, 68), png = 5), # index 4 is the mounttype pixmap
 				],
-				"fonts": [gFont("youvix-r", 32),gFont("youvix-r", 24)],
+				"fonts": [gFont("youvix-r", 32),gFont("youvix-r", 26)],
 				"itemHeight": 75
 				}
 			</convert>
@@ -1535,18 +1535,18 @@
 	<screen name="NetworkBrowser" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyNetworkText" />
-		<widget source="list" render="Listbox" position="680,165" size="1160,750" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
+		<widget source="list" render="Listbox" position="680,165" size="1160,750" selectionPixmap="selectionbars/SelectionBar_H75x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
-				MultiContentEntryText(pos = (50, 4), size = (800, 35), font=2, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the Hostname
-				MultiContentEntryText(pos = (140, 5), size = (800, 25), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # index 3 is the sharename
-				MultiContentEntryText(pos = (140, 26), size = (800, 17), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # index 4 is the sharedescription
-				MultiContentEntryPixmapAlphaBlend(pos = (45, 0), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
-				MultiContentEntryPixmapAlphaBlend(pos = (90, 0), size = (48, 48), png = 6), # index 6 is the isMounted icon
+				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (72, 72), png = 1), # index 1 is the expandable/expanded/verticalline icon
+				MultiContentEntryText(pos = (100, 4), size = (800, 35), font=2, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the Hostname
+				MultiContentEntryText(pos = (240, 5), size = (800, 35), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # index 3 is the sharename
+				MultiContentEntryText(pos = (240, 40), size = (800, 35), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # index 4 is the sharedescription
+				MultiContentEntryPixmapAlphaBlend(pos = (80, 2), size = (72, 72), png = 5), # index 5 is the nfs/cifs icon
+				MultiContentEntryPixmapAlphaBlend(pos = (158, 2), size = (72, 72), png = 6), # index 6 is the isMounted icon
 				],
-				"fonts": [gFont("youvix-r", 20),gFont("youvix-r", 18),gFont("youvix-r", 28)],
-				"itemHeight": 50
+				"fonts": [gFont("youvix-r", 28),gFont("youvix-r", 22),gFont("youvix-r", 28)],
+				"itemHeight": 75
 				}
 			</convert>
 		</widget>
@@ -1670,6 +1670,28 @@
 		<panel name="InfoPanel" />
 		<panel name="MenuMyNetworkText" />
 		<widget name="infotext" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" foregroundColor="white" backgroundColor="menubackground" transparent="1" zPosition="1"/>
+	</screen>
+	
+	<!-- ## Network - User Manager ## -->
+	<screen name="UserManager"  position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Enter Manager">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyNetworkText" />
+		<widget source="config" render="Listbox" position="680,165" size="1160,750" scrollbarMode="showOnDemand" selectionPixmap="myNOVUM_HD2/images/FocusBar.png" backgroundColor="background2" transparent="1">
+		<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (100, 0), size = (900, 75), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryPixmapAlphaTest(pos = (0, 2), size = (72, 72), png = 3), # index 4 is the status pixmap
+				],
+				"fonts": [gFont("youvix-r", 32)],
+				"itemHeight": 75
+				}
+			</convert>
+		</widget>
+		<widget source="introduction" render="Label" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+		<panel name="MenuButtonYellowSource" />
+		<panel name="MenuButtonBlueSource" />
 	</screen>
 	
 	<!-- ## Network Info ## -->
