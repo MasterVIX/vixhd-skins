@@ -47,11 +47,11 @@
 	
 	<!-- INFOBAR TEMPLATES -->
 	<screen name="InfobarClock">
-		<widget source="global.CurrentTime" render="Label" position="123,880" zPosition="1" size="80,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center">
-			<convert type="ClockToText">Format:%e %h</convert>
+		<widget source="global.CurrentTime" render="Label" position="23,880" size="180,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="1">
+			<convert type="ClockToText">Format:%a %e %b</convert>
 		</widget>
 		<ePixmap position="218,887" size="24,24" pixmap="YouViX-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
-		<widget source="global.CurrentTime" render="Label" position="255,880" zPosition="1" size="80,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center">
+		<widget source="global.CurrentTime" render="Label" position="255,880" size="80,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 	</screen>
@@ -67,7 +67,7 @@
 		</widget>
 	</screen>
 	<screen name="InfobarProgramNowStartTime">
-		<widget source="session.Event_Now" render="Label" position="607,936" size="100,38" font="youvix-r;30" foregroundColor="white" backgroundColor="lightcolour" transparent="1" noWrap="1" valign="center" halign="left">
+		<widget source="session.Event_Now" render="Label" position="607,935" size="100,38" font="youvix-r;32" foregroundColor="white" backgroundColor="lightcolour" transparent="1" noWrap="1" valign="center" halign="left">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -82,12 +82,12 @@
 		</widget>
 	</screen>
 	<screen name="InfobarProgramNowName">
-		<widget source="session.Event_Now" render="Label" position="825,933" size="650,38" font="youvix-r;32" noWrap="1" foregroundColor="white" backgroundColor="lightcolour" transparent="1" valign="center" halign="left">
+		<widget source="session.Event_Now" render="Label" position="825,932" size="650,38" font="youvix-r;34" noWrap="1" foregroundColor="white" backgroundColor="lightcolour" transparent="1" valign="center" halign="left">
 			<convert type="EventName">Name</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarProgramNowRemainingTime">
-		<widget source="session.Event_Now" render="Label" position="1450,933" size="200,35" font="youvix-r;28" foregroundColor="white" backgroundColor="lightcolour" transparent="1" noWrap="1" halign="right" valign="center">
+		<widget source="session.Event_Now" render="Label" position="1450,933" size="200,35" font="youvix-r;30" foregroundColor="white" backgroundColor="lightcolour" transparent="1" noWrap="1" halign="right" valign="center">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
@@ -96,10 +96,11 @@
 		<ePixmap position="1665,933" size="35,35" pixmap="YouViX-Common/icons/info.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="InfobarOnNowIcon">
-		<ePixmap position="607,988" size="110,22" pixmap="YouViX-Common/icons/onnow.png" alphatest="blend" zPosition="1"/>
+		<!-- <ePixmap position="607,988" size="110,22" pixmap="YouViX-Common/icons/onnow.png" alphatest="blend" zPosition="1"/> -->
+		<eLabel text="ON NOW" position="607,983" size="150,35" font="youvix-b;28" foregroundColor="white" backgroundColor="lightcolour" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="InfobarStatusIcons">
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_sd.png" position="774,988" size="46,22" zPosition="1" alphatest="blend">
+		<!-- <widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_sd.png" position="774,988" size="46,22" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsSD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget> 
@@ -126,17 +127,69 @@
 		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_crypt.png" position="940,987" size="27,22" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
-		</widget> 
-        <!-- <ePixmap pixmap="icons/icon_hbbtv.png" position="1556,977" size="94,33" zPosition="1" alphatest="blend" /> -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_hbbtv.png" position="1556,977" size="94,33" zPosition="1" alphatest="blend">
+		</widget> -->
+		
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/hd1080.png" position="780,962" size="111,75" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">1440,1920</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/hd720.png" position="780,962" size="111,75" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">1280,1439</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/sd576.png" position="780,962" size="111,75" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">575,1339</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/sd540.png" position="780,962" size="111,75" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">500,574</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/sd480.png" position="780,962" size="111,75" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">0,499</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/178.png" position="895,962" size="83,75" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/178.png" position="895,962" size="83,75" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsSDAndWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/133.png" position="895,962" size="83,75" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/dolbyprologic.png" position="1008,983" size="100,35" zPosition="1" alphatest="blend">
+			<convert type="THDPremiumInfo">AudioStereo</convert>
+			<convert type="ConditionalShowHide">
+			</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/dolbydigital.png" position="988,983" size="139,34" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/encrypted.png" position="1138,962" size="75,75" zPosition="1" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		
+        <!-- <ePixmap pixmap="YouViX-Common/icons/hbbtv.png" position="1540,975" size="103,40" zPosition="1" alphatest="blend" /> -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/hbbtv.png" position="1540,975" size="103,40" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
- 		<!-- <ePixmap pixmap="icons/icon_stableupdate.png" position="1660,988" size="50,22" zPosition="1" alphatest="blend" /> -->
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="YouViX-Common/icons/icon_stableupdate.png" position="1660,988" size="50,22" zPosition="1" alphatest="blend" >
+ 		<!-- <ePixmap pixmap="YouViX-Common/buttons/green.png" position="1665,982" size="35,35" zPosition="1" alphatest="blend" /> -->
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="YouViX-Common/buttons/green.png" position="1665,982" size="35,35" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="YouViX-Common/icons/icon_unstableupdate.png" position="1660,988" size="50,22" zPosition="1" alphatest="blend" >
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="YouViX-Common/buttons/red.png" position="1665,982" size="35,35" zPosition="1" alphatest="blend" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>

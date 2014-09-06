@@ -495,6 +495,18 @@
 		<panel name="MenuButtonYellowSource" />
 	</screen>
 	
+	<!-- ## Bluetooth Devices Manager ## -->
+	<screen name="BluetoothDevicesManager" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Bluetooth Devices Manager">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget name="devicelist" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+		<widget name="ConnStatus" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1"/>
+		<panel name="MenuButtonRed" />
+		<panel name="MenuButtonGreen" />
+		<panel name="MenuButtonYellow" />
+		<panel name="MenuButtonBlue" />
+	</screen>
+	
 	<!-- ## Cable Scan ## -->
 	<screen name="CableScanScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Cable Scan">
 		<panel name="BigMenuPanel" />
@@ -889,7 +901,7 @@
 		<widget source="Title" render="Label" position="80,165" size="590,38" font="youvix-r;32" foregroundColor="lightcolour" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
 		<widget name="datetime" position="80,205" size="590,38" font="youvix-r;28" foregroundColor="lightcolour" backgroundColor="menubackground2" transparent="1" noWrap="1" halign="center" valign="center" zPosition="1" />
 		<widget name="duration" position="80,245" size="590,38" font="youvix-r;28" foregroundColor="lightcolour" backgroundColor="menubackground2" transparent="1" noWrap="1" halign="center" valign="center" zPosition="1" />
-		<widget name="FullDescription" position="680,165" size="1160,750" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" zPosition="1" />
+		<widget name="FullDescription" position="680,165" size="1160,750" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="top" transparent="1" zPosition="1" />
 	    <panel name="EPGSelectionPicon" />
 	</screen>
 	<screen name="InfoBarEventView" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" zPosition="1" >
