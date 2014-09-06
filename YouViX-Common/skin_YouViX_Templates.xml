@@ -96,39 +96,9 @@
 		<ePixmap position="1665,933" size="35,35" pixmap="YouViX-Common/icons/info.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="InfobarOnNowIcon">
-		<!-- <ePixmap position="607,988" size="110,22" pixmap="YouViX-Common/icons/onnow.png" alphatest="blend" zPosition="1"/> -->
 		<eLabel text="ON NOW" position="607,983" size="150,35" font="youvix-b;28" foregroundColor="white" backgroundColor="lightcolour" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="InfobarStatusIcons">
-		<!-- <widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_sd.png" position="774,988" size="46,22" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsSD</convert>
-			<convert type="ConditionalShowHide" />
-		</widget> 
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_hd.png" position="774,988" size="46,22" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsHD</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_43.png" position="833,988" size="46,22" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_169.png" position="823,988" size="62,22" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsSDAndWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_169.png" position="823,988" size="62,22" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_dolby.png" position="890,988" size="40,22" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/icon_crypt.png" position="940,987" size="27,22" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsCrypted</convert>
-			<convert type="ConditionalShowHide" />
-		</widget> -->
-		
 		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/hd1080.png" position="780,962" size="111,75" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">1440,1920</convert>
@@ -179,7 +149,6 @@
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		
         <!-- <ePixmap pixmap="YouViX-Common/icons/hbbtv.png" position="1540,975" size="103,40" zPosition="1" alphatest="blend" /> -->
 		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/hbbtv.png" position="1540,975" size="103,40" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
