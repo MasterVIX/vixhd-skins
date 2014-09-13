@@ -606,6 +606,23 @@
 		<panel name="MenuButtonGreen" />
 	</screen>
 	
+	<!-- ## Ruya ## -->
+	<screen name="RuyaMainScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="RuYa IPTV">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyRuyaText" />
+		<widget name="menu0" position="680,300" size="300,50" font="youvix-r;32" foregroundColors="white,lightcolour" transparent="1" zPosition="1"/>
+		<widget name="menu1" position="980,300" size="300,50" font="youvix-r;32" foregroundColors="white,lightcolour" transparent="1" zPosition="1"/>
+		<widget name="menu2" position="1280,300" size="300,50" font="youvix-r;32" foregroundColors="white,lightcolour" transparent="1" zPosition="1"/>
+		<widget name="menu3" position="1580,300" size="300,50" font="youvix-r;32" foregroundColors="white,lightcolour" transparent="1" zPosition="1"/>
+	</screen>
+	<screen name="RuyaSettingsScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="RuYa IPTV Settings">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyRuyaText" />
+		<widget name="version" position="80,765" size="590,150" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="top" zPosition="1"/>
+		<eLabel text="(Press OK to Save, Exit to Cancel)" name="help" position="80,765" size="590,150" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="bottom" zPosition="1"/>
+		<panel name="MenuConfigWidget" />
+	</screen>
+	
 	<!-- ## Sat Keys Updater by rossi2000 ## -->
 	<screen name="KeyUpdate" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
