@@ -1236,6 +1236,35 @@
 		</widget>
 	</screen>
 	
+	<!-- ## Movie Bar ## -->
+	<screen name="MoviePlayer1" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent">
+		<ePixmap pixmap="infobars/infobar.png" position="0,870" size="1920,215" zPosition="-1"/>
+		<panel name="InfobarClock"/>
+		<panel name="InfobarUpArrow"/>
+		<panel name="InfobarLeftArrow"/>		
+        <widget source="session.CurrentService" render="Label" position="825,932" size="650,38" font="youvix-r;34" foregroundColor="white" backgroundColor="lightcolour" transparent="1" valign="center" halign="left" noWrap="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>		
+		<widget name="speed" position="620,938" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="lightcolour" transparent="1" halign="right" zPosition="1" />
+		<widget name="statusicon" position="788,940" size="25,25" pixmaps="YouViX-Common/pvr/play.png,YouViX-Common/pvr/pause.png,YouViX-Common/pvr/stop.png,YouViX-Common/pvr/forward.png,YouViX-Common/pvr/backward.png,YouViX-Common/pvr/slow.png,YouViX-Common/pvr/blank.png" zPosition="1" alphatest="blend" />
+		<panel name="InfobarRecIcon"/>
+		<panel name="InfobarInfoIcon"/>
+		<panel name="InfobarOnNowIcon"/>
+        <panel name="InfobarStatusIcons"/>
+		<widget source="session.CurrentService" render="Picon" position="1720,926" size="155,97" transparent="0" alphatest="blend" zPosition="1">
+			<convert type="MovieReference"/>
+		</widget>
+		<panel name="InfobarRightArrow"/>
+		<panel name="InfobarDownArrow"/>
+		<widget source="session.CurrentService" render="Label" position="1502,1035" size="100,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" halign="right" valign="center">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<eLabel text="/" font="youvix-r;26" position="1612,1039" size="25,38" foregroundColor="lightcolour" backgroundColor="background2" halign="left" transparent="1" zPosition="1"/>
+		<widget source="session.CurrentService" render="Label" position="1630,1035" size="100,38" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="background2" transparent="1" halign="left" valign="center">
+			<convert type="ServicePosition">Length</convert>
+		</widget> 		
+	</screen>
+	
 	<!-- ## Movie Selection ## -->
 	<screen name="MovieSelection" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" >
 	    <panel name="MenuClock" />
