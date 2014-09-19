@@ -23,7 +23,7 @@
 		<alias name="ChoiceList" font="youvix-r" size="28" height="50" />
 		<alias name="Body" font="youvix-r" size="28" height="50" />
 		<alias name="TextNormal" font="youvix-r" size="28" height="50" />
-		<font filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-r.ttf" name="Subtitlefont" scale="90" />
+		<font  name="Subtitlefont" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-r.ttf" scale="90" />
 	</fonts>
 	
 	<colors>

@@ -2236,7 +2236,7 @@
 	<screen name="NimSelection" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyTunersText" />
-		<widget source="nimlist" render="Listbox" position="680,165" size="1160,700" selectionPixmap="selectionbars/SelectionBar_H100x1160.png" foregroundColor="white" backgroundColor="background2" transparent="1" scrollbarMode="showOnDemand">
+		<widget source="nimlist" render="Listbox" position="680,165" size="1160,700" selectionPixmap="selectionbars/SelectionBar_H100x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (5,6), size = (1160,30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
@@ -2276,25 +2276,25 @@
 	
 	<!-- ## ViX Menu ## -->
 	<screen name="VIXMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="MenuPanel" />
+		<panel name="BigMenuPanel" />
 		<panel name="MenuMyViXText" />
-		<widget source="menu" render="Listbox" position="80,165" size="590,600" selectionPixmap="selectionbars/MenuSelectionBar_H50x590.png" foregroundColor="white" backgroundColor="menubackground2" transparent="0" scrollbarMode="showOnDemand" zPosition="2">
+		<widget source="menu" render="Listbox" position="680,165" size="1160,650" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (70,0), size = (465,50), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
+				MultiContentEntryText(pos = (5,0), size = (1160,50), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 0 is the MenuText,
 				],
 				"fonts": [gFont("youvix-r",32)],
 				"itemHeight": 50
 				}
 			</convert>
 		</widget>
-		<widget source="menu" render="Listbox" position="80,165" size="590,600" selectionPixmap="selectionbars/MenuSelectionBar_H50x590.png" foregroundColor="white" backgroundColor="menubackground2" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+		<widget source="menu" render="Listbox" position="680,165" size="1160,650" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" scrollbarMode="showNever" selectionDisabled="1" transparent="1" zPosition="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (0,0),size = (465,50),flags = RT_HALIGN_CENTER|RT_VALIGN_BOTTOM|RT_WRAP,text = 2, color = 0x00ffffff),# index 0 is the MenuText,
+				MultiContentEntryText(pos = (0,0),size = (1155,50),flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER|RT_WRAP,text = 2), # index 0 is the MenuText,
 				],
 				"fonts": [gFont("youvix-r",24)],
-				"itemHeight": 60
+				"itemHeight": 50
 				}
 			</convert>
 		</widget>

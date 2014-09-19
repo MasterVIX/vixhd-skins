@@ -240,7 +240,7 @@
 		<ePixmap position="200,210" size="384,384" pixmap="YouViX-Common/logos/oea-logo.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="BigYouVix-Logo">
-		<ePixmap position="180,550" size="384,384" pixmap="YouViX-Common/logos/youvix-big.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="180,210" size="384,384" pixmap="YouViX-Common/logos/youvix-big.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	
 	<!-- MENU TEMPLATES -->
@@ -304,7 +304,6 @@
 	<screen name="MenuMyInfoText">
 		<eLabel text="MyInfo" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/info.png" alphatest="blend" zPosition="1"/>
-	    <panel name="BigYouVix-Logo" />
 	</screen>
 	<screen name="MenuMyGuideText">
 		<eLabel text="MyGuide" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
@@ -354,6 +353,7 @@
 	</screen>
 	<screen name="MenuMyViXText">
 		<eLabel text="MyViX" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
+	    <panel name="BigYouVix-Logo" />
 	</screen>
 	<screen name="MenuMyJobsText">
 		<eLabel text="MyJobs" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
