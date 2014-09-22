@@ -1210,7 +1210,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1372,920" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" noWrap="1" halign="right" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%a %e %h</convert>
 		</widget>
-		<ePixmap position="1538,924" size="24,24" pixmap="YouViX-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="1538,926" size="24,24" pixmap="YouViX-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="1575,920" size="100,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" noWrap="1" halign="left" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
