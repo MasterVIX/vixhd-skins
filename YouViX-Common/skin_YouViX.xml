@@ -106,10 +106,7 @@
 		<widget source="session.CurrentService" render="Label" position="1715,882" size="155,30" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" halign="center" valign="center" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">VideoCodec</convert>
 		</widget>
-		<panel name="InfoBar"/>
-        <widget source="session.CurrentService" render="Label" position="5,1035" size="320,35" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" halign="right" valign="center" transparent="1" zPosition="1">
-			<convert type="PliExtraInfo">ResolutionString</convert>
-		</widget>		
+		<panel name="InfoBar"/>	
 	</screen>
 	<screen name="RadioInfoBar" flags="wfNoBorder" position="0,0" size="1920,1080" backgroundColor="transparent">
 		<panel name="InfoBar"/>
