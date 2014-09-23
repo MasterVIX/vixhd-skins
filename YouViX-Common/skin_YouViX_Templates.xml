@@ -165,72 +165,110 @@
 		<ePixmap position="442,1038" size="50,32" pixmap="icons/arrow-down.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="InfobarProgramNextStartTime">
-		<widget source="session.Event_Next" render="Label" position="607,1035" size="100,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" valign="center" halign="left">
+		<widget source="session.Event_Next" render="Label" position="607,1035" size="100,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" transparent="1" noWrap="1" valign="center" halign="left">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarProgramNextName">
-		<widget source="session.Event_Next" render="Label" position="780,1035" size="520,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" valign="center" halign="left">
+		<widget source="session.Event_Next" render="Label" position="780,1035" size="520,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" transparent="1" noWrap="1" valign="center" halign="left">
 			<convert type="EventName">Name</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarProgramNextDuration">
-		<widget source="session.Event_Next" render="Label" position="1500,1035" size="150,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center">
+		<widget source="session.Event_Next" render="Label" position="1500,1035" size="150,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarTunerStatus">
-		<eLabel text="Tuner" position="1710,1035" size="95,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="1" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="1805,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">1</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="1825,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">2</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="1845,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">4</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="1865,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">8</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="E" position="1885,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">16</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1805,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
+		<eLabel text="Tuner" position="30,1035" size="95,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
+		<!-- <eLabel text="A" position="125,1035" size="20,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
+		<eLabel text="B" position="145,1035" size="20,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
+		<eLabel text="C" position="165,1035" size="20,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
+		<eLabel text="D" position="185,1035" size="20,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
+		<eLabel text="E" position="205,1035" size="20,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
+		<eLabel text="F" position="225,1035" size="20,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
+		<eLabel text="G" position="245,1035" size="20,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
+		<eLabel text="H" position="265,1035" size="20,35" font="youvix-r;26" foregroundColor="grey" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" /> -->
+		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="125,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1825,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="125,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">1</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="145,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1845,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="145,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="165,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1865,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="165,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">4</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="185,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="E" position="1885,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="185,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">8</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="E" position="205,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">4,4</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="FixedLabel" text="E" position="205,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">16</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="F" position="225,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">5,5</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="FixedLabel" text="F" position="225,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">32</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="G" position="245,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">6,6</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="FixedLabel" text="G" position="245,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">64</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" text="H" position="265,1035" size="20,35" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">7,7</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="FixedLabel" text="H" position="265,1035" size="20,35" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">128</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
