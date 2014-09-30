@@ -348,7 +348,7 @@
 	</screen>
 	<screen name="MenuMyIMDBText">
 		<eLabel text="MyIMDB" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/imdb.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,250" size="256,256" pixmap="YouViX-Common/menuicons/imdb.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyAudioText">
 		<eLabel text="MyAudio" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
