@@ -533,36 +533,36 @@
 		<ePixmap pixmap="buttons/key_help.png" position="1857,280" size="53,38" alphatest="blend" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="MenuButtonRed">
-		<ePixmap pixmap="YouViX-Common/buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
 		<widget name="key_red" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
 	</screen>
 	<screen name="MenuButtonGreen">
-		<ePixmap pixmap="YouViX-Common/buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
 		<widget name="key_green" position="120,1033" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
 	</screen>
 	<screen name="MenuButtonYellow">
 	    <widget name="key_yellow" position="363,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1" />
-		<ePixmap pixmap="YouViX-Common/buttons/yellow.png" position="635,986" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/yellow.png" position="635,986" size="35,35" alphatest="blend" transparent="1" />
 	</screen>
 	<screen name="MenuButtonBlue">
 	    <widget name="key_blue" position="363,1031" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1" />
-		<ePixmap pixmap="YouViX-Common/buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1" />
 	</screen>
 	<screen name="MenuButtonRedSource">
-		<ePixmap pixmap="YouViX-Common/buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
 		<widget source="key_red" render="Label" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
 	</screen>
 	<screen name="MenuButtonGreenSource">
-		<ePixmap pixmap="YouViX-Common/buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
 		<widget source="key_green" render="Label" position="120,1033" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
 	</screen>
 	<screen name="MenuButtonYellowSource">
 	    <widget source="key_yellow" render="Label" position="363,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1" />
-		<ePixmap pixmap="YouViX-Common/buttons/yellow.png" position="635,986" size="35,35" alphatest="blend" transparent="1" />	
+		<ePixmap pixmap="buttons/yellow.png" position="635,986" size="35,35" alphatest="blend" transparent="1" />	
 	</screen>
 	<screen name="MenuButtonBlueSource">
 	    <widget source="key_blue" render="Label" position="363,1031" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1" />
-		<ePixmap pixmap="YouViX-Common/buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1" />
 	</screen>
 	
 	<!-- ## ONDEMAND TEMPLATES ## -->
@@ -628,7 +628,7 @@
 		</widget>
 	</screen>
 	<screen name="WizardRedButton">
-		<ePixmap pixmap="YouViX-Common/buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
 		<widget name="languagetext" render="Label" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
 	</screen>	
 </skin>

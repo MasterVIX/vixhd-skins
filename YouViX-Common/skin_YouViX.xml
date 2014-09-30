@@ -342,16 +342,16 @@
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<widget name="config" position="1025,165" size="545,250" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x545.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" scrollbarMode="showOnDemand" />
-		<widget source="key_red" render="Pixmap" pixmap="YouViX-Common/buttons/red.png" position="980,172" size="35,35" alphatest="blend" zPosition="1">
+		<widget source="key_red" render="Pixmap" pixmap="buttons/red.png" position="980,172" size="35,35" alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="key_green" render="Pixmap" pixmap="YouViX-Common/buttons/green.png" position="980,220" size="35,35" alphatest="blend" zPosition="1">
+		<widget source="key_green" render="Pixmap" pixmap="buttons/green.png" position="980,220" size="35,35" alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="key_yellow" render="Pixmap" pixmap="YouViX-Common/buttons/yellow.png" position="980,272" size="35,35" alphatest="blend" zPosition="1">
+		<widget source="key_yellow" render="Pixmap" pixmap="buttons/yellow.png" position="980,272" size="35,35" alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="key_blue" render="Pixmap" pixmap="YouViX-Common/buttons/blue.png" position="980,321" size="35,35" alphatest="blend" zPosition="1">
+		<widget source="key_blue" render="Pixmap" pixmap="buttons/blue.png" position="980,321" size="35,35" alphatest="blend" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="streams" render="Listbox" position="680,570" size="1160,300" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" scrollbarMode="showOnDemand">
@@ -1086,19 +1086,19 @@
 		</widget>
 		<widget name="config" position="680,354" size="480,30" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" />
 		<widget source="job_status" render="Label" position="680,456" size="1160,40" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" />
-		<widget source="cancelable" render="Pixmap" pixmap="YouViX-Common/buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1">
+		<widget source="cancelable" render="Pixmap" pixmap="buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="cancelable" render="FixedLabel" text="Cancel" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="finished" render="Pixmap" pixmap="YouViX-Common/buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1">
+		<widget source="finished" render="Pixmap" pixmap="buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="finished" render="FixedLabel" text="OK" position="120,1033" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="backgroundable" render="Pixmap" pixmap="YouViX-Common/buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1">
+		<widget source="backgroundable" render="Pixmap" pixmap="buttons/blue.png" position="635,1031" size="35,35" alphatest="blend" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="363,1031" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="1">
@@ -1562,7 +1562,7 @@
 		<widget name="DNS" position="1330,564" size="200,30" font="youvix-r;28" halign="right" foregroundColors="#30000000,#a72c25,#5d984d" backgroundColor="menubackground" transparent="1" zPosition="1" />
 		<widget name="DNSInfo_Check" pixmaps="icons/lock_on.png,icons/lock_error.png" position="1545,561" size="35,35" alphatest="blend" zPosition="1" />
 		<widget name="DNSInfo_Text" position="1595,564" size="150,35" font="youvix-r;28" backgroundColor="menubackground" transparent="1" foregroundColors="#000000,#cccccc,#ffffff" text="Info" zPosition="1" />
-		<widget name="EditSettingsButton" pixmaps="YouViX-Common/buttons/blue.png,YouViX-Common/buttons/blue.png" position="1050,635" size="35,35" transparent="1" alphatest="blend" zPosition="1" />
+		<widget name="EditSettingsButton" pixmaps="buttons/blue.png,buttons/blue.png" position="1050,635" size="35,35" transparent="1" alphatest="blend" zPosition="1" />
 		<widget name="EditSettings_Text" position="1095,635" size="160,35" font="youvix-r;28" backgroundColor="menubackground" halign="left" transparent="1" foregroundColors="#ffffff,#ffffff,#cccccc" zPosition="1" />
 		<widget name="InfoText" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
 		<panel name="MenuButtonRedSource" />
@@ -1603,7 +1603,7 @@
 		<widget source="IFtext" render="Label" position="1090,750" size="180,38" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="left" transparent="1" zPosition="1" />
 		<widget source="IF" render="Label" position="1240,750" size="570,38" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="left" transparent="1" zPosition="1" />
 		<widget source="Statustext" render="Label" position="1090,790" size="172,38" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="left" transparent="1" zPosition="1"/>
-		<widget name="statuspic" pixmaps="YouViX-Common/buttons/green.png,YouViX-Common/buttons/red.png" position="1240,788" size="35,35" transparent="1" alphatest="blend" zPosition="10"/>
+		<widget name="statuspic" pixmaps="buttons/green.png,buttons/red.png" position="1240,788" size="35,35" transparent="1" alphatest="blend" zPosition="10"/>
 	    <panel name="MenuButtonRedSource" />
 	</screen>
 	<!-- ## Network - Network MAC Settings ## -->
@@ -1740,7 +1740,7 @@
 		<widget source="IFtext" render="Label" position="1090,750" size="180,38" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="left" transparent="1" zPosition="1" />
 		<widget source="IF" render="Label" position="1240,750" size="570,38" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="left" transparent="1" zPosition="1" />
 		<widget source="Statustext" render="Label" position="1090,790" size="172,38" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="left" transparent="1" zPosition="1"/>
-		<widget name="statuspic" pixmaps="YouViX-Common/buttons/green.png,YouViX-Common/buttons/red.png" position="1240,788" size="35,35" transparent="1" alphatest="blend" zPosition="10"/>
+		<widget name="statuspic" pixmaps="buttons/green.png,buttons/red.png" position="1240,788" size="35,35" transparent="1" alphatest="blend" zPosition="10"/>
 	</screen>
 
 	<!-- ## Number Zap ## -->
@@ -1915,9 +1915,9 @@
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuConfigWidget" />
-		<ePixmap pixmap="YouViX-Common/buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
 		<widget name="cancel" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
-		<ePixmap pixmap="YouViX-Common/buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
 		<widget name="ok" position="120,1033" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
 	</screen>
 	
@@ -2046,7 +2046,7 @@
 		<widget name="model" position="680,165" size="1160,35" font="youvix-r;28" valign="center" halign="left" transparent="1" />
 		<widget name="capacity" position="680,200" size="1160,35" font="youvix-r;28" valign="center" halign="left" transparent="1" />
 		<widget name="bus" position="680,235" size="1160,35" font="youvix-r;28" valign="center" halign="left" transparent="1" />
-		<ePixmap pixmap="YouViX-Common/buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
 		<widget source="initializetext" render="Label" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
 	</screen>
 	
@@ -2184,9 +2184,9 @@
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyTimersText" />
 		<panel name="MenuConfigWidget" />
-		<widget name="cancel" pixmap="YouViX-Common/buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="cancel" pixmap="buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
 		<widget name="canceltext" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
-		<widget name="ok" pixmap="YouViX-Common/buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="ok" pixmap="buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
 		<widget name="oktext" position="120,1033" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
 		<panel name="MenuHelpwindowWidget" />
 		<panel name="MenuDescriptionWidget" />
@@ -2399,5 +2399,22 @@
 		<panel name="MenuListLogWidget" />
 		<panel name="MenuButtonRed" />
 		<panel name="MenuButtonBlue" />
-	</screen>	
+	</screen>
+	
+	<!-- ## Xtrend FanControl ## -->
+	<screen name="FanSetupScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuConfigWidget" />
+		<widget name="sysTemp" position="80,730" size="590,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground2" halign="center" valign="center" zPosition="1" transparent="1" />
+		<widget name="hddTemp" position="80,770" size="590,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground2" halign="center" valign="center" zPosition="1" transparent="1" />
+		<widget name="powerstatus" position="170,808" size="250,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground2" zPosition="1" transparent="1" halign="right"/>
+		<widget name="daemon0" pixmap="buttons/red.png" position="430,805" size="35,35" transparent="1" alphatest="blend" zPosition="10"/>
+		<widget name="daemon1" pixmap="buttons/green.png" position="430,805" size="35,35" transparent="1" alphatest="blend" zPosition="10"/>
+		<widget name="hddtemp" position="80,860" size="590,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground2" transparent="1" zPosition="1" halign="center" valign="center" />
+		<ePixmap pixmap="buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="cancel" position="120,987" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
+		<ePixmap pixmap="buttons/green.png" position="80,1031" size="35,35" alphatest="blend" transparent="1" />
+		<widget name="ok" position="120,1033" size="268,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1" />
+	</screen>
 </skin>
