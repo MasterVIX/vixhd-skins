@@ -516,21 +516,25 @@
 	
 	<!-- ## MENU BUTTONS ## -->
 	<screen name="MenuMenuButton">
-		<ePixmap pixmap="buttons/key_menu.png" position="1857,160" size="53,38" alphatest="blend" transparent="1" zPosition="1" />
+		<!-- <ePixmap pixmap="buttons/key_menu.png" position="1857,160" size="53,38" alphatest="blend" transparent="1" zPosition="1" /> -->
+		<eLabel text="MENU" position="1848,160" size="68,38" font="youvix-r;22" foregroundColor="white" backgroundColor="darkcolour" halign="center" valign="center" transparent="0" zPosition="1"/>
 	</screen>
 	<screen name="MenuInfoButton">
-		<ePixmap pixmap="buttons/key_info.png" position="1857,200" size="53,38" alphatest="blend" transparent="1" zPosition="1"/>
+		<!-- <ePixmap pixmap="buttons/key_info.png" position="1857,200" size="53,38" alphatest="blend" transparent="1" zPosition="1"/> -->
+		<eLabel text="INFO" position="1848,200" size="68,38" font="youvix-r;22" foregroundColor="white" backgroundColor="darkcolour" halign="center" valign="center" transparent="0" zPosition="1"/>
 	</screen>
 	<screen name="MenuTextButton">
-		<ePixmap pixmap="buttons/key_text.png" position="1857,240" size="53,38" alphatest="blend" transparent="1" zPosition="1"/>
+		<!-- <ePixmap pixmap="buttons/key_text.png" position="1857,240" size="53,38" alphatest="blend" transparent="1" zPosition="1"/> -->
+		<eLabel text="TEXT" position="1848,240" size="68,38" font="youvix-r;22" foregroundColor="white" backgroundColor="darkcolour" halign="center" valign="center" transparent="0" zPosition="1"/>
 	</screen>
 	<screen name="MenuTextButtonVkey">
-		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="1857,240" size="53,38" alphatest="blend" transparent="1" zPosition="1" >
+		<widget source="VKeyIcon" render="Label" text="TEXT" position="1848,240" size="68,38" font="youvix-r;22" foregroundColor="white" backgroundColor="darkcolour" halign="center" valign="center" transparent="0" zPosition="1" >
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
 	<screen name="MenuHelpButton">
-		<ePixmap pixmap="buttons/key_help.png" position="1857,280" size="53,38" alphatest="blend" transparent="1" zPosition="1"/>
+		<!-- <ePixmap pixmap="buttons/key_help.png" position="1857,280" size="53,38" alphatest="blend" transparent="1" zPosition="1"/> -->
+		<eLabel text="HELP" position="1848,280" size="68,38" font="youvix-r;22" foregroundColor="white" backgroundColor="darkcolour" halign="center" valign="center" transparent="0" zPosition="1"/>
 	</screen>
 	<screen name="MenuButtonRed">
 		<ePixmap pixmap="buttons/red.png" position="80,986" size="35,35" alphatest="blend" transparent="1" />
