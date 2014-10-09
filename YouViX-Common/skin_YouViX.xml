@@ -838,7 +838,7 @@
 		</widget>
 	</screen>
 	
-	<!-- HotKey -->
+	<!-- ## HotKey ## -->
 	<screen name="HotkeySetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
