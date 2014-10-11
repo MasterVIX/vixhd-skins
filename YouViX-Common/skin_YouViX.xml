@@ -843,7 +843,8 @@
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuListWidget" />
-		<widget name="choosen" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1"/>
+		<widget name="choosen" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="top" valign="center" zPosition="1"/>
+		<panel name="MenuDescriptionWidget" />
 		<panel name="MenuButtonRedSource" />
 		<panel name="MenuButtonGreenSource" />
 	</screen>
