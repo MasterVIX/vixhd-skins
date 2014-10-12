@@ -846,6 +846,14 @@
 		<widget name="choosen" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="top" valign="center" zPosition="1"/>
 		<panel name="MenuDescriptionWidget" />
 		<panel name="MenuButtonRedSource" />
+	</screen>
+	<screen name="HotkeySetupSelect" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuListWidget" />
+		<widget name="choosen" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="top" valign="center" zPosition="1"/>
+		<panel name="MenuDescriptionWidget" />
+		<panel name="MenuButtonRedSource" />
 		<panel name="MenuButtonGreenSource" />
 	</screen>
 	
