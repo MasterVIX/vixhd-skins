@@ -1185,7 +1185,7 @@
 	
 	<!-- ## Mute ## -->
 	<screen name="Mute" position="1600,50" size="147,132" flags="wfNoBorder" backgroundColor="transparent" title="Mute" zPosition="10">
-		<ePixmap position="0,0" size="147,132" pixmap="YouViX-Common/icons/mute.png" transparent="1" alphatest="blend" />
+		<ePixmap position="0,0" size="147,132" pixmap="icons/mute.png" transparent="1" alphatest="blend" />
 	</screen>
 	
 	<!-- ## NETWORK ## -->
@@ -2125,7 +2125,7 @@
 	
 	<!-- ## Unhandled Key ## -->
 	<screen name="UnhandledKey" position="1770,50" size="147,132" flags="wfNoBorder" zPosition="100" backgroundColor="transparent">
-		<widget name="UnhandledKeyPixmap" position="0,0" size="147,132" pixmap="YouViX-Common/icons/unhandled-key.png" alphatest="blend" />
+		<widget name="UnhandledKeyPixmap" position="0,0" size="147,132" pixmap="icons/unhandled-key.png" alphatest="blend" />
 	</screen>
 	
 	<!-- ## ViX Menu ## -->
