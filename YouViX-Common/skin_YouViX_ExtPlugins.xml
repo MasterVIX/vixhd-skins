@@ -184,6 +184,9 @@
 			</convert>
 		</widget>
 	</screen>
+	<screen name="AutoPiconManager" position="0,0" size="1920,1080" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent" >
+	    <panel name="CrossEPGDownloadBar" />
+	</screen>
 	
 	<!-- ## Bluetooth Devices Manager ## -->
 	<screen name="BluetoothDevicesManager" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Bluetooth Devices Manager">
