@@ -73,7 +73,7 @@
 		</widget>
 	</screen>
 	<screen name="InfobarNowPlayingIcon">
-		<ePixmap position="780,937" size="30,30" pixmap="YouViX-Common/icons/nowplaying.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="780,937" size="30,30" pixmap="icons/nowplaying.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="InfobarRecIcon">
 <!--	    <ePixmap pixmap="icons/record.png" position="740,937" size="30,30" zPosition="0" alphatest="blend" />  -->
