@@ -273,7 +273,7 @@
 		<widget source="Event" render="Label" position="935,792" size="475,35" zPosition="1" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" noWrap="1" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<ePixmap pixmap="YouViX-Common/icons/info.png" position="1630,791" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="icons/info.png" position="1630,791" size="35,35" alphatest="blend" transparent="1" />
 		<widget source="Event" render="Label" position="1685,792" font="youvix-r;24" size="120,35" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2" >
 			<convert type="EventTime">Remaining</convert>
             <convert type="RemainingToText">InMinutes</convert>
@@ -1073,7 +1073,7 @@
 	<!-- ## Movie Bar ## -->
 	<screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="center,905" size="1517,156" pixmap="YouViX-Common/infobars/moviebar.png" zPosition="-1" />
-		<ePixmap position="275,915" size="35,35" pixmap="YouViX-Common/icons/info.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="275,915" size="35,35" pixmap="icons/info.png" alphatest="blend" zPosition="1"/>
 		<widget source="session.CurrentService" render="Label" position="325,915" size="650,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" valign="center" halign="left" noWrap="1" zPosition="1">
 			<convert type="ServiceName">Name :</convert>
 		</widget>
