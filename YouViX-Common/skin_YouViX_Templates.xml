@@ -337,57 +337,57 @@
 	</screen>
 	<screen name="MenuMySetupText">
 		<eLabel text="MySetup" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/setup.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/setup.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyInfoText">
 		<eLabel text="MyInfo" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/info.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/info.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyGuideText">
 		<eLabel text="MyGuide" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyIMDBText">
 		<eLabel text="MyIMDB" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,250" size="256,256" pixmap="YouViX-Common/menuicons/imdb.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,250" size="256,256" pixmap="menuicons/imdb.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyAudioText">
 		<eLabel text="MyAudio" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/audio.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/audio.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyViewText">
 		<eLabel text="MyView" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyPluginsText">
 		<eLabel text="MyPlugins" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/plugins.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/plugins.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyTimersText">
 		<eLabel text="MyTimers" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/timers.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/timers.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyNetworkText">
 		<eLabel text="MyNetwork" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/network.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/network.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMySkinsText">
 		<eLabel text="MySkins" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/skins.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/skins.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMySoftcamsText">
 		<eLabel text="MySoftcams" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/softcam.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/softcam.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyCamsText">
 		<eLabel text="MyCams" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/cam.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/cam.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyUpdatesText">
 		<eLabel text="MyUpdates" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/updates.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/updates.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyTunersText">
 		<eLabel text="MyTuners" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/tuners.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/tuners.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyViXText">
 		<eLabel text="MyViX" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
@@ -395,7 +395,7 @@
 	</screen>
 	<screen name="MenuMyJobsText">
 		<eLabel text="MyJobs" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/info.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/info.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyOnDemandText">
 		<eLabel text="MyOnDemand" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
@@ -420,15 +420,15 @@
 	</screen>
 	<screen name="MenuMyConsoleText">
 		<eLabel text="MyConsole" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/console.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/console.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyLanguagesText">
 		<eLabel text="MyLanguages" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/languages.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/languages.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuMyRuyaText">
 		<eLabel text="MyRuya" position="85,5" size="300,45" font="youvix-r;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-	    <ePixmap position="250,210" size="256,256" pixmap="YouViX-Common/menuicons/ruya.png" alphatest="blend" zPosition="1"/>
+	    <ePixmap position="250,210" size="256,256" pixmap="menuicons/ruya.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="MenuForwardArrow">
 		<eLabel text=">" position="95,53" size="35,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
