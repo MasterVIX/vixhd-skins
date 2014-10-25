@@ -937,7 +937,7 @@
         <panel name="BigMenuPanel" />
 		<panel name="MenuMyRadioText" />
         <eLabel text=">" position="685,157" size="35,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
-        <widget name="rec_pic" position="715,159" size="30,30" pixmap="/icons/record.png" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" alphatest="blend" zPosition="1" /> 
+        <widget name="rec_pic" position="715,159" size="30,30" pixmap="icons/record.png" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" alphatest="blend" zPosition="1" /> 
         <widget name="rec_txt" position="745,159" size="800,35" font="youvix-r;28" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2"/> 
         <widget name="rec_txt2" position="745,159" size="800,35" font="youvix-r;28" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="3"/> 
         <widget name="streamlist" position="680,210" size="1160,700" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" /> 

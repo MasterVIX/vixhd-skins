@@ -76,8 +76,8 @@
 		<ePixmap position="780,937" size="30,30" pixmap="YouViX-Common/icons/nowplaying.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="InfobarRecIcon">
-<!--	    <ePixmap pixmap="YouViX-Common/icons/record.png" position="740,937" size="30,30" zPosition="0" alphatest="blend" />  -->
-		<widget source="session.RecordState" render="Pixmap" pixmap="YouViX-Common/icons/record.png" position="740,937" size="30,30" zPosition="1" backgroundColor="lightcolour" alphatest="blend">
+<!--	    <ePixmap pixmap="icons/record.png" position="740,937" size="30,30" zPosition="0" alphatest="blend" />  -->
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/record.png" position="740,937" size="30,30" zPosition="1" backgroundColor="lightcolour" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
