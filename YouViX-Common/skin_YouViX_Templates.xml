@@ -275,10 +275,10 @@
 	
 	 <!-- LOGOS -->
 	<screen name="OEA-Logo">
-		<ePixmap position="200,210" size="384,384" pixmap="YouViX-Common/logos/oea-logo.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="200,210" size="384,384" pixmap="logos/oea-logo.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	<screen name="BigYouVix-Logo">
-		<ePixmap position="180,210" size="384,384" pixmap="YouViX-Common/logos/youvix-big.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="180,210" size="384,384" pixmap="logos/youvix-big.png" alphatest="blend" zPosition="1"/>
 	</screen>
 	
 	<!-- MENU TEMPLATES -->
@@ -581,31 +581,31 @@
 		<widget name="list" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="117" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />	
 	</screen>
 	<screen name="OnDemandBBCiPlayerLogo">
-		<ePixmap pixmap="YouViX-Common/ondemand/bbciplayer.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ondemand/bbciplayer.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandITVPlayerLogo">
-		<ePixmap pixmap="YouViX-Common/ondemand/itvplayer.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ondemand/itvplayer.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemand4ODLogo">
-		<ePixmap pixmap="YouViX-Common/ondemand/4od.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ondemand/4od.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemand3PlayerLogo">
-		<ePixmap pixmap="YouViX-Common/ondemand/3player.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ondemand/3player.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandIVIEWPlayerLogo">
-		<ePixmap pixmap="YouViX-Common/ondemand/iviewplayer.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ondemand/iviewplayer.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandRTEPlayerLogo">
-		<ePixmap pixmap="YouViX-Common/ondemand/rteplayer.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ondemand/rteplayer.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandiRadioPlayerLogo">
-		<ePixmap pixmap="YouViX-Common/ondemand/iradioplayer.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ondemand/iradioplayer.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandShoutcastLogo">
-		<ePixmap pixmap="YouViX-Common/ondemand/shoutcast.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ondemand/shoutcast.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	<screen name="OnDemandTuneINLogo">
-		<ePixmap pixmap="YouViX-Common/ondemand/tunein.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ondemand/tunein.png" position="100,200" size="551,60" transparent="0" alphatest="blend" zPosition="1" />
 	</screen>
 	
 	<!-- WIZARD TEMPLATES -->
