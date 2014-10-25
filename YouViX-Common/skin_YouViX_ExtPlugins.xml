@@ -343,6 +343,23 @@
 		<widget name="CPto" position="680,370" size="1160,500" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
 	
+	<!-- ## FirmwareUpgrade ## -->
+	<screen name="FirmwareUpgrade" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Firmware Upgrade">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuConfigWidget" />
+		<widget source="status" render="Label" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1"/>
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+	</screen>
+	<screen name="FUFilebrowser" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />		
+		<widget source="status" render="Label" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
+		<widget name="file_list" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<panel name="MenuButtonBlueSource" />
+	</screen>
+	
 	<!-- ## FPGA Update ## -->
 	<screen name="FPGAUpgrade" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
@@ -350,6 +367,67 @@
 		<widget source="status" render="Label" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
 		<widget name="file_list" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+        <panel name="MenuButtonYellowSource" />
+		<panel name="MenuButtonBlueSource" />
+	</screen>
+	
+	<!-- ## Foreca ## -->
+	<screen name="ForecaPreview" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyWeatherText" />
+		<widget source="Titel" render="Label" position="685,159" size="1160,40" font="youvix-r;32" foregroundColor="white" backgroundColor="menubackground" valign="center" halign="center" transparent="1" zPosition="1"/>
+		<widget source="Titel2" render="Label" position="680,165" size="1160,750" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1"/>
+		<widget name="MainList" position="680,240" size="1160,750" font="youvix-r;28" transparent="1" scrollbarMode="showOnDemand"/>
+		<widget source="key_menu" render="Label" position="1598,160" size="220,35" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" zPosition="1"/>
+		<panel name="MenuMenuButton" />
+		<widget source="key_info" render="Label" position="1598,200" size="220,35" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" zPosition="1"/>
+		<panel name="MenuInfoButton" />
+		<panel name="MenuHelpButton" />
+		<widget source="key_ok" render="Label" position="1598,320" size="220,35" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" zPosition="1"/>
+		<panel name="MenuOKButton" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+        <panel name="MenuButtonYellowSource" />
+		<panel name="MenuButtonBlueSource" />
+	</screen>
+	<screen name="SatPanel" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyWeatherText" />
+		<widget name="Mlist" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="100" selectionPixmap="selectionbars/SelectionBar_H100x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+        <panel name="MenuButtonYellowSource" />
+		<panel name="MenuButtonBlueSource" />
+	</screen>
+	<screen name="SatPanelb" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyWeatherText" />
+		<widget name="Mlist" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="100" selectionPixmap="selectionbars/SelectionBar_H100x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+	</screen>
+	<screen name="SatPanelc" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyWeatherText" />
+		<widget name="Mlist" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="100" selectionPixmap="selectionbars/SelectionBar_H100x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+	</screen>
+	<screen name="SatPaneld" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyWeatherText" />
+		<widget name="Mlist" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="100" selectionPixmap="selectionbars/SelectionBar_H100x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+	</screen>
+	<screen name="PicSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyWeatherText" />
+		<widget name="Mlist" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="100" selectionPixmap="selectionbars/SelectionBar_H100x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+	</screen>
+	<screen name="CityPanel" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyWeatherText" />
+		<widget name="Mlist" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
+		<widget source="key_ok" render="Label" position="1598,320" size="220,35" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="right" valign="center" zPosition="1"/>
+		<panel name="MenuOKButton" />
 		<panel name="MenuButtonGreenSource" />
         <panel name="MenuButtonYellowSource" />
 		<panel name="MenuButtonBlueSource" />
