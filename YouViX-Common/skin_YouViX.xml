@@ -152,7 +152,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1552,748" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%a %e %h</convert>
 		</widget>
-		<ePixmap position="1723,753" size="30,30" pixmap="YouViX-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="1723,753" size="30,30" pixmap="icons/clock.png" alphatest="blend" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="1765,748" size="100,38" font="youvix-r;26" foregroundColor="white" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -1080,7 +1080,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1372,920" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" noWrap="1" halign="right" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%a %e %h</convert>
 		</widget>
-		<ePixmap position="1538,926" size="24,24" pixmap="YouViX-Common/icons/clock.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="1538,926" size="24,24" pixmap="icons/clock.png" alphatest="blend" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="1575,920" size="100,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" noWrap="1" halign="left" valign="center" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
