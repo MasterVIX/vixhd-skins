@@ -1092,7 +1092,7 @@
 		<widget source="session.CurrentService" render="PositionGauge" position="276,987" size="1367,20" zPosition="2" pointer="infobars/movieprogressbar.png:1367,0" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget name="statusicon" position="276,1019" size="25,25" pixmaps="YouViX-Common/pvr/play.png,YouViX-Common/pvr/pause.png,YouViX-Common/pvr/stop.png,YouViX-Common/pvr/forward.png,YouViX-Common/pvr/backward.png,YouViX-Common/pvr/slow.png,YouViX-Common/pvr/blank.png" zPosition="1" alphatest="blend" />
+		<widget name="statusicon" position="276,1019" size="25,25" pixmaps="pvr/play.png,pvr/pause.png,pvr/stop.png,pvr/forward.png,pvr/backward.png,pvr/slow.png,pvr/blank.png" zPosition="1" alphatest="blend" />
 		<widget name="speed" position="310,1019" size="100,38" font="youvix-r;22" foregroundColor="white" backgroundColor="background2" transparent="1" halign="left" zPosition="4" />
 		<widget source="session.CurrentService" render="Label" position="1422,1010" size="100,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" halign="right" valign="center">
 			<convert type="ServicePosition">Position</convert>
@@ -1113,7 +1113,7 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>		
 		<widget name="speed" position="620,938" size="150,38" font="youvix-r;26" foregroundColor="white" backgroundColor="lightcolour" transparent="1" halign="right" zPosition="1" />
-		<widget name="statusicon" position="788,940" size="25,25" pixmaps="YouViX-Common/pvr/play.png,YouViX-Common/pvr/pause.png,YouViX-Common/pvr/stop.png,YouViX-Common/pvr/forward.png,YouViX-Common/pvr/backward.png,YouViX-Common/pvr/slow.png,YouViX-Common/pvr/blank.png" zPosition="1" alphatest="blend" />
+		<widget name="statusicon" position="788,940" size="25,25" pixmaps="pvr/play.png,pvr/pause.png,pvr/stop.png,pvr/forward.png,pvr/backward.png,pvr/slow.png,pvr/blank.png" zPosition="1" alphatest="blend" />
 		<panel name="InfobarRecIcon"/>
 		<panel name="InfobarInfoIcon"/>
 		<panel name="InfobarOnNowIcon"/>
@@ -2015,7 +2015,7 @@
 	<!-- ## Timeshift ## -->
 	<screen name="TimeshiftState" position="center,center" size="244,328" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
 	    <ePixmap pixmap="screens/zapbox.png" position="0,0" size="244,328" alphatest="blend" zPosition="-1" />
-		<widget name="statusicon" position="45,30" size="244,153" pixmaps="YouViX-Common/pvr/play_large.png,YouViX-Common/pvr/pause_large.png,YouViX-Common/pvr/stop_large.png,YouViX-Common/pvr/forward_large.png,YouViX-Common/pvr/backward_large.png,YouViX-Common/pvr/slow_large.png" zPosition="0" alphatest="blend" />
+		<widget name="statusicon" position="45,30" size="244,153" pixmaps="pvr/play_large.png,pvr/pause_large.png,pvr/stop_large.png,pvr/forward_large.png,pvr/backward_large.png,pvr/slow_large.png" zPosition="0" alphatest="blend" />
 		<widget name="speed" position="center,210" size="100,40" font="youvix-r;24" foregroundColor="white" backgroundColor="background2" transparent="1" halign="center" valign="center" zPosition="1" />
 		<widget source="session.CurrentService" render="Label" position="center,261" size="100,40" font="youvix-r;22" foregroundColor="white" backgroundColor="background2" transparent="1" valign="center" halign="center" zPosition="1" >
 			<convert type="ServicePosition">Length</convert>
@@ -2026,7 +2026,7 @@
 	</screen>
 	<screen name="PVRState" position="center,center" size="244,328" backgroundColor="transparent" flags="wfNoBorder" transparent="0" zPosition="2">
 		<ePixmap pixmap="screens/zapbox.png" position="0,0" size="244,253" alphatest="blend" zPosition="-1" />
-		<widget name="statusicon" position="45,30" size="244,153" pixmaps="YouViX-Common/pvr/play_large.png,YouViX-Common/pvr/pause_large.png,YouViX-Common/pvr/stop_large.png,YouViX-Common/pvr/forward_large.png,YouViX-Common/pvr/backward_large.png,YouViX-Common/pvr/slow_large.png" zPosition="0" alphatest="blend" />
+		<widget name="statusicon" position="45,30" size="244,153" pixmaps="pvr/play_large.png,pvr/pause_large.png,pvr/stop_large.png,pvr/forward_large.png,pvr/backward_large.png,pvr/slow_large.png" zPosition="0" alphatest="blend" />
 		<widget name="speed" position="center,210" size="100,40" font="youvix-r;24" foregroundColor="white" backgroundColor="background2" transparent="1" halign="center" valign="center" zPosition="4" />
 	</screen>
 	
