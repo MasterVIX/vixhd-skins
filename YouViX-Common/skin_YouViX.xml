@@ -2169,7 +2169,7 @@
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (170, 5), size = (850, 35), font=0, text = 0),
-				MultiContentEntryText(pos = (170, 50), size = (850, 50), font=1, flags = RT_VALIGN_TOP, text = 1),
+				MultiContentEntryText(pos = (170, 50), size = (850, 55), font=1, flags = RT_VALIGN_TOP, text = 1),
 				MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (120, 120), png = 2),
 				],
 				"fonts": [gFont("youvix-r", 32),gFont("youvix-r", 24)],
