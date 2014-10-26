@@ -46,7 +46,7 @@
 	
 	<!-- ## INFOBARS ## -->
 	<screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent">
-		<ePixmap pixmap="infobars/infobar.png" position="0,870" size="1920,215" zPosition="-1"/>
+		<ePixmap pixmap="infobar/infobar.png" position="0,870" size="1920,215" zPosition="-1"/>
 		<panel name="InfobarClock"/>
 		<panel name="InfobarUpArrow"/>
 		<panel name="InfobarLeftArrow"/>				
@@ -68,7 +68,7 @@
         <panel name="InfobarTunerStatus"/>  		
 	</screen>
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1920,1080" backgroundColor="transparent">
-	    <ePixmap pixmap="YouViX-Common/infobars/2ndinfobar.png" position="0,670" size="1920,215" zPosition="-1"/>
+	    <ePixmap pixmap="infobar/2ndinfobar.png" position="0,670" size="1920,215" zPosition="-1"/>
 		<widget source="session.CurrentService" render="Label" position="5,675" size="475,30" font="youvix-r;24" foregroundColor="white" backgroundColor="background2" halign="left" valign="center" transparent="1" zPosition="1">
 			<convert type="PliExtraInfo">CryptoSpecial</convert>
 		</widget>
@@ -114,7 +114,7 @@
 	
 	<!-- ## EPG SCREENS ## -->
 	<screen name="QuickEPG" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent">
-<!--	    <ePixmap pixmap="infobars/2ndinfobar.png" position="490,670" size="1430,215" zPosition="-1"/>
+<!--	    <ePixmap pixmap="infobar/2ndinfobar.png" position="490,670" size="1430,215" zPosition="-1"/>
 		<widget source="session.CurrentService" render="Label" position="505,682" size="80,30" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" halign="center" >
 			<convert type="PliExtraInfo">OrbitalPosition</convert>
 		</widget>
@@ -124,7 +124,7 @@
 		<widget source="Event" render="Label" position="607,720" size="740,140" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget> -->
-		<ePixmap pixmap="YouViX-Common/infobars/quickepg.png" position="0,870" size="1920,215" zPosition="-1"/>
+		<ePixmap pixmap="infobar/quickepg.png" position="0,870" size="1920,215" zPosition="-1"/>
 		<panel name="InfobarClock"/>
 		<panel name="InfobarUpArrow"/>
         <panel name="InfobarLeftArrow"/>		
@@ -1072,7 +1072,7 @@
 	
 	<!-- ## Movie Bar ## -->
 	<screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent">
-		<ePixmap position="center,905" size="1517,156" pixmap="YouViX-Common/infobars/moviebar.png" zPosition="-1" />
+		<ePixmap position="center,905" size="1517,156" pixmap="infobar/moviebar.png" zPosition="-1" />
 		<ePixmap position="275,915" size="35,35" pixmap="icons/info.png" alphatest="blend" zPosition="1"/>
 		<widget source="session.CurrentService" render="Label" position="325,915" size="650,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" valign="center" halign="left" noWrap="1" zPosition="1">
 			<convert type="ServiceName">Name :</convert>
