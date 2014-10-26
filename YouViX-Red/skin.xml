@@ -11,10 +11,10 @@
 		<resolution xres="1920" yres="1080" bpp="32" />
 	</output>
 	
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Templates.xml"/>
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX.xml"/>
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_ExtPlugins.xml"/>
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Wizards.xml"/>
+	<include filename="/usr/share/enigma2/skin_default/skin_YouViX_Templates.xml"/>
+	<include filename="/usr/share/enigma2/skin_default/skin_YouViX.xml"/>
+	<include filename="/usr/share/enigma2/skin_default/skin_YouViX_ExtPlugins.xml"/>
+	<include filename="/usr/share/enigma2/skin_default/skin_YouViX_Wizards.xml"/>
 	
 	<fonts>		
 		<font name="youvix-b" filename="/usr/share/fonts/youvix-b.ttf" scale="100" />
