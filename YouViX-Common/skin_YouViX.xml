@@ -826,7 +826,7 @@
 				{"template": [
 						MultiContentEntryText(pos = (275, 2), size = (10, 61), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
 						MultiContentEntryText(pos = (295, 2), size = (260, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2, color = 0x00ffffff, color_sel = 0x00ffffff),
-						MultiContentEntryText(pos = (725, 33), size = (390, 30), font = 2, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 3, color = 0x003499cc, color_sel = 0x00ffffff),
+						MultiContentEntryText(pos = (675, 33), size = (440, 30), font = 2, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 3, color = 0x003499cc, color_sel = 0x00ffffff),
 						MultiContentEntryText(pos = (295, 33), size = (280, 30), font = 3, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 5, color = 0x003499cc, color_sel = 0x00ffffff),
 						MultiContentEntryText(pos = (295, 68), size = (830, 76), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00ffffff, color_sel = 0x00ffffff),
 						MultiContentEntryPixmapAlphaBlend(pos=(25, 10), size=(220, 132), png=6, flags = BT_SCALE)
