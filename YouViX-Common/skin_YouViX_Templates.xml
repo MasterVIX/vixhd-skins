@@ -103,45 +103,45 @@
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/hd1080.png" position="823,962" size="111,75" zPosition="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hd1080.png" position="823,962" size="111,75" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">Is1080</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/hd720.png" position="823,962" size="111,75" zPosition="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hd720.png" position="823,962" size="111,75" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">Is720</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/sd576.png" position="823,962" size="111,75" zPosition="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/sd576.png" position="823,962" size="111,75" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">Is576</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<!-- <widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/sd540.png" position="823,962" size="111,75" zPosition="1" alphatest="blend">
+		<!-- <widget source="session.CurrentService" render="Pixmap" pixmap="icons/sd540.png" position="823,962" size="111,75" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">500,574</convert>
 			<convert type="ConditionalShowHide" />
 		</widget> -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/sd480.png" position="823,962" size="111,75" zPosition="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/sd480.png" position="823,962" size="111,75" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">Is480</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/178.png" position="943,962" size="83,75" zPosition="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/178.png" position="943,962" size="83,75" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/133.png" position="943,962" size="83,75" zPosition="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/133.png" position="943,962" size="83,75" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsNotWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/dolbyprologic.png" position="1039,983" size="100,35" zPosition="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolbyprologic.png" position="1039,983" size="100,35" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsStereo</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/dolbydigital.png" position="1039,983" size="139,34" zPosition="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolbydigital.png" position="1039,983" size="139,34" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-        <!-- <ePixmap pixmap="YouViX-Common/icons/hbbtv.png" position="1540,975" size="103,40" zPosition="1" alphatest="blend" /> -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="YouViX-Common/icons/hbbtv.png" position="1540,975" size="103,40" zPosition="1" alphatest="blend">
+        <!-- <ePixmap pixmap="icons/hbbtv.png" position="1540,975" size="103,40" zPosition="1" alphatest="blend" /> -->
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hbbtv.png" position="1540,975" size="103,40" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
