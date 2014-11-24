@@ -1,10 +1,22 @@
 <skin>
-	<!--	Skin: Default 1080 OE-A Skin by rossi2000	-->
-	<!--	This skin is part of the default 1080 OE-A skin; the same license applies.	-->
+	<!--  Skin: YouViX-Blue by rossi2000 & simonsez  -->
+	<!--  SKIN FILE -->
+	<!--  This skin is OpenSource. Anyone can modify it and use it in other images.  -->
+	<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
+	<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
+	
+	<!--  ## Head ##  -->
 	
 	<output id="0">
 		<resolution xres="1920" yres="1080" bpp="32" />
 	</output>
+		
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Templates.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_ExtPlugins.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Enigma2-Plugins.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_OEA-Plugins.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Wizards.xml"/>
 	
 	<fonts>
 		<font name="youvix-b" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-b.ttf" scale="100" />
@@ -32,13 +44,6 @@
 		<color name="darkcolour" value="#001176ad" />
 		<color name="window-sel-bg" value="#00acacac" />
 	</colors>
-	
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Templates.xml"/>
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX.xml"/>
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_ExtPlugins.xml"/>
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Enigma2-Plugins.xml"/>
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_OEA-Plugins.xml"/>
-	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Wizards.xml"/>
 	
 	<windowstyle type="skinned" id="0">
 		<title offset="60,10" font="youvix-r;28" />

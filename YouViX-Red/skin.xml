@@ -11,21 +11,21 @@
 		<resolution xres="1920" yres="1080" bpp="32" />
 	</output>
 	
-	<include filename="/usr/share/enigma2/skin_default/skin_YouViX_Templates.xml"/>
-	<include filename="/usr/share/enigma2/skin_default/skin_YouViX.xml"/>
-	<include filename="/usr/share/enigma2/skin_default/skin_YouViX_ExtPlugins.xml"/>
-	<include filename="/usr/share/enigma2/skin_default/skin_YouViX_Enigma2-Plugins.xml"/>
-	<include filename="/usr/share/enigma2/skin_default/skin_YouViX_OEA-Plugins.xml"/>
-	<include filename="/usr/share/enigma2/skin_default/skin_YouViX_Wizards.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Templates.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_ExtPlugins.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Enigma2-Plugins.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_OEA-Plugins.xml"/>
+	<include filename="/usr/share/enigma2/YouViX-Common/skin_YouViX_Wizards.xml"/>
 	
 	<fonts>		
-		<font name="youvix-b" filename="/usr/share/fonts/youvix-b.ttf" scale="100" />
-		<font name="youvix-r" filename="/usr/share/fonts/youvix-r.ttf" scale="100" />
-		<font name="youvix-l" filename="/usr/share/fonts/youvix-l.ttf" scale="100" />
+		<font name="youvix-b" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-b.ttf" scale="100" />
+		<font name="youvix-r" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-r.ttf" scale="100" />
+		<font name="youvix-l" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-l.ttf" scale="100" />
 		<alias name="ChoiceList" font="youvix-r" size="28" height="50" />
 		<alias name="Body" font="youvix-r" size="28" height="50" />
 		<alias name="TextNormal" font="youvix-r" size="28" height="50" />
-		<font name="Subtitlefont" filename="/usr/share/fonts/youvix-r.ttf" scale="90" />
+		<font name="Subtitlefont" filename="/usr/share/enigma2/YouViX-Common/fonts/youvix-r.ttf" scale="90" />
 	</fonts>
 	
 	<colors>
