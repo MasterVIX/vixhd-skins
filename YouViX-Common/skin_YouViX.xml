@@ -1214,10 +1214,10 @@
 		<widget name="list" position="680,210" size="1160,714" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H80x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2"  />
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
-		<panel name="MenuButtonRedSource" />
-		<panel name="MenuButtonGreenSource" />
-        <panel name="MenuButtonYellowSource" />
-		<panel name="MenuButtonBlueSource" />
+		<panel name="MenuButtonRed" />
+		<panel name="MenuButtonGreen" />
+        <panel name="MenuButtonYellow" />
+		<panel name="MenuButtonBlue" />
 	</screen>
 	<screen name="MovieSelectionSlim" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 	    <panel name="MovieSelection" />
