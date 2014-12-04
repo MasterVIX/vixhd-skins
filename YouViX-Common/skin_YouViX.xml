@@ -275,7 +275,7 @@
 		<widget source="Event" render="Label" position="935,792" size="475,35" zPosition="1" font="youvix-r;26" foregroundColor="lightcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" noWrap="1" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<ePixmap pixmap="icons/info.png" position="1630,791" size="35,35" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="YouViX-Common/icons/info.png" position="1630,791" size="35,35" alphatest="blend" transparent="1" />
 		<widget source="Event" render="Label" position="1685,792" font="youvix-r;24" size="120,35" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2" >
 			<convert type="EventTime">Remaining</convert>
             <convert type="RemainingToText">InMinutes</convert>
@@ -1118,7 +1118,7 @@
 	<!-- ## Movie Bar ## -->
 	<screen name="MoviePlayer" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="center,905" size="1517,156" pixmap="YouViX-Common/infobar/moviebar.png" zPosition="-1" />
-		<ePixmap position="275,915" size="35,35" pixmap="icons/info.png" alphatest="blend" zPosition="1"/>
+		<ePixmap position="275,915" size="35,35" pixmap="YouViX-Common/icons/info.png" alphatest="blend" zPosition="1"/>
 		<widget source="session.CurrentService" render="Label" position="325,915" size="650,38" font="youvix-r;26" foregroundColor="white" backgroundColor="background2" transparent="1" valign="center" halign="left" noWrap="1" zPosition="1">
 			<convert type="ServiceName">Name :</convert>
 		</widget>
@@ -2018,28 +2018,31 @@
 	</screen>
 	<screen name="ServiceScan" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
-		<panel name="MenuMyInfoText" />
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="1050,235" size="96,96" transparent="1" alphatest="blend" zPosition="1">
+		<panel name="MenuMyTunersText" />
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="950,225" size="96,96" transparent="1" alphatest="blend" zPosition="1">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="1050,235" size="96,96" transparent="1" alphatest="blend" zPosition="1">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-c.png" position="950,225" size="96,96" transparent="1" alphatest="blend" zPosition="1">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="1050,235" size="96,96" transparent="1" alphatest="blend" zPosition="1">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-t.png" position="950,225" size="96,96" transparent="1" alphatest="blend" zPosition="1">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="network" position="1170,245" size="330,35" font="youvix-r;32" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1" />
-		<widget name="transponder" position="1170,285" size="330,35" font="youvix-r;32" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1" />
+		<widget name="network" position="1070,235" size="600,35" font="youvix-r;32" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1" />
+		<widget name="transponder" position="1070,275" size="600,35" font="youvix-r;32" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1" />
 		<widget name="scan_state" position="680,345" size="1160,35" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="0" zPosition="1" />
 		<widget name="pass" position="680,345" size="1160,35" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" transparent="0" zPosition="2" />
-		<widget name="scan_progress" position="680,400" size="1160,10" pixmap="infobar/movieprogressbar_background.png" transparent="0" zPosition="1"/>
+		<ePixmap position="960,400" size="600,10" pixmap="selectionbars/activitysliderbackground.png" alphatest="blend" zPosition="10"/>
+		<widget name="scan_progress" position="960,400" size="600,10" pixmap="selectionbars/activityslider.png" transparent="1" zPosition="11"/>
 		<widget name="servicelist" position="680,450" size="1160,450" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
 	</screen>
 	
 	<!-- ## Subtitles ## -->
