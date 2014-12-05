@@ -496,7 +496,7 @@
 	
 	<!-- BufferIndicator -->
 	<screen name="BufferIndicator" title="Channel" position="center,50" size="300,50" backgroundColor="transparent" flags="wfNoBorder">
-		<widget name="status" position="0,0" size="300,50" font="youvix-r;38" foregroundColor="white" backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2" haligh="center" valign="center" zPosition="100"/>
+		<widget name="status" position="0,0" size="300,50" font="youvix-r;38" foregroundColor="white" backgroundColor="transparent" transparent="1" borderColor="black" borderWidth="2" halign="center" valign="center" zPosition="100"/>
 	</screen>
 	
 	<!-- ## Button Setup ## -->
@@ -669,7 +669,7 @@
 		</widget>
 		<panel name="ChannelSelectionPicon" />
 		<panel name="ChannelSelectionBouquetName" />
-		<widget name="list" position="680,210" size="1160,680" selectionPixmap="selectionbars/SelectionBar_H80x1160.png" backgroundColor="menubackground" foregroundColorEvent="lightcolour" foregroundColorEventSelected="white" backgroundColorEventSelected="lightcolour" foregroundColorServiceNotAvail="darkgrey" foregroundColorMarked="white" foregroundColorMarkedSelected="red" backgroundColorMarked="lightcolour" backgroundColorMarkedSelected="lightcolour" serviceItemHeight="50" serviceNumberFont="youvix-r;28" serviceNameFont="youvix-r;28" serviceInfoFont="youvix-r;26" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
+		<widget name="list" position="680,210" size="1160,680" selectionPixmap="selectionbars/SelectionBar_H80x1160.png" backgroundColor="menubackground" foregroundColorEvent="lightcolour" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="darkgrey" foregroundColorMarked="white" foregroundColorMarkedSelected="red" backgroundColorMarked="lightcolour" backgroundColorMarkedSelected="lightcolour" serviceItemHeight="50" serviceNumberFont="youvix-r;28" serviceNameFont="youvix-r;28" serviceInfoFont="youvix-r;26" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
 		<widget source="ServiceEvent" render="Label" position="680,890" size="1160,35" font="youvix-r;28" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="1">
 			<convert type="ServiceName2">TpansponderInfo</convert>
 		</widget>
