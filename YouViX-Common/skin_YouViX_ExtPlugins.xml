@@ -154,15 +154,12 @@
 	<screen name="CrossEPG_Importer" position="0,0" size="1920,1080" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent" >
 	    <panel name="CrossEPGDownloadBar" />
 	</screen>
-	
 	<screen name="CrossEPG_Loader" position="0,0" size="1920,1080" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent" >
 	    <panel name="CrossEPGDownloadBar" />
 	</screen>
-	
 	<screen name="CrossEPG_Rytec_Update" position="0,0" size="1920,1080" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent" >
 	    <panel name="CrossEPGDownloadBar" />
 	</screen>
-	
 	<screen name="CrossEPG_Xepgdb_Update" position="0,0" size="1920,1080" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent" >
 	    <panel name="CrossEPGDownloadBar" />
 	</screen>
