@@ -261,7 +261,7 @@
 		<widget name="timeline_text" position="center,203" size="1770,40" font="youvix-b;24" valign="center" foregroundColor="white" transparent="1" zPosition="1"/>
 		<widget name="timeline_now" position="center,225" size="19,350" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="2" />
 		<widget name="lab1" position="center,238" size="1770,550" font="youvix-r;24" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
-		<widget name="list" position="center,238" size="1770,550" backgroundColor="menubackground" ServiceForegroundColor="white" ServiceBackgroundColor="menubackground" ServiceForegroundColorNow="white" ServiceBackgroundColorNow="darkcolour" EntryForegroundColor="lightgrey" EntryBackgroundColor="menubackground" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="darkcolour" EntryForegroundColorNow="white" EntryBackgroundColorNow="menubackground" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="darkcolour" RecordForegroundColorSelected="white" ZapForegroundColorSelected="white" scrollbarMode="showNever" transparent="0" zPosition="2" />	
+		<widget name="list" position="center,238" size="1770,550" backgroundColor="menubackground" ServiceForegroundColor="white" ServiceBackgroundColor="black" ServiceForegroundColorNow="white" ServiceBackgroundColorNow="darkergrey" EntryForegroundColor="white" EntryBackgroundColor="darkgrey" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="darkcolour" EntryForegroundColorNow="white" EntryBackgroundColorNow="darkergrey" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="darkcolour" RecordForegroundColorSelected="white" ZapForegroundColorSelected="white" scrollbarMode="showNever" transparent="0" zPosition="2" />	
 		<widget name="bouquetlist" position="center,238" size="1770,550" itemHeight="50" backgroundColor="menubackground" foregroundColorSelected="white" scrollbarMode="showNever" transparent="0" zPosition="5" />
 		<panel name="ChannelSelectionPicon" />
 		<widget source="Event" render="Label" position="720,792" size="90,35" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="right" valign="center" noWrap="1" transparent="1">
@@ -280,7 +280,7 @@
 			<convert type="EventTime">Remaining</convert>
             <convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget source="Event" render="RunningText" position="730,830" size="1065,100" font="youvix-r;24" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=11000,wrap" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="1">
+		<widget source="Event" render="RunningText" position="730,830" size="1065,88" font="youvix-r;24" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=11000,wrap" foregroundColor="white" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<panel name="MenuMenuButton" />

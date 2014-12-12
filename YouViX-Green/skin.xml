@@ -41,6 +41,7 @@
 		<color name="lightgrey" value="#00d6d5d5" />
 		<color name="grey" value="#00b3b3b3" />
 		<color name="darkgrey" value="#00676565" />
+		<color name="darkergrey" value="#00343333" />
 		<color name="lightcolour" value="#0040ab00" />
 		<color name="darkcolour" value="#000e7102" />
 		<color name="window-sel-bg" value="#00acacac" />
