@@ -194,17 +194,16 @@
 		<panel name="MenuMyGuideText" />
 		<panel name="ChannelSelectionPicon" />
 		<panel name="ChannelSelectionBouquetName" />
-		<widget name="lab1" position="680,210" size="1160,715" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1" />
-		<widget name="list" position="680,210" size="1160,715" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H80x1160.png" backgroundColor="menubackground" foregroundColorEvent="lightcolour" foregroundColorEventSelected="white" foregroundColorServiceNotAvail="grey" serviceItemHeight="36" serviceNumberFont="youvix-r;26" serviceNameFont="youvix-r;26" serviceInfoFont="youvix-r;24" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
+		<widget name="list" position="680,210" size="1160,715" selectionPixmap="selectionbars/SelectionBar_H80x1160.png" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
 		<widget source="Event" render="RunningText" position="80,205" size="590,200" font="youvix-r;26" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="top" zPosition="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
-		<panel name="MenuButtonRedSource" />
-		<panel name="MenuButtonGreenSource" />
-        <panel name="MenuButtonYellowSource" />
-		<panel name="MenuButtonBlueSource" />
+		<panel name="MenuButtonRed" />
+		<panel name="MenuButtonGreen" />
+        <panel name="MenuButtonYellow" />
+		<panel name="MenuButtonBlue" />
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuClock" />
@@ -239,10 +238,10 @@
 		<widget name="bouquetlist" position="680,265" size="1160,654" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H80x1160.png" backgroundColor="menubackground" foregroundColorSelected="white" scrollbarMode="showNever" transparent="0" zPosition="5" />
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
-		<panel name="MenuButtonRedSource" />
-		<panel name="MenuButtonGreenSource" />
-        <panel name="MenuButtonYellowSource" />
-		<panel name="MenuButtonBlueSource" />
+		<panel name="MenuButtonRed" />
+		<panel name="MenuButtonGreen" />
+        <panel name="MenuButtonYellow" />
+		<panel name="MenuButtonBlue" />
 	</screen>
 	<screen name="GraphicalEPG" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" >
 		<panel name="MenuClock" />
@@ -285,10 +284,10 @@
 		</widget>
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
-		<panel name="MenuButtonRedSource" />
-		<panel name="MenuButtonGreenSource" />
-        <panel name="MenuButtonYellowSource" />
-		<panel name="MenuButtonBlueSource" />
+		<panel name="MenuButtonRed" />
+		<panel name="MenuButtonGreen" />
+        <panel name="MenuButtonYellow" />
+		<panel name="MenuButtonBlue" />
 	</screen>
 	<screen name="GraphicalEPGPIG" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" >
 		<panel name="GraphicalEPG" />
