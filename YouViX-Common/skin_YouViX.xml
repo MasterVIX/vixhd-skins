@@ -157,7 +157,7 @@
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<eLabel position="675,785" size="1170,175" backgroundColor="menubackground" zPosition="-1" />
-		<widget name="timeline_text" position="center,795" size="1770,40" font="youvix-b;22" valign="center" foregroundColor="white" transparent="1" zPosition="2" />
+		<widget name="timeline_text" position="center,795" size="1770,40" itemHeight="40" font="youvix-b;24" valign="center" foregroundColor="white" transparent="1" zPosition="2" />
 		<widget name="timeline_now" position="center,820" zPosition="1" size="19,85" pixmap="epg/timeline-now.png" alphatest="blend" />
 		<widget name="bouquetlist" position="center,832" size="1770,120" backgroundColor="menubackground" foregroundColorSelected="white" scrollbarMode="showNever" transparent="0" zPosition="5" />
 		<widget name="lab1" position="center,832" size="1770,120" font="youvix-r;24" foregroundColor="white" backgroundColor="menubackground" halign="center" valign="center" zPosition="1" transparent="1" />
@@ -166,10 +166,10 @@
 		<ePixmap pixmap="icons/arrow-right.png" position="1855,847" size="32,48" zPosition="5"  alphatest="blend" />
 		<ePixmap position="345,966" size="50,32" pixmap="icons/arrow-down.png" alphatest="blend" zPosition="1"/>
 		<eLabel position="75,960" size="600,120" backgroundColor="menubackground" zPosition="-1" />
-		<panel name="MenuButtonRedSource" />
-		<panel name="MenuButtonGreenSource" />
-        <panel name="MenuButtonYellowSource" />
-		<panel name="MenuButtonBlueSource" />
+		<panel name="MenuButtonRed" />
+		<panel name="MenuButtonGreen" />
+        <panel name="MenuButtonYellow" />
+		<panel name="MenuButtonBlue" />
 		<eLabel position="675,930" size="1170,150" backgroundColor="menubackground" zPosition="-1" />
 		<widget source="Service" render="Picon" position="710,960" size="187,112" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
@@ -178,7 +178,6 @@
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
-	
 	<screen name="EPGSelection" flags="wfNoBorder" position="0,0" size="1920,1080" backgroundColor="transparent">
 		<panel name="MenuClock" />
 	    <panel name="TopMenuBlock" />
@@ -233,7 +232,6 @@
 		<widget source="Event" render="RunningText" position="80,205" size="590,200" font="youvix-r;26" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="top" zPosition="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget name="lab1" position="680,265" size="1160,665" font="youvix-r;24" halign="center" valign="center" backgroundColor="menubackground" transparent="1" zPosition="20" />
 		<widget name="list" position="680,265" size="1160,665" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H80x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="1" />
 		<widget name="bouquetlist" position="680,265" size="1160,654" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H80x1160.png" backgroundColor="menubackground" foregroundColorSelected="white" scrollbarMode="showNever" transparent="0" zPosition="5" />
 		<panel name="MenuMenuButton" />
@@ -257,7 +255,7 @@
 		<panel name="MenuDownArrow" />
 		<panel name="MenuMyGuideText" />
 		<panel name="ChannelSelectionBouquetName" />
-		<widget name="timeline_text" position="center,203" size="1770,40" font="youvix-b;24" valign="center" foregroundColor="white" transparent="1" zPosition="1"/>
+		<widget name="timeline_text" position="center,203" size="1770,40" itemHeight="40" font="youvix-b;24" valign="center" foregroundColor="white" transparent="1" zPosition="1"/>
 		<widget name="timeline_now" position="center,225" size="19,350" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="2" />
 		<widget name="lab1" position="center,238" size="1770,550" font="youvix-r;24" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="1" />
 		<widget name="list" position="center,238" size="1770,550" backgroundColor="menubackground" ServiceForegroundColor="white" ServiceBackgroundColor="black" ServiceForegroundColorNow="white" ServiceBackgroundColorNow="darkergrey" EntryForegroundColor="white" EntryBackgroundColor="darkgrey" EntryForegroundColorSelected="white" EntryBackgroundColorSelected="darkcolour" EntryForegroundColorNow="white" EntryBackgroundColorNow="darkergrey" EntryForegroundColorNowSelected="white" EntryBackgroundColorNowSelected="darkcolour" RecordForegroundColorSelected="white" ZapForegroundColorSelected="white" scrollbarMode="showNever" transparent="0" zPosition="2" />	
