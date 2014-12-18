@@ -1542,7 +1542,8 @@
 		<panel name="MenuButtonBlueSource" />
 	</screen>
 	<screen name="NetworkVpnLog" position="0,0" size="1920,1080" flags="wfNoBorder">
-		<panel name="BasicTemplate"/>
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMyNetworkText" />
 		<widget name="infotext" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" foregroundColor="white" backgroundColor="menubackground" transparent="1" zPosition="1"/>
 	</screen>
 	<!-- ## Network - Telnet ## -->
