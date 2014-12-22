@@ -49,7 +49,7 @@
 		<widget source="session.Event_Next" render="Label" position="960,70" size="960,55" font="infobar2;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="990,130" size="900,320" font="infobar;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2">
+		<widget source="session.Event_Next" render="Label" position="990,130" size="900,370" font="infobar;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<eLabel text="FREQ" position="1080,550" size="160,70" font="screentitle;56" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
