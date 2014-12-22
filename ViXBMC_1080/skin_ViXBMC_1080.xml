@@ -512,7 +512,7 @@
 		<eLabel position="0,754" size="1920,324" backgroundColor="outlinemenubackground" zPosition="-1" />
 		<eLabel position="606,862" size="1138,186" backgroundColor="outlinemenubackground" zPosition="2" />
 		<eLabel position="0,757" size="957,60" backgroundColor="menubackground" zPosition="1" />
-		<widget source="Service" render="Label" position="275,757" size="525,50" font="menulist;46" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="2">
+		<widget source="Service" render="Label" position="230,757" size="550,60" font="infobar;46" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<panel name="InfobarTunerType" />
