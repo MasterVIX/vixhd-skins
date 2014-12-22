@@ -36,11 +36,11 @@
 		<widget source="session.Event_Now" render="Label" position="0,70" size="960,55" font="infobar2;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="30,130" size="900,320" font="infobar;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2">
+		<widget source="session.Event_Now" render="Label" position="30,130" size="900,370" font="infobar;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<eLabel text="CAM" position="120,550" size="150,60" font="screentitle;56" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
-		<widget source="session.CurrentService" render="Label" position="290,550" size="600,80" font="infobar;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2" >
+		<eLabel text="CAM" position="60,550" size="150,60" font="screentitle;56" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
+		<widget source="session.CurrentService" render="Label" position="230,550" size="660,80" font="infobar;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2" >
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 		<panel name="2ndInfobarStatusIcons" />
