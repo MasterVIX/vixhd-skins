@@ -2046,6 +2046,11 @@
 			self.autoResize()
 		</applet>
 	</screen>
+		
+	<!-- ## Unhandled Key ## -->
+	<screen name="UnhandledKey" position="1450,1" size="147,132" flags="wfNoBorder" zPosition="100" backgroundColor="transparent">
+		<widget name="UnhandledKeyPixmap" position="0,0" size="147,132" pixmap="icons/unhandled-key.png" alphatest="blend" backgroundColor="transparent" />
+	</screen>
 	
 	<!-- ## USER DIALOG ## -->
 	<screen name="UserDialog" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="">
