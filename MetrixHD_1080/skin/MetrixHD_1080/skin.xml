@@ -6141,7 +6141,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget font="SetrixHD;195" foregroundColor="metrixPreTrans" position="30,828" render="Label" size="1909,444" source="Title" transparent="1" valign="top" zPosition="-50"/>
     <widget enableWrapAround="1" position="954,90" render="Listbox" scrollbarMode="showNever" size="643,630" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
-        {&quot;template&quot;: [ MultiContentEntryText(pos = (30, 5), size = (620, 90), flags = RT_HALIGN_LEFT, text = 0) ], &quot;fonts&quot;: [gFont(&quot;SetrixHD&quot;, 50)], &quot;itemHeight&quot;: 90 } 	
+				{&quot;template&quot;: [ MultiContentEntryText(pos = (30, 5), size = (620, 90), flags = RT_HALIGN_LEFT, text = 1) ],
+				&quot;fonts&quot;: [gFont(&quot;SetrixHD&quot;, 50)],
+				&quot;itemHeight&quot;: 90
 				}
 			</convert>
     </widget>
