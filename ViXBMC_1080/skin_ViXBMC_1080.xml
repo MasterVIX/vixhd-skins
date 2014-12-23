@@ -1915,6 +1915,20 @@
 		<widget source="initializetext" render="Label" position="420,963" size="270,60" font="buttons;34" foregroundColor="red" backgroundColor="menubackground" transparent="1" halign="center" valign="center" noWrap="1" zPosition="2" />
 	</screen>
 	
+	<!-- ## Subtitles ## -->
+	<screen name="Subtitles" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="SetupMenuPanel2" />
+		<panel name="SetupMenuMenuWindowIcon" />
+		<panel name="SetupMenuConfigWidget3" />
+	</screen>
+	<screen name="SubtitleDisplay" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" zPosition="-1" />
+	<screen name="QuickSubtitlesConfigMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Subtitle settings">
+		<panel name="SetupMenuPanel2" />
+		<panel name="SetupMenuMenuWindowIcon" />
+		<panel name="SetupMenuConfigWidget" />
+		<widget name="videofps" position="420,773" size="1080,180" font="screentitle;30" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2"/>
+	</screen>
+	
 	<!-- ## TIMEDATEINPUT ## -->
 	<screen name="TimeDateInput" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
