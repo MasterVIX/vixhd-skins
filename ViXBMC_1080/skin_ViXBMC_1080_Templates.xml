@@ -152,20 +152,20 @@
 		</widget>
 	</screen>
 	<screen name="InfobarChannelName">
-		<widget source="session.CurrentService" render="Label" position="230,757" size="550,60" font="infobar;46" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="2">
+		<widget source="session.CurrentService" render="Label" position="230,752" size="550,60" font="infobar;46" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarTunerType">
-		<widget source="session.CurrentService" render="Label" position="790,757" size="150,60" font="infobar;46" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" zPosition="2">
+		<widget source="session.CurrentService" render="Label" position="790,752" size="150,60" font="infobar;46" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" zPosition="2">
 			<convert type="PliExtraInfo">TunerType</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarClock">
-		<widget source="global.CurrentTime" render="Label" position="1100,757" size="620,60" font="date;46" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="1100,752" size="620,60" font="date;46" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %G</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1760,757" size="130,60" font="clock;46" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="1760,752" size="130,60" font="clock;46" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 	</screen>
@@ -178,19 +178,19 @@
 		</widget>
 	</screen>
 	<screen name="InfobarProgramNowStartTime">
-		<widget source="session.Event_Now" render="Label" position="480,850" size="150,75" font="infobar2;62" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="2">
+		<widget source="session.Event_Now" render="Label" position="490,840" size="150,75" font="infobar2;58" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="2">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarEncryptedIcon">
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/encrypted.png" position="645,856" size="80,80" alphatest="blend" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/encrypted.png" position="655,851" size="80,80" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
 	<screen name="InfobarProgramNowName">
-		<widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=0,oneshot=1,startdelay=8000" position="720,850" size="1100,75" font="infobar2;62" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
+		<widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=0,oneshot=1,startdelay=8000" position="730,840" size="1100,75" font="infobar2;58" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
 			<convert type="EventName">Name</convert>
 		</widget>
 	</screen>
@@ -201,22 +201,22 @@
 		</widget>
 	</screen>
 	<screen name="InfobarNextText">
-		<eLabel text="Next" position="490,950" size="120,50" font="infobar;46" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
-		<eLabel text="@" position="605,948" size="50,50" font="infobar;50" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2"/>
+		<eLabel text="Next" position="490,950" size="120,60" font="infobar;44" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
+		<eLabel text="@" position="605,941" size="50,60" font="infobar;48" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2"/>
 	</screen>
 	<screen name="InfobarProgramNextStartTime">
-		<widget source="session.Event_Next" render="Label" position="665,950" size="120,50" font="infobar;46" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
+		<widget source="session.Event_Next" render="Label" position="665,950" size="150,60" font="infobar;44" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarProgramNextName">
-		<widget source="session.Event_Next" render="Label" position="800,950" size="900,50" font="infobar;46" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
+		<widget source="session.Event_Next" render="Label" position="830,950" size="900,60" font="infobar;44" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
 			<convert type="EventName">Name</convert>
 		</widget>
 	</screen>
 	<screen name="InfobarProgramNextDuration">
-		<widget source="session.Event_Next" render="Label" position="1630,950" size="200,50" font="infobar;46" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="2">
+		<widget source="session.Event_Next" render="Label" position="1630,950" size="200,60" font="infobar;44" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="2">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
