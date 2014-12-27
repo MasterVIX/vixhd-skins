@@ -856,19 +856,19 @@
 		<widget source="cancelable" render="Pixmap" pixmap="buttons/key_red.png" position="730,781" size="67,48" alphatest="blend" transparent="1" zPosition="2">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="cancelable" render="FixedLabel" text="Cancel" position="800,780" size="400,60" font="menulist;40" foregroundColor="red" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="800,780" size="420,60" font="menulist;40" foregroundColor="red" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="finished" render="Pixmap" pixmap="buttons/key_green.png" position="730,841" size="67,48" alphatest="blend" transparent="1" zPosition="2">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="finished" render="FixedLabel" text="OK" position="800,840" size="400,60" font="menulist;40" foregroundColor="green" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
+		<widget source="finished" render="FixedLabel" text="OK" position="800,840" size="420,60" font="menulist;40" foregroundColor="green" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="backgroundable" render="Pixmap" pixmap="buttons/key_blue.png" position="730,901" size="67,48" alphatest="blend" transparent="1" zPosition="2">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="800,900" size="400,60" font="menulist;40" foregroundColor="blue" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
+		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="800,900" size="420,60" font="menulist;40" foregroundColor="blue" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
@@ -2209,7 +2209,7 @@
 	<screen name="VIXDevicesPanel" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
 		<panel name="SetupMenuMenuWindowIcon" />
-		<widget name="lab1" position="420,210" size="1080,700" font="screentitle;40" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
+		<widget name="lab1" position="420,210" size="1080,700" font="screentitle;36" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
 		<widget source="list" render="Listbox" position="420,210" size="1080,700" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
