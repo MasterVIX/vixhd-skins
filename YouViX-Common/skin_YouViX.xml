@@ -325,6 +325,26 @@
 		<panel name="MenuListLogWidget" />
 	</screen>
 	
+	<!-- ## Animation Setup ## -->
+	<screen name="AnimationSetupConfig" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Animation Settings">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuConfigWidget" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+		<panel name="MenuButtonYellowSource" />
+	</screen>
+	<screen name="AnimationSetupScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Animation Setup">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<panel name="MenuListWidget" />
+		<panel name="MenuIntroductionWidget" />
+		<panel name="MenuButtonRedSource" />
+		<panel name="MenuButtonGreenSource" />
+		<panel name="MenuButtonYellowSource" />
+		<panel name="MenuButtonBlueSource" />
+	</screen>
+	
 	<!-- ## Audio Selection ## -->
 	<screen name="AudioSelection" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
