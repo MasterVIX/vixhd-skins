@@ -56,20 +56,20 @@
 		<widget source="session.CurrentService" render="Label" position="1250,545" size="600,85" font="infobar;32" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
 			<convert type="PliExtraInfo">TransponderInfo2line</convert>
 		</widget>
-		<eLabel text="SNR:" position="1100,652" size="150,60" font="screentitle;52" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
-		<widget source="session.FrontendStatus" render="Label" position="1220,653" size="150,60" font="infobar;50" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" noWrap="1" zPosition="2">
+		<eLabel text="SNR:" position="1080,652" size="150,60" font="screentitle;52" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
+		<widget source="session.FrontendStatus" render="Label" position="1200,653" size="180,60" font="infobar;50" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" noWrap="1" zPosition="2">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Pixmap" pixmap="icons/lock_off1.png" position="1395,660" size="64,64" alphatest="blend" zPosition="2">
+		<widget source="session.FrontendStatus" render="Pixmap" pixmap="icons/lock_off1.png" position="1415,660" size="64,64" alphatest="blend" zPosition="2">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Pixmap" pixmap="icons/lock_on1.png" position="1395,660" size="64,64" alphatest="blend" zPosition="3">
+		<widget source="session.FrontendStatus" render="Pixmap" pixmap="icons/lock_on1.png" position="1415,660" size="64,64" alphatest="blend" zPosition="3">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<eLabel text="AGC:" position="1535,652" size="150,60" font="screentitle;52" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
-		<widget source="session.FrontendStatus" render="Label" position="1675,653" size="150,60" font="infobar;50" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" noWrap="1" zPosition="2">
+		<eLabel text="AGC:" position="1555,652" size="150,60" font="screentitle;52" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
+		<widget source="session.FrontendStatus" render="Label" position="1695,653" size="150,60" font="infobar;50" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" noWrap="1" zPosition="2">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<eLabel position="957,0" size="3,754" backgroundColor="outlinemenubackground" zPosition="-1" />
