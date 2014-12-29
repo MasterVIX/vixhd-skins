@@ -92,9 +92,9 @@
 		<widget name="config" position="420,210" size="1080,300" font="menulist;40" itemHeight="60" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
 		<widget name="sysTemp" position="420,730" size="1080,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1" />
 		<widget name="hddTemp" position="420,790" size="1080,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" transparent="1" />
-		<widget name="powerstatus" position="800,850" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2"/>
-		<widget name="daemon0" pixmap="buttons/key_red.png" position="1000,858" size="67,48" transparent="1" alphatest="blend" zPosition="10"/>
-		<widget name="daemon1" pixmap="buttons/key_green.png" position="1000,858" size="67,48" transparent="1" alphatest="blend" zPosition="10"/>
+		<widget name="powerstatus" position="750,850" size="250,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2"/>
+		<widget name="daemon0" pixmap="buttons/key_red.png" position="1050,858" size="67,48" transparent="1" alphatest="blend" zPosition="10"/>
+		<widget name="daemon1" pixmap="buttons/key_green.png" position="1050,858" size="67,48" transparent="1" alphatest="blend" zPosition="10"/>
 		<widget name="hddtemp" position="600,910" size="1080,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" zPosition="2" halign="left" valign="center" />
 		<widget name="cancel" position="420,963" size="270,60" font="menulist;40" foregroundColor="red" backgroundColor="menubackground" transparent="1" halign="center" valign="center" noWrap="1" zPosition="2" />
 		<widget name="ok" position="690,963" size="270,60" font="menulist;40" foregroundColor="green" backgroundColor="menubackground" transparent="1" halign="center" valign="center" noWrap="1" zPosition="2" />

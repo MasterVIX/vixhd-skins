@@ -81,7 +81,7 @@
 	<screen name="AboutOE" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
 		<widget source="global.CurrentTime" render="Label" position="780,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
-			<convert type="ClockToText">Format:%A,%e %B %G</convert>
+			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1380,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%H:%M</convert>
@@ -426,12 +426,12 @@
 	<!-- ## CRON TIMERS ## -->
 	<screen name="CronTimers" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
-		<widget name="lab1" position="480,210" size="150,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" />
-		<widget name="labdisabled" position="640,210" size="200,60" font="menulist;40" backgroundColor="red" halign="center" valign="center" zPosition="2" />
-		<widget name="labactive" position="640,210" size="200,60" font="menulist;40" backgroundColor="green" halign="center" valign="center" zPosition="3" />
-		<widget name="lab2" position="1000,210" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labstop" position="1240,210" size="200,60" font="menulist;40" backgroundColor="red" valign="center" halign="center" zPosition="2" />
-		<widget name="labrun" position="1240,210" size="200,60" font="menulist;40" backgroundColor="green" valign="center" halign="center" zPosition="3"/>
+		<widget name="lab1" position="450,210" size="180,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" />
+		<widget name="labdisabled" position="640,210" size="200,60" font="menulist;38" backgroundColor="red" halign="center" valign="center" zPosition="2" />
+		<widget name="labactive" position="640,210" size="200,60" font="menulist;38" backgroundColor="green" halign="center" valign="center" zPosition="3" />
+		<widget name="lab2" position="970,210" size="330,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="labstop" position="1240,210" size="200,60" font="menulist;38" backgroundColor="red" valign="center" halign="center" zPosition="2" />
+		<widget name="labrun" position="1240,210" size="200,60" font="menulist;38" backgroundColor="green" valign="center" halign="center" zPosition="3"/>
 		<widget source="list" render="Listbox" position="420,300" size="1080,540" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="2">
 			<convert type="StringList" />
 		</widget>
@@ -477,7 +477,7 @@
 	<screen name="GraphicalInfoBarEPG" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" >
 		<ePixmap pixmap="infobar/infobarepg.png" position="0,680" size="1920,420" alphatest="blend" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="1137,700" size="570,60" font="date;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
-			<convert type="ClockToText">Format:%A,%e %B %G</convert>
+			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1735,700" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%H:%M</convert>
@@ -609,7 +609,7 @@
 	<screen name="EventViewSimple" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" zPosition="1" >
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
 		<widget source="global.CurrentTime" render="Label" position="780,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
-			<convert type="ClockToText">Format:%A,%e %B %G</convert>
+			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1380,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%H:%M</convert>
@@ -838,7 +838,7 @@
 	<screen name="SystemMemoryInfo" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
 		<widget source="global.CurrentTime" render="Label" position="780,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
-			<convert type="ClockToText">Format:%A,%e %B %G</convert>
+			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1380,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%H:%M</convert>
@@ -870,7 +870,7 @@
 	<screen name="MessageBoxSimple" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
 		<widget source="global.CurrentTime" render="Label" position="630,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
-			<convert type="ClockToText">Format:%A,%e %B %G</convert>
+			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1230,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%H:%M</convert>
@@ -885,7 +885,7 @@
 	<screen name="SystemMessage" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" >
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
 		<widget source="global.CurrentTime" render="Label" position="630,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
-			<convert type="ClockToText">Format:%A,%e %B %G</convert>
+			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1230,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%H:%M</convert>
@@ -1047,9 +1047,9 @@
 	<screen name="NetworkFtp" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
 		<widget name="lab1" position="420,210" size="1080,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground1" transparent="1" halign="center" valign="center" zPosition="2" />
-		<widget name="lab2" position="520,300" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="right" valign="center" transparent="1" zPosition="2" />
-		<widget name="labstop" position="1020,300" size="200,60" font="menulist;40" backgroundColor="red" valign="center" halign="center" zPosition="2" />
-		<widget name="labrun" position="1020,300" size="200,60" font="menulist;40" backgroundColor="green" valign="center" halign="center" zPosition="3" />
+		<widget name="lab2" position="520,300" size="400,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" halign="right" valign="center" transparent="1" zPosition="2" />
+		<widget name="labstop" position="1020,300" size="200,60" font="menulist;38" backgroundColor="red" valign="center" halign="center" zPosition="2" />
+		<widget name="labrun" position="1020,300" size="200,60" font="menulist;38" backgroundColor="green" valign="center" halign="center" zPosition="3" />
 		<panel name="SetupMenuRedButton2" />
 		<panel name="SetupMenuGreenButton2" />
 	</screen>
@@ -1057,20 +1057,20 @@
 	<!-- ## NETWORK - INADYN ## -->
 	<screen name="NetworkInadyn" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
-		<widget name="autostart" position="480,210" size="150,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="autostart" position="450,210" size="180,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="labdisabled" position="640,210" size="200,60" font="menulist;40" backgroundColor="red" halign="center" valign="center" zPosition="2" />
 		<widget name="labactive" position="640,210" size="200,60" font="menulist;40" backgroundColor="green" halign="center" valign="center" zPosition="3" />
-		<widget name="status" position="1000,210" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="status" position="970,210" size="330,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="labstop" position="1240,210" size="200,60" font="menulist;40" backgroundColor="red" valign="center" halign="center" zPosition="2" />
 		<widget name="labrun" position="1240,210" size="200,60" font="menulist;40" backgroundColor="green" valign="center" halign="center" zPosition="3"/>
 		<widget name="time" position="420,313" size="450,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labtime" position="820,313" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="labtime" position="870,313" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="username" position="420,363" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labuser" position="620,363" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="labuser" position="670,363" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="password" position="420,413" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labpass" position="620,413" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="labpass" position="670,413" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="alias" position="420,463" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labalias" position="620,463" size="800,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="labalias" position="670,463" size="800,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="sinactive" position="420,525" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="2" />
 		<widget name="sactive" position="420,525" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="3" />
 		<widget name="system" position="500,520" size="150,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
@@ -1105,10 +1105,10 @@
 	<!-- ## NETWORK - MINIDLNA ## -->
 	<screen name="NetworkMiniDLNA" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
-		<widget name="autostart" position="480,210" size="150,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="autostart" position="450,210" size="180,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="labdisabled" position="640,210" size="200,60" font="menulist;40" backgroundColor="red" halign="center" valign="center" zPosition="2" />
 		<widget name="labactive" position="640,210" size="200,60" font="menulist;40" backgroundColor="green" halign="center" valign="center" zPosition="3" />
-		<widget name="status" position="1000,210" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="status" position="970,210" size="330,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="labstop" position="1240,210" size="200,60" font="menulist;40" backgroundColor="red" valign="center" halign="center" zPosition="2" />
 		<widget name="labrun" position="1240,210" size="200,60" font="menulist;40" backgroundColor="green" valign="center" halign="center" zPosition="3"/>
 		<widget name="username" position="420,290" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
@@ -1120,14 +1120,14 @@
 		<widget name="serialno" position="420,470" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
 		<widget name="labserialno" position="650,470" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="sharedir" position="420,535" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="top" zPosition="2" />
-		<widget name="labsharedir" position="650,535" size="400,180" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="top" transparent="1" zPosition="2" />
+		<widget name="labsharedir" position="700,535" size="370,180" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="top" transparent="1" zPosition="2" />
 		<widget name="inotify" position="630,690" size="350,60" font="menulist;40" halign="right" valign="center" foregroundColor="white" backgroundColor="menubackground" transparent="1" zPosition="2" />
 		<widget name="inotifyinactive" position="1020,695" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="3" />
 		<widget name="inotifyactive" position="1020,695" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="4" />
 		<widget name="tivo" position="730,750" size="250,60" font="menulist;40" halign="right" valign="center" foregroundColor="white" backgroundColor="menubackground" transparent="1" zPosition="2" />
 		<widget name="tivoinactive" position="1020,755" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="3" />
 		<widget name="tivoactive" position="1020,755" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="4" />
-		<widget name="dlna" position="780,810" size="200,60" font="menulist;40" halign="right" valign="center" foregroundColor="white" backgroundColor="menubackground" transparent="1" zPosition="2" />
+		<widget name="dlna" position="730,810" size="250,60" font="menulist;40" halign="right" valign="center" foregroundColor="white" backgroundColor="menubackground" transparent="1" zPosition="2" />
 		<widget name="dlnainactive" position="1020,815" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="3" />
 		<widget name="dlnaactive" position="1020,815" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="4" />
 		<panel name="SetupMenuMenuButton" />
@@ -1166,7 +1166,7 @@
 				MultiContentEntryText(pos = (25, 40), size = (800, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 3 is the Description
 				MultiContentEntryPixmapAlphaBlend(pos = (1000, 2), size = (68, 68), png = 3), # index 4 is the pixmap
 				],
-				"fonts": [gFont("menulist", 40),gFont("menulist", 26)],
+				"fonts": [gFont("menulist", 38),gFont("menulist", 26)],
 				"itemHeight": 75
 				}
 			</convert>
@@ -1250,7 +1250,7 @@
 		<panel name="SetupMenuPanel2" />
 		<widget name="lab1" position="640,210" size="250,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="right" valign="center" transparent="1" zPosition="2" />
 		<widget name="labactive" position="910,210" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
-		<widget name="lab2" position="640,270" size="250,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="right" valign="center" transparent="1" zPosition="2" />
+		<widget name="lab2" position="600,270" size="290,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" halign="right" valign="center" transparent="1" zPosition="2" />
 		<widget name="labstop" position="910,270" size="200,60" font="menulist;40" backgroundColor="red" valign="center" halign="center" zPosition="2" />
 		<widget name="labrun" position="910,270" size="200,60" font="menulist;40" backgroundColor="green" valign="center" halign="center" zPosition="3" />
 		<panel name="SetupMenuRedButtonSource2" />
@@ -1292,32 +1292,32 @@
 	<!-- ## NETWORK - USHARE ## -->		
 	<screen name="NetworkuShare" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
-		<widget name="autostart" position="480,210" size="150,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="autostart" position="450,210" size="180,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="labdisabled" position="640,210" size="200,60" font="menulist;40" backgroundColor="red" halign="center" valign="center" zPosition="2" />
 		<widget name="labactive" position="640,210" size="200,60" font="menulist;40" backgroundColor="green" halign="center" valign="center" zPosition="3" />
-		<widget name="status" position="1000,210" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="status" position="970,210" size="330,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="labstop" position="1240,210" size="200,60" font="menulist;40" backgroundColor="red" valign="center" halign="center" zPosition="2" />
 		<widget name="labrun" position="1240,210" size="200,60" font="menulist;40" backgroundColor="green" valign="center" halign="center" zPosition="3"/>
-		<widget name="username" position="420,290" size="250,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
-		<widget name="labuser" position="700,290" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
-		<widget name="iface" position="420,350" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
-		<widget name="labiface" position="700,350" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
-		<widget name="port" position="420,410" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
-		<widget name="labport" position="700,410" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="telnetport" position="420,470" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
-		<widget name="labtelnetport" position="700,470" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="username" position="420,290" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
+		<widget name="labuser" position="750,290" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
+		<widget name="iface" position="420,350" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
+		<widget name="labiface" position="750,350" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
+		<widget name="port" position="420,410" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
+		<widget name="labport" position="750,410" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="telnetport" position="420,470" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="center" zPosition="2" />
+		<widget name="labtelnetport" position="750,470" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
 		<widget name="sharedir" position="420,535" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" valign="top" zPosition="2" />
-		<widget name="labsharedir" position="700,535" size="400,180" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="top" transparent="1" zPosition="2" />
+		<widget name="labsharedir" position="750,535" size="400,180" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="top" transparent="1" zPosition="2" />
 		<widget name="web" position="630,690" size="350,60" font="menulist;40" halign="right" valign="center" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" zPosition="2" />
 		<widget name="webinactive" position="1020,695" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="3" />
 		<widget name="webactive" position="1020,695" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="4" />
-		<widget name="telnet" position="730,750" size="250,60" font="menulist;40" halign="right" valign="center" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" zPosition="2" />
+		<widget name="telnet" position="630,750" size="350,60" font="menulist;40" halign="right" valign="center" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" zPosition="2" />
 		<widget name="telnetinactive" position="1020,755" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="3" />
 		<widget name="telnetactive" position="1020,755" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="4" />
 		<widget name="xbox" position="630,810" size="350,60" font="menulist;40" halign="right" valign="center" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" zPosition="2" />
 		<widget name="xboxinactive" position="1020,815" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="3" />
 		<widget name="xboxactive" position="1020,815" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="4" />
-		<widget name="dlna" position="750,875" size="250,60" font="menulist;40" valign="center" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" zPosition="1" />
+		<widget name="dlna" position="630,875" size="350,60" font="menulist;40" halign="right" valign="center" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" zPosition="1" />
 		<widget name="dlnainactive" position="1020,880" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="3" />
 		<widget name="dlnaactive" position="1020,880" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="4" />
 		<panel name="SetupMenuMenuButton" />
