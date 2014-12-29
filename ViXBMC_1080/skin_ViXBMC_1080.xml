@@ -136,6 +136,26 @@
 		<widget name="text" position="420,510" size="1080,300" font="menulist;40" itemHeight="60" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" zPosition="2"/>
 	</screen>
 	
+	<!-- ## ANIMATION SETUP ## -->
+	<screen name="AnimationSetupConfig" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Animation Settings" >
+		<panel name="SetupMenuPanel2" />
+		<panel name="SetupMenuMenuWindowIcon" />
+		<panel name="SetupMenuConfigWidget3" />
+		<panel name="SetupMenuRedButtonSource2" />
+		<panel name="SetupMenuGreenButtonSource2" />
+		<panel name="SetupMenuYellowButtonSource2" />
+	</screen>
+	<screen name="AnimationSetupScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Animation Setup" >
+		<panel name="SetupMenuPanel2" />
+		<panel name="SetupMenuMenuWindowIcon" />
+		<panel name="SetupMenuListWidget" />
+		<widget source="introduction" render="Label" position="420,773" size="1080,180" font="screentitle;30" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
+		<panel name="SetupMenuRedButtonSource2" />
+		<panel name="SetupMenuGreenButtonSource2" />
+		<panel name="SetupMenuYellowButtonSource2" />
+		<panel name="SetupMenuBlueButtonSource2" />
+	</screen>
+	
 	<!-- ## AUDIO SELECTION ## -->
 	<screen name="AudioSelection" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel3" />
