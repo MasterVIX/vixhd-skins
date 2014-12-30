@@ -544,7 +544,7 @@
 		<widget source="Service" render="Picon" position="70,830" size="400,240" alphatest="blend" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget name="list" position="610,865" size="1130,180" ServiceFontInfobar="screentitle;42" NumberOfRows="3" itemHeight="60" foregroundColor="maincolour" backgroundColor="menubackground" EntryBackgroundColorNow="menubackground" transparent="0" zPosition="3"/>
+		<widget name="list" position="610,865" size="1130,180" EventFontInfobar="infobar;36" itemHeight="60" foregroundColor="maincolour" backgroundColor="menubackground" EntryBackgroundColorNow="menubackground" transparent="0" zPosition="3"/>
 		<panel name="InfobarRightArrow" />
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" >
@@ -568,7 +568,7 @@
 		<widget name="timeline_now" position="800,862" size="2,150" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="3"/>
 		<widget name="bouquetlist" position="center,862" size="1770,150" font="screentitle;42" itemHeight="50" backgroundColor="menubackground" foregroundColorSelected="maincolour" scrollbarMode="showNever" transparent="0" zPosition="5" />
 		<widget name="lab1" position="center,862" size="1770,150" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="2" />
-		<widget name="list" position="center,862" size="1770,150" backgroundColor="menubackground" EntryForegroundColor="grey" EntryBackgroundColor="menubackground" EntryForegroundColorSelected="maincolour" EntryForegroundColorNowSelected="maincolour" RecordForegroundColorSelected="maincolour" ZapForegroundColorSelected="maincolour" scrollbarMode="showNever" transparent="0" EntryFontWrap="no" zPosition="2"/>
+		<widget name="list" position="center,862" size="1770,150" ServiceFontInfobar="infobar;30" EventFontInfobar="infobar;30" backgroundColor="menubackground" EntryForegroundColor="grey" EntryBackgroundColor="menubackground" EntryForegroundColorSelected="maincolour" EntryForegroundColorNowSelected="maincolour" RecordForegroundColorSelected="maincolour" ZapForegroundColorSelected="maincolour" scrollbarMode="showNever" transparent="0" EntryFontWrap="no" zPosition="2"/>
 		<ePixmap pixmap="icons/arrow-right.png" position="1855,914" size="48,48" alphatest="blend" zPosition="2" />
 		<panel name="FullScreenBottomBar" />
 		<panel name="FullScreenRedButton" />
@@ -584,7 +584,7 @@
 		<panel name="FullScreenMenuButton" />
 		<ePixmap position="1790,0" size="130,123" pixmap="menuicons/channelselection.png" alphatest="blend" zPosition="2"/>
 		<panel name="FullScreenMiddleBoxes" />
-		<widget name="list" position="10,140" size="940,800" font="screentitle;42" itemHeight="60" transparent="1" scrollbarMode="showOnDemand" zPosition="2" />
+		<widget name="list" position="10,140" size="940,800" EventFontSingle="infobar;32" itemHeight="60" transparent="1" scrollbarMode="showOnDemand" zPosition="2" />
 		<!-- <widget source="Service" render="Label" position="160,956" size="760,60" font="menulist;36" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
 			<convert type="ServiceName2">TpansponderInfo</convert>
 		</widget> -->
@@ -613,7 +613,7 @@
 		<panel name="FullScreenInfoButton" />
 		<ePixmap position="1790,0" size="130,123" pixmap="menuicons/channelselection.png" alphatest="blend" zPosition="2"/>
 		<panel name="FullScreenMiddleBoxes" />
-		<widget name="list"  position="10,140" size="940,800" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="2" />
+		<widget name="list"  position="10,140" size="940,800" EventFontSingle="infobar;32" itemHeight="60" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="2" />
 		<widget name="bouquetlist" position="10,140" size="940,800" itemHeight="50" backgroundColor="menubackground" foregroundColorSelected="maincolour" scrollbarMode="showNever" transparent="0" zPosition="5" />
 		<!-- <widget source="Service" render="Label" position="160,956" size="760,60" font="menulist;36" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2">
 			<convert type="ServiceName2">TpansponderInfo</convert>
@@ -681,7 +681,7 @@
 		<widget name="timeline_now" position="800,465" size="2,550" pixmap="epg/timeline-now.png" alphatest="blend" zPosition="3"/>
 		<widget name="bouquetlist" position="center,465" size="1770,550" font="menulist;40" itemHeight="50" backgroundColor="menubackground" foregroundColorSelected="maincolour" scrollbarMode="showNever" transparent="0" zPosition="5" />
 		<widget name="lab1" position="center,465" size="1770,550" font="infobar;42" foregroundColor="maincolour" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="2" />
-		<widget name="list" position="center,465" size="1770,550" ServiceFontGraphical="infobar;42" backgroundColor="menubackground" ServiceForegroundColor="maincolour" ServiceBackgroundColor="grey" ServiceForegroundColorNow="maincolour" ServiceBackgroundColorNow="menubackground" EntryForegroundColor="grey" EntryBackgroundColor="menubackground" EntryForegroundColorSelected="maincolour" EntryBackgroundColorSelected="green" EntryForegroundColorNow="maincolour" EntryBackgroundColorNow="menubackground" EntryForegroundColorNowSelected="maincolour" EntryBackgroundColorNowSelected="blue" RecordForegroundColorSelected="maincolour" ZapForegroundColorSelected="maincolour" scrollbarMode="showNever" transparent="0" zPosition="2" />	
+		<widget name="list" position="center,465" size="1770,550" ServiceFontGraphical="infobar2;30" EntryFontGraphical="infobar2;30" EntryFontWrap="no" EventNamePadding="5" backgroundColor="menubackground" ServiceForegroundColor="maincolour" ServiceBackgroundColor="grey" ServiceForegroundColorNow="maincolour" ServiceBackgroundColorNow="menubackground" EntryForegroundColor="grey" EntryBackgroundColor="menubackground" EntryForegroundColorSelected="maincolour" EntryBackgroundColorSelected="green" EntryForegroundColorNow="maincolour" EntryBackgroundColorNow="menubackground" EntryForegroundColorNowSelected="maincolour" EntryBackgroundColorNowSelected="blue" RecordForegroundColorSelected="maincolour" ZapForegroundColorSelected="maincolour" scrollbarMode="showNever" transparent="0" zPosition="2" />	
 		<ePixmap pixmap="icons/arrow-right.png" position="1855,714" size="48,48" alphatest="blend" zPosition="2" />
 		<panel name="FullScreenBottomBar" />
 		<panel name="FullScreenRedButton" />
