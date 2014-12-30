@@ -469,7 +469,7 @@
 		</widget>
 		<panel name="InfobarRecIcon" />
 		<panel name="InfobarClock" />
-		<widget source="Service" render="Picon" position="60,805" size="400,240" alphatest="blend" zPosition="2">
+		<widget source="Service" render="Picon" position="50,805" size="400,240" alphatest="blend" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget name="list" position="610,865" size="1130,140" EventFontInfobar="infobar2;36" itemHeight="60" foregroundColor="maincolour" backgroundColor="menubackground" EntryBackgroundColorNow="menubackground" transparent="1" zPosition="3"/>
