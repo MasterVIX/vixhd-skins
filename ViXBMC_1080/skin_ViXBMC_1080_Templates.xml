@@ -152,7 +152,7 @@
 		</widget>
 	</screen>
 	<screen name="InfobarChannelName">
-		<widget source="session.CurrentService" render="Label" position="230,752" size="550,60" font="infobar;46" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="2">
+		<widget source="session.CurrentService" render="Label" position="130,752" size="650,60" font="infobar;46" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" noWrap="1" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
