@@ -17,6 +17,7 @@
 	<include filename="/usr/share/enigma2/ViXBMC_1080/skin_ViXBMC_1080_EXT-Plugins.xml"/>
 	
 	<fonts>
+		<font name="Regular" filename="/usr/share/enigma2/ViXBMC_1080/fonts/Raleway-Channel.ttf" scale="110" />
 		<font name="menulist" filename="/usr/share/enigma2/ViXBMC_1080/fonts/Raleway-Channel.ttf" scale="100" />
 		<font name="channelselectionservice" filename="/usr/share/enigma2/ViXBMC_1080/fonts/mplus-2p-light.ttf" scale="100" />
 		<font name="channelselectionevent" filename="/usr/share/enigma2/ViXBMC_1080/fonts/mplus-2p-light.ttf" scale="100" />
