@@ -749,7 +749,7 @@
 			<convert type="ProgressToText" />
 		</widget>
 		<widget name="config" position="420,410" size="1080,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" />
-		<widget source="job_status" render="Label" position="420,456" size="1080,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="center" valign="center" zPosition="2" />
+		<widget source="job_status" render="Label" position="420,456" size="1080,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
 		<widget source="cancelable" render="Pixmap" pixmap="buttons/key_red.png" position="730,781" size="67,48" alphatest="blend" transparent="1" zPosition="2">
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -1679,7 +1679,7 @@
 	<screen name="VIXAutoStartCam" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
 		<widget name="lab1" position="420,240" size="1080,120" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
-		<widget name="connect" position="950,420" size="100,100" pixmaps="spinner/wait1.png,spinner/wait2.png,spinner/wait3.png,spinner/wait4.png,spinner/wait5.png,spinner/wait6.png,spinner/wait7.png,spinner/wait8.png,spinner/wait9.png,spinner/wait9.png,spinner/wait10.png,spinner/wait11.png,spinner/wait12.png,spinner/wait13.png,spinner/wait14.png,spinner/wait15.png,spinner/wait17.png,spinner/wait18.png" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="connect" position="930,420" size="100,100" pixmaps="spinner/wait1.png,spinner/wait2.png,spinner/wait3.png,spinner/wait4.png,spinner/wait5.png,spinner/wait6.png,spinner/wait7.png,spinner/wait8.png,spinner/wait9.png,spinner/wait9.png,spinner/wait10.png,spinner/wait11.png,spinner/wait12.png,spinner/wait13.png,spinner/wait14.png,spinner/wait15.png,spinner/wait17.png,spinner/wait18.png" transparent="1" alphatest="blend" zPosition="2" />
 	</screen>
 	<screen name="VIXStartCam" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="VIXAutoStartCam" />
@@ -1877,7 +1877,7 @@
 		<panel name="SetupMenuPanel2" />
         <widget source="menu" render="Listbox" position="420,210" size="1080,720" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2">
             <convert type="TemplatedMultiContent">
-                {"template": [ MultiContentEntryText(pos = (0,0), size = (1080,60), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1 ) ],
+                {"template": [ MultiContentEntryText(pos = (10,0), size = (1070,60), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1 ) ],
                 "fonts": [gFont("menulist",40)],
                 "itemHeight": 60
                 }
@@ -2009,14 +2009,14 @@
 	<!-- ## SWAP MANAGER ## -->
 	<screen name="VIXSwap" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
-		<widget name="autostart_off" position="700,222" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="2" />
-		<widget name="autostart_on" position="700,222" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="3" />
-		<widget name="lab1" position="780,200" size="700,100" font="menulist;40" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2" />
-		<widget name="lab2" position="620,400" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="autostart_off" position="650,222" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="2" />
+		<widget name="autostart_on" position="650,222" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="3" />
+		<widget name="lab1" position="730,200" size="750,100" font="menulist;40" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2" />
+		<widget name="lab2" position="570,400" size="250,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
 		<widget name="labplace" position="850,402" size="400,60" font="menulist;40" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
-		<widget name="lab3" position="620,470" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="2" zPosition="2" />
+		<widget name="lab3" position="570,470" size="250,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="2" zPosition="2" />
 		<widget name="labsize" position="850,472" size="400,60" font="menulist;40" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
-		<widget name="lab4" position="620,540" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="lab4" position="570,540" size="250,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
 		<widget name="inactive" position="850,542" size="400,60" font="menulist;40" backgroundColor="red" halign="center" valign="center" zPosition="2" />
 		<widget name="active" position="850,542" size="400,60" font="menulist;40" backgroundColor="green" halign="center" valign="center" zPosition="3" />
 		<panel name="SetupMenuRedButton2" />
