@@ -80,7 +80,7 @@
 	<!-- ## ABOUT ## -->
 	<screen name="AboutOE" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
-		<widget source="global.CurrentTime" render="Label" position="780,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="680,69" size="670,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1380,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
@@ -476,7 +476,7 @@
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" >
 		<ePixmap pixmap="infobar/infobarepg.png" position="0,680" size="1920,420" alphatest="blend" zPosition="1"/>
-		<widget source="global.CurrentTime" render="Label" position="1137,700" size="570,60" font="date;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="1037,700" size="670,60" font="date;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1735,700" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
@@ -608,7 +608,7 @@
 	</screen>
 	<screen name="EventViewSimple" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" zPosition="1" >
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
-		<widget source="global.CurrentTime" render="Label" position="780,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="680,69" size="670,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1380,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
@@ -837,7 +837,7 @@
 	<!-- ## MEMORY INFO ## -->
 	<screen name="SystemMemoryInfo" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
-		<widget source="global.CurrentTime" render="Label" position="780,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="680,69" size="670,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1380,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
@@ -869,7 +869,7 @@
 	</screen>
 	<screen name="MessageBoxSimple" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
-		<widget source="global.CurrentTime" render="Label" position="630,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="530,69" size="670,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1230,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
@@ -884,7 +884,7 @@
 	</screen>
 	<screen name="SystemMessage" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" >
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
-		<widget source="global.CurrentTime" render="Label" position="630,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="530,69" size="670,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1230,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">

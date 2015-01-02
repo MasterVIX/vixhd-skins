@@ -18,7 +18,7 @@
 	
 	<!-- ## FULLSCREEN TEMPLATES ## -->
 	<screen name="FullScreenTimeDate">
-		<widget source="global.CurrentTime" render="Label" position="1137,0" size="570,60" font="date;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="1037,0" size="670,60" font="date;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %G</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1735,0" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
@@ -199,7 +199,7 @@
 	<!-- ## SETUP MENU TEMPLATES ## -->
 	<screen name="SetupMenuPanel">
 		<eLabel position="410,69" size="966,60" backgroundColor="menubackground" zPosition="1" />
-		<widget source="global.CurrentTime" render="Label" position="780,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="680,69" size="670,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1380,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
@@ -273,7 +273,7 @@
 	
 	<screen name="SetupMenuPanel2">
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
-		<widget source="global.CurrentTime" render="Label" position="780,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="680,69" size="670,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1380,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
@@ -308,7 +308,7 @@
 	
 	<screen name="SetupMenuPanel3">
 		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
-		<widget source="global.CurrentTime" render="Label" position="780,69" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="680,69" size="670,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1380,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
