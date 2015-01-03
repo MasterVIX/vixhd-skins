@@ -9,11 +9,12 @@
 	
 	<!-- DOWNLOADER TEMPLATES -->
 	<screen name="DownloadBar">
-		<eLabel position="center,0" size="800,140" backgroundColor="menubackground" zPosition="1" />
-		<ePixmap position="620,23" size="214,48" pixmap="icons/downloading.png" alphatest="blend" zPosition="2"/>
-		<widget name="action" position="870,3" size="600,50" font="menulist;40" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
-		<widget name="status" position="870,53" size="600,50" font="menulist;38" foregroundColor="white" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
-		<widget name="progress" position="center,110" size="760,10" foregroundColor="thirdcolour" transparent="1" zPosition="2"/>
+		<eLabel position="center,0" size="906,156" backgroundColor="outlinemenubackground" zPosition="1" />
+		<eLabel position="center,3" size="900,150" backgroundColor="menubackground" zPosition="1" />
+		<ePixmap position="560,28" size="214,48" pixmap="icons/downloading.png" alphatest="blend" zPosition="2"/>
+		<widget name="action" position="810,10" size="660,50" font="menulist;36" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="status" position="810,58" size="660,50" font="menulist;34" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="progress" position="center,115" size="860,10" foregroundColor="thirdcolour" transparent="1" zPosition="2"/>
 	</screen>
 	
 	<!-- ## FULLSCREEN TEMPLATES ## -->
