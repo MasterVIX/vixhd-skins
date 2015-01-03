@@ -396,7 +396,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="970,253" size="940,180" font="infobar;32" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2">
+		<widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="970,253" size="940,185" font="infobar;32" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<eLabel text="PLAYING NEXT" position="970,450" size="940,60" font="screentitle;44" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2"/>
@@ -412,7 +412,7 @@
 			<convert type="EventTime">NextEndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="970,563" size="940,180" font="infobar;32" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2">
+		<widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="970,563" size="940,185" font="infobar;32" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2">
 			<convert type="EventName">NextDescription</convert>
 		</widget>
 		<widget source="Service" render="Picon" position="965,768" size="400,240" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="2">
