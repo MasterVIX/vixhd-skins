@@ -19,7 +19,7 @@
 	<!-- ## FULLSCREEN TEMPLATES ## -->
 	<screen name="FullScreenTimeDate">
 		<widget source="global.CurrentTime" render="Label" position="1037,0" size="670,60" font="date;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
-			<convert type="ClockToText">Format:%A,%e %B %G</convert>
+			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1735,0" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
 			<convert type="ClockToText">Format:%H:%M</convert>
