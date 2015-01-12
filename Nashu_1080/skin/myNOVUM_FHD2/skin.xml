@@ -373,8 +373,8 @@
   <!-- Infobar-->
   <screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent">
     <ePixmap position="0,835" size="1920,245" pixmap="myNOVUM_FHD2/images/myInfobar.png" transparent="1" zPosition="-1" />
-    <ePixmap position="0,0" size="840,45" pixmap="myNOVUM_FHD2_Black/images/iconbg3.png" transparent="1" zPosition="-1" alphatest="blend" />
-    <ePixmap position="1552,0" size="372,45" pixmap="myNOVUM_FHD2_Black/images/iconbg2.png" transparent="1" zPosition="-1" alphatest="blend" />
+    <ePixmap position="0,0" size="840,45" pixmap="myNOVUM_FHD2/images/iconbg3.png" transparent="1" zPosition="-1" alphatest="blend" />
+    <ePixmap position="1552,0" size="372,45" pixmap="myNOVUM_FHD2/images/iconbg2.png" transparent="1" zPosition="-1" alphatest="blend" />
     <eLabel position="0,0" size="1920,47" zPosition="-10" backgroundColor="background40" />
     <widget source="global.CurrentTime" render="Label" position="1670,6" size="150,37" font="scoutcondWide;30" halign="center" valign="center" foregroundColor="background2" backgroundColor="grey" transparent="1" zPosition="1">
       <convert type="ClockToText">Format:%H:%M</convert>
@@ -610,8 +610,8 @@
   <screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1920,1080" backgroundColor="transparent">
     <eLabel position="0,0" size="1920,192" zPosition="-2" backgroundColor="background40" />
     <ePixmap position="0,835" size="1920,245" pixmap="myNOVUM_FHD2/images/myInfobar.png" transparent="1" zPosition="-1" />
-    <ePixmap position="0,0" size="840,45" pixmap="myNOVUM_FHD2_Black/images/iconbg3.png" transparent="1" zPosition="-1" alphatest="blend" />
-    <ePixmap position="1552,0" size="372,45" pixmap="myNOVUM_FHD2_Black/images/iconbg2.png" transparent="1" zPosition="-1" alphatest="blend" />
+    <ePixmap position="0,0" size="840,45" pixmap="myNOVUM_FHD2/images/iconbg3.png" transparent="1" zPosition="-1" alphatest="blend" />
+    <ePixmap position="1552,0" size="372,45" pixmap="myNOVUM_FHD2/images/iconbg2.png" transparent="1" zPosition="-1" alphatest="blend" />
     <widget source="global.CurrentTime" render="Label" position="1670,6" size="150,37" font="scoutcondWide;30" halign="center" valign="center" foregroundColor="background2" backgroundColor="grey" transparent="1" zPosition="1">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
