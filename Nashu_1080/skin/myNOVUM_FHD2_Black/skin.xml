@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--	Skin: myNOVUM_FHD2_Black vs.0.1 by Nashu  -->
+  <!--	Skin: myNOVUM_FHD2_Black vs.0.6 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -845,7 +845,7 @@
     </widget>
     <!-- Running Text End -->
     <!--/* WEATHER WIDGET -->
-    <widget Wrap="1" backgroundColor="background2" font="scoutcondWide;27" foregroundColor="ivorywhite" render="Label" position="277,75" size="270,81" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
+    <widget Wrap="1" backgroundColor="background2" font="scoutcondWide; 28" foregroundColor="ivorywhite" render="Label" position="195,72" size="290,80" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
       <convert type="MSNWeather">city</convert>
     </widget>
     <widget alphatest="blend" render="MSNWeatherPixmap" position="1705,985" size="60,60" source="session.MSNWeather" transparent="1" zPosition="5" backgroundColor="transparent">
@@ -865,67 +865,67 @@
     <widget Wrap="1" backgroundColor="background20" font="Regular;24" foregroundColor="preTrans10" render="Label" position="1640,900" size="185,60" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
       <convert type="MSNWeather">temperature_text,current</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background30" font="Regular;27" foregroundColor="orange" render="Label" position="592,75" size="64,37" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+    <widget noWrap="1" backgroundColor="background30" font="scoutcondWide; 30" foregroundColor="orange" render="Label" position="490,70" size="90,40" source="session.MSNWeather" zPosition="3" halign="right" transparent="1">
       <convert type="MSNWeather">weekshortday,day2</convert>
     </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="658,60" size="60,60" source="session.MSNWeather" transparent="1" zPosition="5" backgroundColor="transparent">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="600,60" size="60,60" source="session.MSNWeather" transparent="1" zPosition="5" backgroundColor="transparent">
       <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/myNOVUM_FHD2_Black/WeatherIcons/,png</convert>
     </widget>
-    <widget Wrap="1" backgroundColor="background2" font="Regular;22" render="Label" position="607,124" size="165,52" source="session.MSNWeather" transparent="1" zPosition="3" halign="center" foregroundColor="preTrans20" valign="center">
+    <widget Wrap="1" backgroundColor="background2" font="Regular;22" render="Label" position="545,126" size="165,52" source="session.MSNWeather" transparent="1" zPosition="3" halign="center" foregroundColor="preTrans20" valign="center">
       <convert type="MSNWeather">temperature_text,day2</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background2" font="Regular;27" foregroundColor="transpWhite" render="Label" position="718,94" size="64,27" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
+    <widget noWrap="1" backgroundColor="background2" font="scoutcondWide; 27" foregroundColor="transpWhite" render="Label" position="680,92" size="90,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center">
       <convert type="MSNWeather">temperature_low,day2</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background90" font="Regular;22" foregroundColor="preTrans20" render="Label" position="718,67" size="64,27" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
+    <widget noWrap="1" backgroundColor="background90" font="scoutcondWide; 27" foregroundColor="preTrans20" render="Label" position="680,60" size="90,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center">
       <convert type="MSNWeather">temperature_high,day2</convert>
     </widget>
-    <widget Wrap="1" backgroundColor="background2" font="Regular;22" foregroundColor="transpWhite" render="Label" position="877,124" size="165,52" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
+    <widget Wrap="1" backgroundColor="background2" font="Regular;22" foregroundColor="transpWhite" render="Label" position="845,126" size="165,52" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
       <convert type="MSNWeather">temperature_text,day3</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background30" font="Regular;27" foregroundColor="unff6600" render="Label" position="865,75" size="64,37" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+    <widget noWrap="1" backgroundColor="background30" font="scoutcondWide; 30" foregroundColor="unff6600" render="Label" position="790,70" size="90,40" source="session.MSNWeather" zPosition="3" halign="right" transparent="1">
       <convert type="MSNWeather">weekshortday,day3</convert>
     </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="931,60" size="60,60" source="session.MSNWeather" transparent="1" zPosition="5" backgroundColor="transparent">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="900,60" size="60,60" source="session.MSNWeather" transparent="1" zPosition="5" backgroundColor="transparent">
       <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/myNOVUM_FHD2_Black/WeatherIcons/,png</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background2" font="Regular;22" foregroundColor="transpWhite" render="Label" position="993,94" size="64,27" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
+    <widget noWrap="1" backgroundColor="background2" font="scoutcondWide; 27" foregroundColor="transpWhite" render="Label" position="980,92" size="90,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center">
       <convert type="MSNWeather">temperature_low,day3</convert>
     </widget>
-    <widget backgroundColor="background2" font="Regular;22" foregroundColor="preTrans20" render="Label" position="993,67" size="64,27" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <widget backgroundColor="background2" font="scoutcondWide; 27" foregroundColor="preTrans20" render="Label" position="980,60" size="90,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" noWrap="1">
       <convert type="MSNWeather">temperature_high,day3</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background30" font="Regular;27" foregroundColor="unff6600" render="Label" position="1140,75" size="64,37" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+    <widget noWrap="1" backgroundColor="background30" font="Regular; 30" foregroundColor="unff6600" render="Label" position="1090,70" size="90,40" source="session.MSNWeather" zPosition="3" halign="right" transparent="1">
       <convert type="MSNWeather">weekshortday,day4</convert>
     </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="1206,60" size="60,60" source="session.MSNWeather" transparent="1" zPosition="5">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="1210,60" size="60,60" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/myNOVUM_FHD2_Black/WeatherIcons/,png</convert>
     </widget>
-    <widget backgroundColor="background30" font="Regular;22" foregroundColor="preTrans20" render="Label" position="1266,67" size="64,27" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center" noWrap="1">
+    <widget backgroundColor="background30" font="scoutcondWide; 27" foregroundColor="preTrans20" render="Label" position="1290,60" size="90,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center" noWrap="1">
       <convert type="MSNWeather">temperature_high,day4</convert>
     </widget>
-    <widget backgroundColor="background2" font="Regular;22" foregroundColor="preTrans20" render="Label" position="1266,94" size="64,27" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <widget backgroundColor="background2" font="scoutcondWide; 27" foregroundColor="transpWhite" render="Label" position="1290,92" size="90,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" noWrap="1">
       <convert type="MSNWeather">temperature_low,day4</convert>
     </widget>
-    <widget Wrap="1" backgroundColor="background2" font="Regular;22" foregroundColor="transpWhite" render="Label" position="1155,124" size="165,52" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
+    <widget Wrap="1" backgroundColor="background2" font="Regular;22" foregroundColor="transpWhite" render="Label" position="1155,126" size="165,52" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
       <convert type="MSNWeather">temperature_text,day4</convert>
     </widget>
-    <widget Wrap="1" backgroundColor="background2" font="Regular;22" foregroundColor="transpWhite" render="Label" position="1432,124" size="165,52" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
+    <widget Wrap="1" backgroundColor="background2" font="Regular;22" foregroundColor="transpWhite" render="Label" position="1455,126" size="165,52" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
       <convert type="MSNWeather">temperature_text,day5</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background30" font="Regular;27" foregroundColor="unff6600" render="Label" position="1414,75" size="64,37" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+    <widget noWrap="1" backgroundColor="background30" font="scoutcondWide; 30" foregroundColor="unff6600" render="Label" position="1400,70" size="90,40" source="session.MSNWeather" zPosition="3" halign="right" transparent="1">
       <convert type="MSNWeather">weekshortday,day5</convert>
     </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="1482,60" size="60,60" source="session.MSNWeather" transparent="1" zPosition="5">
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="1510,60" size="60,60" source="session.MSNWeather" transparent="1" zPosition="5">
       <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/myNOVUM_FHD2_Black/WeatherIcons/,png</convert>
     </widget>
-    <widget noWrap="1" backgroundColor="background30" font="Regular;22" foregroundColor="preTrans20" render="Label" position="1540,67" size="64,27" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
+    <widget noWrap="1" backgroundColor="background30" font="scoutcondWide; 27" foregroundColor="preTrans20" render="Label" position="1590,60" size="90,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" valign="center">
       <convert type="MSNWeather">temperature_high,day5</convert>
     </widget>
-    <widget backgroundColor="background2" font="Regular;22" foregroundColor="transpWhite" render="Label" position="1540,94" size="64,27" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+    <widget backgroundColor="background2" font="scoutcondWide; 27" foregroundColor="transpWhite" render="Label" position="1590,92" size="90,30" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" noWrap="1">
       <convert type="MSNWeather">temperature_low,day5</convert>
     </widget>
-    <!-- WEATHER WIDGET */-->
+    <!-- WEATHER WIDGET */-->	
   </screen>
   <!-- Secondinfobar End -->
   <!-- Channel Selection -->
@@ -960,7 +960,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="994,452" size="112,60" halign="left" font="scoutcondWide;31" backgroundColor="background2" transparent="1" noWrap="1" zPosition="6" foregroundColor="preTrans60" valign="top">
+    <widget source="ServiceEvent" render="Label" position="994,452" size="112,60" halign="left" font="scoutcondWide;31" backgroundColor="background2" transparent="1" noWrap="1" zPosition="6" foregroundColor="preTrans40" valign="top">
       <convert type="EventTime">NextStartTime</convert>
       <convert type="ClockToText">Format:%H:%M-</convert>
     </widget>
@@ -968,7 +968,7 @@
       <convert type="EventTime">NextEndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="994,765" size="112,60" halign="left" font="scoutcondWide;31" foregroundColor="preTrans60" backgroundColor="background2" transparent="1" noWrap="1" zPosition="6" valign="top">
+    <widget source="ServiceEvent" render="Label" position="994,765" size="112,60" halign="left" font="scoutcondWide;31" foregroundColor="preTrans40" backgroundColor="background2" transparent="1" noWrap="1" zPosition="6" valign="top">
       <convert type="EventTime">ThirdStartTime</convert>
       <convert type="ClockToText">Format:%H:%M-</convert>
     </widget>
@@ -983,23 +983,23 @@
     <widget source="ServiceEvent" render="Label" position="1122,136" size="600,84" halign="left" Valign="top" backgroundColor="background2" font="RobotoCond;30" foregroundColor="preTrans40" transparent="1" zPosition="6" Wrap="0" valign="top">
       <convert type="EventName">NowName</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="1122,449" size="600,84" halign="left" Valign="top" backgroundColor="background2" font="RobotoCond;30" transparent="1" zPosition="6" Wrap="0" foregroundColor="preTrans60" valign="top">
+    <widget source="ServiceEvent" render="Label" position="1122,449" size="600,84" halign="left" Valign="top" backgroundColor="background2" font="RobotoCond;30" transparent="1" zPosition="6" Wrap="0" foregroundColor="preTrans40" valign="top">
       <convert type="EventName">NextName</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="1122,762" size="600,84" halign="left" Valign="top" backgroundColor="background2" font="RobotoCond;30" foregroundColor="preTrans60" transparent="1" zPosition="6" Wrap="0" valign="top">
+    <widget source="ServiceEvent" render="Label" position="1122,762" size="600,84" halign="left" Valign="top" backgroundColor="background2" font="RobotoCond;30" foregroundColor="preTrans40" transparent="1" zPosition="6" Wrap="0" valign="top">
       <convert type="EventName">ThirdName</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="myNOVUM_FHD2_Black/icons/ico_rec_on1.png" position="1785,525" size="75,37" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <!-- Running Text Start -->
-    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=3,always=0,oneshot=1,startdelay=8000,wrap" position="1122,242" size="600,180" font="Regular-Light;28" backgroundColor="background30" foregroundColor="preTrans50" transparent="1" zPosition="6">
+    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=3,always=0,oneshot=1,startdelay=8000,wrap" position="1122,254" size="600,154" font="RobotoCond;27" backgroundColor="background30" foregroundColor="darkgrey" transparent="1" zPosition="6">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=4,always=0,oneshot=1,startdelay=11000,wrap" position="1122,555" size="600,180" font="Regular-Light;28" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
+    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=4,always=0,oneshot=1,startdelay=11000,wrap" position="1122,567" size="600,154" font="RobotoCond;27" backgroundColor="background30" foregroundColor="darkgrey" transparent="1" zPosition="6">
       <convert type="EventName">NextDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=5,always=0,oneshot=1,startdelay=14000,wrap" position="1122,868" size="600,180" font="Regular-Light;28" backgroundColor="background30" foregroundColor="un27aeaeae" transparent="1" zPosition="6">
+    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=5,always=0,oneshot=1,startdelay=14000,wrap" position="1122,880" size="600,154" font="RobotoCond;27" backgroundColor="background30" foregroundColor="darkgrey" transparent="1" zPosition="6">
       <convert type="EventName">ThirdDescription</convert>
     </widget>
     <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=20,repeat=3,always=1,oneshot=1,startdelay=4000" position="15,55" size="900,57" font="RobotoCond;36" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" zPosition="6" />
@@ -1681,43 +1681,43 @@
     <eLabel position="0,141" size="1920,1" backgroundColor="background80" zPosition="-1" />
     <eLabel position="0,141" size="1560,939" backgroundColor="background70" zPosition="-10" />
     <eLabel position="60,180" size="1500,900" backgroundColor="background30" zPosition="-2" />
-    <widget source="Service" render="Label" position="210,210" size="935,45" font="RobotoCond; 32" foregroundColor="unFFFFF4" backgroundColor="background2" valign="center" halign="left" transparent="1" wrap="1">
+    <widget source="Service" render="Label" position="210,210" size="880,45" font="RobotoCond; 32" foregroundColor="unFFFFF4" backgroundColor="background2" valign="center" halign="left" transparent="1" wrap="1">
       <convert type="EventName">Name</convert>
     </widget>
     <ePixmap position="1630,180" size="220,220" pixmap="myNOVUM_FHD2_Black/menu/movielogo.png" transparent="1" alphatest="blend" />
     <eLabel text="Select a movie" position="105,66" size="540,57" font="RobotoCond; 44" transparent="1" foregroundColor="preTrans40" valign="top" zPosition="2" halign="left" backgroundColor="background30" />
     <widget source="Title" render="Label" position="772,85" size="772,45" font="Regular;30" backgroundColor="un2D3033" transparent="1" foregroundColor="transpWhite" halign="right" />
-    <widget name="list" position="210,510" size="1330,540" font="Regular;28" backgroundColor="background2" foregroundColor="unc0d7ff" scrollbarMode="showOnDemand" itemHeight="60" transparent="1" selectionPixmap="myNOVUM_FHD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_FHD2_Black/images/sel_bg1.png" />
-    <widget name="freeDiskSpace" position="1192,412" size="330,75" font="Regular;28" valign="bottom" backgroundColor="background2" transparent="1" foregroundColor="white" halign="center" />
-    <widget name="movie_sort" position="1620,1047" size="52,30" pixmaps="myNOVUM_FHD2_Black/icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="blend" />
-    <widget name="movie_off" position="1687,1047" size="52,30" pixmaps="myNOVUM_FHD2_Black/icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="blend" />
-    <widget name="chosenletter" position="210,510" size="1330,540" foregroundColor="orange" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4" backgroundColor="background2" />
-    <widget source="Service" render="Label" position="210,262" size="965,42" font="RobotoCond;30" backgroundColor="background2" transparent="1" foregroundColor="unFFFFF4" halign="left" wrap="1">
+    <widget name="list" position="210,535" size="1250,480" font="RobotoCond;26" backgroundColor="background2" foregroundColor="unc0d7ff" scrollbarMode="showOnDemand" itemHeight="40" transparent="1" selectionPixmap="myNOVUM_FHD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_FHD2_Black/images/sel_bg2.png" />
+    <widget name="freeDiskSpace" position="1105,440" size="390,75" font="Regular; 24" valign="bottom" backgroundColor="background2" transparent="1" foregroundColor="white" halign="center" />
+    <widget name="movie_sort" position="1340,1035" size="52,30" pixmaps="myNOVUM_FHD2_Black/icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="blend" />
+    <widget name="movie_off" position="1400,1035" size="52,30" pixmaps="myNOVUM_FHD2_Black/icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="blend" />
+    <widget name="chosenletter" position="210,535" size="1250,480" foregroundColor="orange" font="Regular; 35" halign="center" valign="center" transparent="1" zPosition="4" backgroundColor="background2" />
+    <widget source="Service" render="Label" position="210,267" size="880,42" font="RobotoCond;30" backgroundColor="background2" transparent="1" foregroundColor="unFFFFF4" halign="left" wrap="1">
       <convert type="MovieInfo">ShortDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="1147,210" size="405,45" font="RobotoCond;30" foregroundColor="preTrans20" halign="center" backgroundColor="background2" transparent="1">
+    <widget source="Service" render="Label" position="1100,210" size="405,90" font="RobotoCond;30" foregroundColor="preTrans20" halign="center" backgroundColor="background2" transparent="1">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget source="Service" render="Label" position="1237,267" size="120,37" font="Regular;30" halign="right" foregroundColor="light_blue" backgroundColor="background2" transparent="1" noWrap="1">
+    <widget source="Service" render="Label" position="1157,305" size="139,37" font="Regular;30" halign="right" foregroundColor="light_blue" backgroundColor="background2" transparent="1" noWrap="1">
       <convert type="ServiceTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M </convert>
     </widget>
-    <widget source="Service" render="Label" position="1360,267" size="120,37" font="Regular;30" foregroundColor="light_blue" backgroundColor="background2" transparent="1" noWrap="1" halign="left">
+    <widget source="Service" render="Label" position="1300,305" size="139,37" font="Regular;30" foregroundColor="light_blue" backgroundColor="background2" transparent="1" noWrap="1" halign="left">
       <convert type="ServiceTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M </convert>
     </widget>
-    <widget source="Service" render="Label" position="1260,315" size="195,37" font="Regular;30" halign="center" backgroundColor="background2" transparent="1" zPosition="2" foregroundColor="unff6600">
+    <widget source="Service" render="Label" position="1157,350" size="285,37" font="Regular; 28" halign="center" backgroundColor="background2" transparent="1" zPosition="2" foregroundColor="unff6600">
       <convert type="ServiceTime">Duration</convert>
       <convert type="ClockToText">AsLength</convert>
     </widget>
-    <widget source="Service" render="Label" position="1192,364" size="330,37" font="Regular;28" halign="center" backgroundColor="background2" transparent="1" zPosition="2" foregroundColor="white">
+    <widget source="Service" render="Label" position="1112,395" size="375,37" font="Regular;28" halign="center" backgroundColor="background2" transparent="1" zPosition="2" foregroundColor="white">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="myNOVUM_FHD2_Black/icons/ico_rec_on1.png" position="1702,615" size="75,37" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <!-- Running Text Start -->
-    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=3,always=0,oneshot=1,startdelay=12000,wrap" position="210,315" size="965,168" font="Regular-Light;25" foregroundColor="preTrans40" backgroundColor="background2" transparent="1" valign="top">
+    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=3,always=0,oneshot=1,startdelay=12000,wrap" position="210,335" size="880,158" font="RobotoCond;28" foregroundColor="transpWhite" backgroundColor="background30" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- Running Text End -->
@@ -1726,7 +1726,7 @@
     <widget source="global.CurrentTime" render="Label" position="1560,78" size="360,57" font="scoutcondWide;36" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <eLabel position="210,1050" size="1350,1" backgroundColor="background80" zPosition="1" foregroundColor="background80" />
+    <eLabel position="210,1015" size="1350,1" backgroundColor="background90transparent3" zPosition="1" foregroundColor="background80" />
     <ePixmap pixmap="myNOVUM_FHD2_Black/buttons/key_menu.png" position="1590,855" size="82,37" zPosition="1" alphatest="blend" />
     <ePixmap pixmap="myNOVUM_FHD2_Black/buttons/key_info.png" position="1687,855" size="67,37" alphatest="blend" transparent="1" />
     <ePixmap pixmap="myNOVUM_FHD2_Black/buttons/red.png" position="1567,900" size="37,37" alphatest="blend" transparent="1" />
@@ -1745,8 +1745,8 @@
     <eLabel position="60,180" size="1665,900" backgroundColor="background60" zPosition="-3" />
     <eLabel position="60,322" size="690,1" backgroundColor="transparent9" zPosition="1" />
     <eLabel position="795,322" size="930,1" backgroundColor="background80" zPosition="4" />
-    <eLabel position="795,1002" size="930,1" backgroundColor="background80" zPosition="4" />
-    <eLabel position="795,322" size="1,680" backgroundColor="background60" zPosition="4" font="Regular;24" />
+    <eLabel position="795,1002" size="930,1" backgroundColor="background90transparent3" zPosition="4" />
+    <eLabel position="795,322" size="1,680" backgroundColor="background90transp" zPosition="4" font="Regular;24" />
     <eLabel position="750,225" size="1,810" backgroundColor="background90transparent3" zPosition="3" font="Regular;24" />
     <eLabel position="750,225" size="975,810" zPosition="-2" backgroundColor="background40" />
     <eLabel position="60,1035" size="1665,1" backgroundColor="transparent9" zPosition="2" />
@@ -1781,13 +1781,13 @@
     </widget>
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
     <widget name="waitingtext" position="0,0" size="0,0" />
-    <widget name="list" position="795,322" size="930,680" backgroundColor="background2" foregroundColor="unc0d7ff" scrollbarMode="showOnDemand" itemHeight="40" transparent="1" selectionPixmap="myNOVUM_FHD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_FHD2_Black/images/sel_bg1.png" />
+    <widget name="list" position="795,322" size="930,680" font="Regular;28" backgroundColor="background2" foregroundColor="unc0d7ff" scrollbarMode="showOnDemand" itemHeight="40" transparent="1" selectionPixmap="myNOVUM_FHD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_FHD2_Black/images/sel_bg2.png" />
     <widget name="movie_sort" position="1595,1040" size="52,30" pixmaps="myNOVUM_FHD2_Black/icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="blend" />
     <widget name="movie_off" position="1655,1040" size="52,30" pixmaps="myNOVUM_FHD2_Black/icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="blend" />
     <widget source="session.RecordState" render="Pixmap" pixmap="myNOVUM_FHD2_Black/icons/ico_rec_on1.png" position="1777,525" size="88,45" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="Service" render="Label" position="140,547" size="600,372" font="Regular-Light;28" foregroundColor="preTrans20" backgroundColor="background60" transparent="1" valign="top">
+    <widget source="Service" render="Label" position="140,542" size="600,377" font="RobotoCond;28" foregroundColor="transpWhite" backgroundColor="background60" transparent="1" valign="top">
       <convert type="MovieInfo">MetaDescription</convert>
     </widget>
     <widget source="Title" render="Label" position="140,1047" size="600,30" font="Regular;22" foregroundColor="transpWhite" backgroundColor="background60transp" transparent="1" zPosition="6" />
@@ -2317,11 +2317,11 @@
     <eLabel position="0,141" size="1920,1" backgroundColor="background80" zPosition="-1" />
     <eLabel position="0,141" size="1560,939" backgroundColor="background70" zPosition="-10" />
     <eLabel position="60,180" size="1500,900" backgroundColor="background30" zPosition="-2" />
-    <eLabel position="210,840" size="1200,1" backgroundColor="background80" zPosition="4" />
+    <eLabel position="210,900" size="1200,1" backgroundColor="background80" zPosition="4" />
     <widget source="global.CurrentTime" render="Label" position="1560,78" size="360,57" font="scoutcondWide;36" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <widget name="list" position="210,300" size="1200,540" zPosition="3" scrollbarMode="showNever" backgroundColor="background30" selectionPixmap="myNOVUM_FHD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_FHD2_Black/images/sel_bg1.png" foregroundColorEvent="lightgrey" foregroundColorEventSelected="white" serviceItemHeight="45" foregroundColorServiceNotAvail="red" serviceNumberFont="Regular;26" serviceNameFont="Regular;26" serviceInfoFont="Regular;23" transparent="1" />
+    <widget name="list" position="210,300" size="1200,600" zPosition="3" scrollbarMode="showNever" backgroundColor="background30" selectionPixmap="myNOVUM_FHD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_FHD2_Black/images/sel_bg1.png" foregroundColorEvent="lightgrey" foregroundColorEventSelected="white" serviceItemHeight="50" foregroundColorServiceNotAvail="red" serviceNumberFont="Regular;26" serviceNameFont="Regular;26" serviceInfoFont="Regular;22" transparent="1" Wrap="0" />
     <widget source="Service" render="Label" position="210,240" size="750,45" zPosition="2" backgroundColor="background2" font="RobotoCond;31" noWrap="1" transparent="1" valign="top" foregroundColor="un7FA5FF">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -2330,7 +2330,7 @@
     </widget>
     <!-- Running Text Start -->
     <eLabel text="Program Guide" render="Label" position="105,66" size="525,57" font="RobotoCond;45" transparent="1" foregroundColor="transpWhite" backgroundColor="un181A1C" zPosition="2" />
-    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="210,880" size="1200,138" font="Regular;28" backgroundColor="background30" foregroundColor="white" transparent="1" valign="top" zPosition="2">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="210,930" size="1200,138" font="Regular;28" backgroundColor="background30" foregroundColor="white" transparent="1" valign="top" zPosition="2">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <!-- Running Text End -->
@@ -2364,7 +2364,7 @@
     </widget>
     <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=20,repeat=3,always=1,oneshot=1,startdelay=4000" position="105,66" size="1440,57" font="RobotoCond;44" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <widget name="bouquetlist" position="210,880" size="1200,200" itemHeight="50" foregroundColor="un181A1C" backgroundColor="myblue1transp1" foregroundColorSelected="ivorywhite" backgroundColorSelected="myblue1transp1" scrollbarMode="showNever" zPosition="6" transparent="1" />
-    <widget name="list" position="210,300" size="1200,480" zPosition="3" scrollbarMode="showNever" backgroundColor="background30" selectionPixmap="myNOVUM_FHD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_FHD2_Black/images/sel_bg1.png" foregroundColorEvent="lightgrey" foregroundColorEventSelected="white" serviceItemHeight="40" foregroundColorServiceNotAvail="red" serviceNumberFont="Regular;26" serviceNameFont="Regular;26" serviceInfoFont="Regular;23" transparent="1" />
+    <widget name="list" position="210,300" size="1200,480" zPosition="3" scrollbarMode="showNever" backgroundColor="background30" selectionPixmap="myNOVUM_FHD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_FHD2_Black/images/sel_bg1.png" foregroundColorEvent="lightgrey" foregroundColorEventSelected="white" serviceItemHeight="40" foregroundColorServiceNotAvail="red" serviceNumberFont="Regular;26" serviceNameFont="Regular;26" serviceInfoFont="Regular;22" transparent="1" Wrap="0" />
     <widget name="now_button_sel" pixmap="myNOVUM_FHD2_Black/epg_now.png" position="210,240" zPosition="1" size="694,51" alphatest="on" />
     <widget name="next_button_sel" pixmap="myNOVUM_FHD2_Black/epg_next.png" position="210,240" zPosition="1" size="694,51" alphatest="on" />
     <widget name="more_button_sel" pixmap="myNOVUM_FHD2_Black/epg_more.png" position="210,240" zPosition="1" size="694,51" alphatest="on" />
@@ -3838,7 +3838,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen name="NumberZapExt" position="center,center" size="1290,450" title="Channel" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
     <eLabel text="QuickZap" position="375,45" size="468,64" zPosition="3" font="Regular;52" transparent="1" halign="right" backgroundColor="background2" foregroundColor="orange" noWrap="1" />
-    <widget name="chPicon" position="915,125" size="330,198" transparent="1" zPosition="1" alphatest="blend" backgroundColor="un2D3033" />
+    <widget name="chPicon" position="970,145" size="220,132" transparent="1" zPosition="1" alphatest="blend" backgroundColor="un2D3033" />
     <widget name="number" position="21,138" size="234,99" halign="right" font="RobotoCond-Light;40" transparent="1" backgroundColor="background2" foregroundColor="transpWhite" noWrap="1" />
     <widget name="chNum" position="255,97" size="615,99" halign="center" font="Regular;90" transparent="1" backgroundColor="background2" foregroundColor="un1481FF" noWrap="1" />
     <widget name="channel" position="21,222" size="234,99" halign="right" font="RobotoCond-Light;40" transparent="1" backgroundColor="background2" foregroundColor="transpWhite" noWrap="1" />
@@ -3846,7 +3846,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="bouquet" position="21,303" size="234,90" halign="right" font="RobotoCond-Light;40" transparent="1" backgroundColor="background2" foregroundColor="transpWhite" noWrap="1" />
     <widget name="chBouq" position="255,310" size="615,90" halign="center" font="RobotoCond-Light;40" noWrap="1" transparent="1" backgroundColor="background2" foregroundColor="light_blue" />
     <eLabel position="876,4" size="410,440" backgroundColor="un2D3033transp" zPosition="-2" />
-    <eLabel position="4,24" size="870,400" backgroundColor="background50transp" />
+    <eLabel position="4,24" size="870,400" backgroundColor="background50transp" zPosition="-1" />
   </screen>
   <!-- NameZap -->
   <screen name="NamezapSetup" position="center,center" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
@@ -9974,7 +9974,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel text="OPEN SOURCE" position="315,315" size="300,45" font="Regular;33" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="315,525" size="975,480" font="Regular;30" backgroundColor="background30" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="1590,855" size="67,37" pixmap="myNOVUM_FHD2_Black/buttons/key_info.png" alphatest="blend" />
-    <eLabel text="Skin myNOVUM_FHD2_Black vs.0.1 by Nashu" position="315,1020" size="705,45" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="RobotoCond;28" halign="left" />
+    <eLabel text="Skin myNOVUM_FHD2_Black vs.0.6 by Nashu" position="315,1020" size="705,45" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="RobotoCond;28" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1920,1080" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="myNOVUM_FHD2_Black/images/sidebar.png" position="1560,142" size="360,938" transparent="1" zPosition="-3" />
@@ -14664,24 +14664,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <eLabel text="Enhanced Movie Center" position="105,66" size="600,57" font="RobotoCond; 44" backgroundColor="background2" transparent="1" halign="left" valign="center" foregroundColor="preTrans40" />
     <widget source="Title" render="Label" position="742,85" size="795,45" font="Regular;30" backgroundColor="un2D3033" transparent="1" foregroundColor="transpWhite" halign="right" />
-    <widget name="list" position="210,510" size="1330,540" itemHeight="60" CoolFont="Regular;28" CoolSelectFont="Regular;28" CoolDateFont="Regular;28" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="550" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="110" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="640" CoolBarHPos="10" CoolBarSize="55,10" CoolBarSizeSa="110,16" selectionPixmap="myNOVUM_FHD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_FHD2_Black/images/sel_bg1.png" DefaultColor="white" UnwatchedColor="unc0d7ff" WatchingColor="unFFFFF4" FinishedColor="darkgrey" RecordingColor="unff0000" BackColorSel="un2E83AE" backgroundColor="background2" foregroundColorSelected="white" scrollbarMode="showNever" transparent="1" />
-    <widget name="wait" position="-1,424" size="1924,75" zPosition="1" font="Regular;48" foregroundColor="lightgrey" backgroundColor="un18080911" halign="center" valign="center" />
-    <widget source="Service" render="Label" position="210,210" size="930,90" font="Regular; 34" foregroundColor="unFFFFF4" backgroundColor="background2" valign="center" halign="left" transparent="1" Wrap="0">
+    <widget name="list" position="210,530" size="1250,520" itemHeight="40" CoolFont="RobotoCond;26" CoolSelectFont="RobotoCond;26" CoolDateFont="RobotoCond;24" CoolMoviePos="35" CoolMovieSize="900" CoolFolderSize="900" CoolTitleColor="0" CoolDatePos="1110" CoolDateWidth="130" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1020" CoolBarPos="1000" CoolBarHPos="15" CoolBarSize="65,10" CoolBarSizeSa="100,10" selectionPixmap="myNOVUM_FHD2_Black/images/FocusBar.png" backgroundPixmap="myNOVUM_FHD2_Black/images/sel_bg1.png" DefaultColor="white" UnwatchedColor="unc0d7ff" WatchingColor="unFFFFF4" FinishedColor="darkgrey" RecordingColor="unff0000" BackColorSel="un2E83AE" backgroundColor="background2" foregroundColorSelected="white" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="wait" position="4,407" size="1920,75" zPosition="1" font="Regular;48" foregroundColor="lightgrey" backgroundColor="background30" halign="center" valign="center" />
+    <widget source="Service" render="Label" position="210,210" size="870,100" font="Regular; 32" foregroundColor="unFFFFF4" backgroundColor="background2" valign="center" halign="left" transparent="1" Wrap="0">
       <convert type="EMCEventName">Name</convert>
     </widget>
-    <widget source="Service" render="Label" position="1206,285" size="139,37" font="Regular;30" halign="right" foregroundColor="light_blue" backgroundColor="background2" transparent="1" noWrap="1">
+    <widget source="Service" render="Label" position="1157,305" size="139,37" font="Regular;30" halign="right" foregroundColor="light_blue" backgroundColor="background2" transparent="1" noWrap="1">
       <convert type="EMCServiceTime">StartTime</convert>
       <convert type="EMCClockToText">Format:%H:%M </convert>
     </widget>
-    <widget source="Service" render="Label" position="1351,285" size="139,37" font="Regular;30" foregroundColor="light_blue" backgroundColor="background2" transparent="1" noWrap="1" halign="left">
+    <widget source="Service" render="Label" position="1300,305" size="139,37" font="Regular;30" foregroundColor="light_blue" backgroundColor="background2" transparent="1" noWrap="1" halign="left">
       <convert type="EMCServiceTime">EndTime</convert>
       <convert type="EMCClockToText">Format:- %H:%M </convert>
     </widget>
-    <widget source="Service" render="Label" position="1207,337" size="285,37" font="Regular;30" halign="center" backgroundColor="background2" transparent="1" zPosition="2" foregroundColor="unff6600">
+    <widget source="Service" render="Label" position="1157,350" size="285,37" font="Regular; 28" halign="center" backgroundColor="background2" transparent="1" zPosition="2" foregroundColor="unff6600">
       <convert type="EMCServiceTime">Duration</convert>
       <convert type="EMCClockToText">InMinutes</convert>
     </widget>
-    <widget source="Service" render="Label" position="1162,390" size="375,37" font="Regular;28" halign="center" backgroundColor="background2" transparent="1" zPosition="2" foregroundColor="white">
+    <widget source="Service" render="Label" position="1112,395" size="375,37" font="Regular;28" halign="center" backgroundColor="background2" transparent="1" zPosition="2" foregroundColor="white">
       <convert type="EMCMovieInfo">FileSize</convert>
     </widget>
     <widget source="session.RecordState" render="Pixmap" pixmap="myNOVUM_FHD2_Black/icons/ico_rec_on1.png" position="1702,615" size="75,37" zPosition="2" alphatest="blend">
@@ -14690,14 +14690,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <!-- Subtitle Label only for DVD -->
     <widget name="subtitleLabel" position="1620,1050" size="300,30" zPosition="3" halign="left" font="Regular;25" backgroundColor="background2" transparent="1" foregroundColor="ivorywhite" />
     <!-- Running Text Start -->
-    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=3,always=0,oneshot=1,startdelay=12000,wrap" position="210,315" size="930,168" font="Regular-Light;31" foregroundColor="preTrans40" backgroundColor="background2" transparent="1" valign="top">
+    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=3,always=0,oneshot=1,startdelay=12000,wrap" position="210,335" size="880,158" font="RobotoCond;28" foregroundColor="transpWhite" backgroundColor="background2" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- Running Text End -->
-    <widget source="Service" render="Label" position="1155,229" size="390,45" font="RobotoCond;30" foregroundColor="preTrans20" halign="center" backgroundColor="background2" transparent="1">
+    <widget source="Service" render="Label" position="1105,210" size="390,90" font="RobotoCond;30" foregroundColor="preTrans20" halign="center" backgroundColor="background2" transparent="1">
       <convert type="EMCMovieInfo">RecordServiceName</convert>
     </widget>
-    <widget source="Service" render="Label" position="1155,442" size="390,37" font="scoutcondWide;28" foregroundColor="unFFFFF4" halign="center" backgroundColor="background2" transparent="1">
+    <widget source="Service" render="Label" position="1105,440" size="390,37" font="scoutcondWide; 26" foregroundColor="unFFFFF4" halign="center" backgroundColor="background2" transparent="1">
       <convert type="EMCServiceTime">StartTime</convert>
       <convert type="EMCClockToText">Date</convert>
     </widget>
@@ -14720,7 +14720,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="15,1009" size="480,4" backgroundColor="transparent7" zPosition="1" />
     <eLabel position="0,949" size="514,130" backgroundColor="background60" zPosition="-2" />
     <!-- Running Text Start -->
-    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" backgroundColor="background90transp" font="Regular-Light;33" foregroundColor="preTrans20" halign="left" position="22,457" size="465,471" transparent="1" zPosition="0">
+    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" backgroundColor="background90transp" font="RobotoCond;31" foregroundColor="preTrans20" halign="left" position="22,457" size="465,471" transparent="1" zPosition="0">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=3,always=1,oneshot=1,startdelay=4000" position="532,967" size="1365,127" font="Regular1;102" backgroundColor="transparent" foregroundColor="preTrans40" transparent="1" zPosition="0">

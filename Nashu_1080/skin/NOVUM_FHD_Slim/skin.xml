@@ -1,5 +1,5 @@
 ﻿<skin>
-  <!--	Skin: NOVUM_FHD_Slim vs.0.4 by Nashu  -->
+  <!--	Skin: NOVUM_FHD_Slim vs.0.8 by Nashu  -->
   <!--	This skin is a Freeware. Everyone can modify and use it in other images.		-->
   <!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!		-->
   <!--	Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -932,10 +932,10 @@
       </convert>
     </widget>
     <!-- Running Text Start -->
-    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=3,always=0,oneshot=1,startdelay=8000,wrap" position="195,439" size="547,172" font="RobotoCond-Light;30" backgroundColor="background60" foregroundColor="preTrans20" transparent="1" zPosition="6">
+    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=3,always=0,oneshot=1,startdelay=8000,wrap" position="195,447" size="547,156" font="RobotoCond;28" backgroundColor="background60" foregroundColor="preTrans70" transparent="1" zPosition="6">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=4,always=0,oneshot=1,startdelay=11000,wrap" position="195,747" size="547,172" font="RobotoCond-Light;30" backgroundColor="background60" foregroundColor="preTrans40" transparent="1" zPosition="6">
+    <widget source="ServiceEvent" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=4,always=0,oneshot=1,startdelay=11000,wrap" position="195,755" size="547,156" font="RobotoCond;28" backgroundColor="background60" foregroundColor="preTrans70" transparent="1" zPosition="6">
       <convert type="EventName">NextDescription</convert>
     </widget>
     <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=20,repeat=12,always=1,oneshot=1,startdelay=4000" position="30,75" size="1635,57" font="RobotoCond;36" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" zPosition="6" />
@@ -1658,15 +1658,15 @@
     </widget>
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
     <widget name="waitingtext" position="0,0" size="0,0" />
-    <widget name="list" position="795,322" size="930,680" backgroundColor="background2" foregroundColor="unc0d7ff" scrollbarMode="showOnDemand" itemHeight="40" transparent="1" selectionPixmap="NOVUM_FHD_Slim/images/FocusBar.png" backgroundPixmap="NOVUM_FHD_Slim/images/sel_bg1.png" />
+    <widget name="list" position="795,322" size="930,680" backgroundColor="background2" foregroundColor="unc0d7ff" scrollbarMode="showOnDemand" itemHeight="40" font="RobotoCond;26" transparent="1" selectionPixmap="NOVUM_FHD_Slim/images/FocusBar.png" backgroundPixmap="NOVUM_FHD_Slim/images/sel_bg1.png" />
     <widget name="movie_sort" position="1595,1040" size="52,30" pixmaps="NOVUM_FHD_Slim/icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="blend" />
     <widget name="movie_off" position="1655,1040" size="52,30" pixmaps="NOVUM_FHD_Slim/icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="blend" />
-    <widget name="chosenletter" position="795,322" size="915,680" foregroundColor="orange" font="Regular; 35" halign="center" valign="center" transparent="1" zPosition="3" backgroundColor="background2" />
+    <widget name="chosenletter" position="795,322" size="915,680" foregroundColor="orange" font="Regular; 28" halign="center" valign="center" transparent="1" zPosition="3" backgroundColor="background2" />
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_FHD_Slim/icons/ico_rec_on1.png" position="1785,525" size="75,37" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <!-- Running Text Start -->
-    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="140,547" size="600,372" font="Regular-Light;28" foregroundColor="preTrans20" backgroundColor="background60" transparent="1" valign="top">
+    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="140,542" size="600,379" font="RobotoCond;28" foregroundColor="transpWhite" backgroundColor="background60" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- Running Text End -->
@@ -1726,13 +1726,13 @@
     </widget>
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
     <widget name="waitingtext" position="0,0" size="0,0" />
-    <widget name="list" position="795,322" size="930,680" backgroundColor="background2" foregroundColor="unc0d7ff" scrollbarMode="showOnDemand" itemHeight="40" transparent="1" selectionPixmap="NOVUM_FHD_Slim/images/FocusBar.png" backgroundPixmap="NOVUM_FHD_Slim/images/sel_bg1.png" />
+    <widget name="list" position="795,322" size="930,680" backgroundColor="background2" foregroundColor="unc0d7ff" scrollbarMode="showOnDemand" itemHeight="40" font="Regular;26" transparent="1" selectionPixmap="NOVUM_FHD_Slim/images/FocusBar.png" backgroundPixmap="NOVUM_FHD_Slim/images/sel_bg1.png" />
     <widget name="movie_sort" position="1595,1040" size="52,30" pixmaps="NOVUM_FHD_Slim/icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="blend" />
     <widget name="movie_off" position="1655,1040" size="52,30" pixmaps="NOVUM_FHD_Slim/icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="blend" />
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_FHD_Slim/icons/ico_rec_on1.png" position="1777,525" size="88,45" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="Service" render="Label" position="140,547" size="600,372" font="Regular-Light;28" foregroundColor="preTrans20" backgroundColor="background60" transparent="1" valign="top">
+    <widget source="Service" render="Label" position="140,542" size="600,379" font="RobotoCond;28" foregroundColor="transpWhite" backgroundColor="background60" transparent="1" valign="top">
       <convert type="MovieInfo">MetaDescription</convert>
     </widget>
     <widget source="Title" render="Label" position="140,1047" size="600,30" font="Regular;22" foregroundColor="transpWhite" backgroundColor="background60transp" transparent="1" zPosition="6" />
@@ -2266,7 +2266,7 @@
     <widget source="global.CurrentTime" render="Label" position="1560,78" size="360,57" font="scoutcondWide;36" foregroundColor="transpWhite" backgroundColor="un181A1C" halign="center" transparent="1">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <widget name="list" position="210,300" size="1200,540" zPosition="3" scrollbarMode="showNever" backgroundColor="background30" selectionPixmap="NOVUM_FHD_Slim/images/FocusBar.png" backgroundPixmap="NOVUM_FHD_Slim/images/sel_bg1.png" foregroundColorEvent="lightgrey" foregroundColorEventSelected="white" serviceItemHeight="45" foregroundColorServiceNotAvail="red" serviceNumberFont="Regular;26" serviceNameFont="Regular;26" serviceInfoFont="Regular;23" transparent="1" />
+    <widget name="list" position="210,300" size="1200,540" zPosition="3" scrollbarMode="showNever" backgroundColor="background30" selectionPixmap="NOVUM_FHD_Slim/images/FocusBar.png" backgroundPixmap="NOVUM_FHD_Slim/images/sel_bg1.png" foregroundColorEvent="lightgrey" foregroundColorEventSelected="white" serviceItemHeight="45" foregroundColorServiceNotAvail="red" serviceNumberFont="Regular;26" serviceNameFont="Regular;26" serviceInfoFont="Regular;23" transparent="1" Wrap="0" />
     <widget source="Service" render="Label" position="210,240" size="750,45" zPosition="2" backgroundColor="background2" font="RobotoCond;31" noWrap="1" transparent="1" valign="top" foregroundColor="un7FA5FF">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -2275,7 +2275,7 @@
     </widget>
     <!-- Running Text Start -->
     <eLabel text="Program Guide" render="Label" position="105,66" size="525,57" font="RobotoCond;45" transparent="1" foregroundColor="transpWhite" backgroundColor="un181A1C" zPosition="2" />
-    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="210,880" size="1200,138" font="Regular;28" backgroundColor="background30" foregroundColor="white" transparent="1" valign="top" zPosition="2">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="210,880" size="1200,138" font="Regular;28" backgroundColor="background30" foregroundColor="transpWhite" transparent="1" valign="top" zPosition="2">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <!-- Running Text End -->
@@ -2309,7 +2309,7 @@
     </widget>
     <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=20,repeat=3,always=1,oneshot=1,startdelay=4000" position="105,66" size="1440,57" font="RobotoCond;44" foregroundColor="transpWhite" backgroundColor="un181A1C" transparent="1" halign="left" />
     <widget name="bouquetlist" position="210,880" size="1200,200" itemHeight="50" foregroundColor="un181A1C" backgroundColor="myblue1transp1" foregroundColorSelected="ivorywhite" backgroundColorSelected="myblue1transp1" scrollbarMode="showNever" zPosition="6" transparent="1" />
-    <widget name="list" position="210,300" size="1200,480" zPosition="3" scrollbarMode="showNever" backgroundColor="background30" selectionPixmap="NOVUM_FHD_Slim/images/FocusBar.png" backgroundPixmap="NOVUM_FHD_Slim/images/sel_bg1.png" foregroundColorEvent="lightgrey" foregroundColorEventSelected="white" serviceItemHeight="40" foregroundColorServiceNotAvail="red" serviceNumberFont="Regular;26" serviceNameFont="Regular;26" serviceInfoFont="Regular;23" transparent="1" />
+    <widget name="list" position="210,300" size="1200,480" zPosition="3" scrollbarMode="showNever" backgroundColor="background30" selectionPixmap="NOVUM_FHD_Slim/images/FocusBar.png" backgroundPixmap="NOVUM_FHD_Slim/images/sel_bg1.png" foregroundColorEvent="lightgrey" foregroundColorEventSelected="white" serviceItemHeight="40" foregroundColorServiceNotAvail="red" serviceNumberFont="Regular;26" serviceNameFont="Regular;26" serviceInfoFont="Regular;23" transparent="1" Wrap="0" />
     <widget name="now_button_sel" pixmap="NOVUM_FHD_Slim/epg_now.png" position="210,240" zPosition="1" size="694,51" alphatest="on" />
     <widget name="next_button_sel" pixmap="NOVUM_FHD_Slim/epg_next.png" position="210,240" zPosition="1" size="694,51" alphatest="on" />
     <widget name="more_button_sel" pixmap="NOVUM_FHD_Slim/epg_more.png" position="210,240" zPosition="1" size="694,51" alphatest="on" />
@@ -2324,7 +2324,7 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <!-- Running Text Start -->
-    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="210,880" size="1200,138" font="Regular;28" backgroundColor="background30" foregroundColor="white" transparent="1" valign="top" zPosition="2">
+    <widget source="Event" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="210,880" size="1200,138" font="Regular;28" backgroundColor="background30" foregroundColor="transpWhite" transparent="1" valign="top" zPosition="2">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <!-- Running Text End -->
@@ -3783,7 +3783,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen name="NumberZapExt" position="center,center" size="1290,450" title="Channel" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
     <eLabel text="QuickZap" position="375,45" size="468,64" zPosition="3" font="Regular;52" transparent="1" halign="right" backgroundColor="background2" foregroundColor="orange" noWrap="1" />
-    <widget name="chPicon" position="915,125" size="330,198" transparent="1" zPosition="1" alphatest="blend" backgroundColor="un2D3033" />
+    <widget name="chPicon" position="970,145" size="220,132" transparent="1" zPosition="1" alphatest="blend" backgroundColor="un2D3033" />
     <widget name="number" position="21,138" size="234,99" halign="right" font="RobotoCond-Light;40" transparent="1" backgroundColor="background2" foregroundColor="transpWhite" noWrap="1" />
     <widget name="chNum" position="255,97" size="615,99" halign="center" font="Regular;90" transparent="1" backgroundColor="background2" foregroundColor="un1481FF" noWrap="1" />
     <widget name="channel" position="21,222" size="234,99" halign="right" font="RobotoCond-Light;40" transparent="1" backgroundColor="background2" foregroundColor="transpWhite" noWrap="1" />
@@ -3791,7 +3791,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="bouquet" position="21,303" size="234,90" halign="right" font="RobotoCond-Light;40" transparent="1" backgroundColor="background2" foregroundColor="transpWhite" noWrap="1" />
     <widget name="chBouq" position="255,310" size="615,90" halign="center" font="RobotoCond-Light;40" noWrap="1" transparent="1" backgroundColor="background2" foregroundColor="light_blue" />
     <eLabel position="876,4" size="410,440" backgroundColor="un2D3033transp" zPosition="-2" />
-    <eLabel position="4,24" size="870,400" backgroundColor="background50transp" />
+    <eLabel position="4,24" size="870,400" backgroundColor="background50transp" zPosition="-1" />
   </screen>
   <!-- NameZap -->
   <screen name="NamezapSetup" position="center,center" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder">
@@ -9919,7 +9919,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel text="OPEN SOURCE" position="315,315" size="300,45" font="Regular;33" backgroundColor="background2" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="315,525" size="975,480" font="Regular;30" backgroundColor="background30" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <ePixmap position="1590,855" size="67,37" pixmap="NOVUM_FHD_Slim/buttons/key_info.png" alphatest="blend" />
-    <eLabel text="Skin NOVUM_FHD_Slim vs.0.4 by Nashu" position="315,1020" size="705,45" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="RobotoCond;28" halign="left" />
+    <eLabel text="Skin NOVUM_FHD_Slim vs.0.8 by Nashu" position="315,1020" size="705,45" backgroundColor="background2" foregroundColor="unc0d7ff" transparent="1" font="RobotoCond;28" halign="left" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1920,1080" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="NOVUM_FHD_Slim/images/sidebar.png" position="1560,142" size="360,938" transparent="1" zPosition="-3" />
@@ -14627,7 +14627,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget backgroundColor="background60" font="scoutcondWide;45" foregroundColor="transpWhite" halign="center" position="60,202" render="Label" size="210,75" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget name="list" position="795,322" size="930,680" itemHeight="40" CoolFont="Regular;28" CoolSelectFont="Regular;28" CoolDateFont="Regular;28" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="550" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="590" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" selectionPixmap="NOVUM_FHD_Slim/images/FocusBar.png" backgroundPixmap="NOVUM_FHD_Slim/images/sel_bg1.png" DefaultColor="white" UnwatchedColor="unc0d7ff" WatchingColor="unFFFFF4" FinishedColor="darkgrey" RecordingColor="unff0000" BackColorSel="myblue1transp1" backgroundColor="background2" foregroundColorSelected="white" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="list" position="795,322" size="930,680" itemHeight="40" CoolFont="RobotoCond;26" CoolSelectFont="RobotoCond;26" CoolDateFont="RobotoCond;23" CoolMoviePos="35" CoolMovieSize="670" CoolFolderSize="670" CoolTitleColor="0" CoolDatePos="790" CoolDateWidth="120" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="705" CoolBarPos="675" CoolBarHPos="15" CoolBarSize="55,15" CoolBarSizeSa="100,15" selectionPixmap="NOVUM_FHD_Slim/images/FocusBar.png" backgroundPixmap="NOVUM_FHD_Slim/images/sel_bg1.png" DefaultColor="white" UnwatchedColor="unc0d7ff" WatchingColor="unFFFFF4" FinishedColor="darkgrey" RecordingColor="unff0000" BackColorSel="myblue1transp1" backgroundColor="background2" foregroundColorSelected="white" scrollbarMode="showOnDemand" transparent="1" />
     <widget source="session.RecordState" render="Pixmap" pixmap="NOVUM_FHD_Slim/icons/ico_rec_on1.png" position="1785,525" size="75,37" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
@@ -14663,7 +14663,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <!-- Subtitle Label only for DVD -->
     <widget name="subtitleLabel" position="1567,1042" size="150,33" zPosition="3" halign="right" font="Regular;27" backgroundColor="background30" transparent="1" />
     <!-- Running Text Start -->
-    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="360,498" size="382,406" font="Regular-Light;28" foregroundColor="preTrans20" backgroundColor="background60" transparent="1" valign="top">
+    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=70,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="360,498" size="382,417" font="RobotoCond;28" foregroundColor="transpWhite" backgroundColor="background60transp" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!-- Running Text End -->
@@ -14686,7 +14686,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="15,1009" size="480,4" backgroundColor="transparent7" zPosition="1" />
     <eLabel position="0,949" size="514,130" backgroundColor="background60" zPosition="-2" />
     <!-- Running Text Start -->
-    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" backgroundColor="background90transp" font="Regular-Light;33" foregroundColor="preTrans20" halign="left" position="22,457" size="465,471" transparent="1" zPosition="0">
+    <widget source="session.Event_Now" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" backgroundColor="background90transp" font="RobotoCond;31" foregroundColor="preTrans20" halign="left" position="22,457" size="465,471" transparent="1" zPosition="0">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=3,always=1,oneshot=1,startdelay=4000" position="532,967" size="1365,127" font="Regular1;102" backgroundColor="transparent" foregroundColor="preTrans40" transparent="1" zPosition="0">
@@ -14712,7 +14712,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ServiceInfo">IsStereo</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap pixmap="NOVUM_FHD_Slim/icons/iconback.png" position="389,1027" size="89,45" zPosition="1" alphatest="blend" />	
+    <ePixmap pixmap="NOVUM_FHD_Slim/icons/iconback.png" position="389,1027" size="89,45" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" position="389,1027" size="89,45" zPosition="2" pixmap="NOVUM_FHD_Slim/icons/1080.png" alphatest="blend">
       <convert type="ServiceInfo">Is1080</convert>
       <convert type="ConditionalShowHide" />
@@ -14729,11 +14729,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ServiceInfo">Is480</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-	<!-- <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_FHD_Slim/icons/540.png" position="389,1027" size="89,45" alphatest="blend" zPosition="2">
+    <!-- <widget source="session.CurrentService" render="Pixmap" pixmap="NOVUM_FHD_Slim/icons/540.png" position="389,1027" size="89,45" alphatest="blend" zPosition="2">
 	  <convert type="ServiceInfo">VideoWidth</convert>
 	  <convert type="ValueRange">500,574</convert>
 	  <convert type="ConditionalShowHide" />
-	</widget> -->	
+	</widget> -->
     <ePixmap pixmap="NOVUM_FHD_Slim/icons/iconback.png" position="211,1027" size="89,45" zPosition="1" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" position="211,1027" size="89,45" zPosition="2" pixmap="NOVUM_FHD_Slim/icons/mpeg2.png" alphatest="blend">
       <convert type="ServiceInfo">IsSD</convert>
