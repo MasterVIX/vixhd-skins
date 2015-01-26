@@ -31,7 +31,7 @@
 		<widget source="list" render="Listbox" position="420,210" size="1080,720" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (10, 0), size = (600, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+				MultiContentEntryText(pos = (10, 0), size = (1000, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 				MultiContentEntryPixmapAlphaBlend(pos = (1020, 5), size = (50, 50), png = 1),
 				],
 				"fonts": [gFont("menulist",40)],
@@ -48,7 +48,7 @@
 		<widget source="list" render="Listbox" position="420,210" size="1080,720" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (10, 0), size = (600, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+				MultiContentEntryText(pos = (10, 0), size = (1000, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
 				MultiContentEntryPixmapAlphaBlend(pos = (1035, 5), size = (35, 35), png = 1),
 				],
 				"fonts": [gFont("menulist",40)],

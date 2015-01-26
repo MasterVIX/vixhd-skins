@@ -8,7 +8,7 @@
 	<!--  ## Head ##  -->
 	
 	<!-- ## AutoBouquetsMaker ## -->
-	<screen name="AutoBouquetsMaker_Menu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_Menu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel" />
 		<panel name="MenuMyBouquetsText" />
 		<widget source="list" render="Listbox" position="80,165" size="590,600" selectionPixmap="selectionbars/MenuSelectionBar_H50x590.png" foregroundColor="white" backgroundColor="menubackground2" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" >
@@ -20,7 +20,7 @@
 			</convert>
 		</widget>
 	</screen>
-	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_Setup" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuPleaseWaitWidget" />
@@ -29,7 +29,7 @@
 		<panel name="MenuButtonRed" />
 		<panel name="MenuButtonGreen" />
 	</screen>
-	<screen name="AutoBouquetsMaker_Ordering" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_Ordering" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuPleaseWaitWidget" />
@@ -48,7 +48,7 @@
 		<panel name="MenuButtonYellow" />
 		<panel name="MenuButtonBlue" />
 	</screen>
-	<screen name="AutoBouquetsMaker_ProvidersSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_ProvidersSetup" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuPleaseWaitWidget" />
@@ -57,7 +57,7 @@
 		<panel name="MenuButtonRed" />
 		<panel name="MenuButtonGreen" />
 	</screen>
-	<screen name="AutoBouquetsMaker_HideSections" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_HideSections" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<widget source="list" render="Listbox" position="680,165" size="1160,750" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" >
@@ -75,27 +75,47 @@
 		<panel name="MenuButtonRed" />
 		<panel name="MenuButtonGreen" />
 	</screen>
-	<screen name="AutoBouquetsMaker_KeepBouquets" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_KeepBouquets" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="AutoBouquetsMaker_HideSections" />
 	</screen>
-	<screen name="AutoBouquetsMaker" position="0,0" size="1920,1080" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent" >
+	<screen name="AutoBouquetsMaker_DeleteBouquets" position="fill" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="BigMenuPanel" />
+		<panel name="MenuMySetupText" />
+		<widget source="list" render="Listbox" position="680,165" size="1160,750" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaBlend(pos = (10, 5), size = (35, 35), png = 0),
+					MultiContentEntryText(pos = (60, 5), size = (300, 35), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+					MultiContentEntryText(pos = (840, 5), size = (300, 35), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
+					],
+					"fonts": [gFont("youvix-r", 28)],
+					"itemHeight": 50
+				}
+			</convert>
+		</widget>
+		<panel name="MenuButtonRed" />
+		<panel name="MenuButtonGreen" />
+		<panel name="MenuButtonYellow" />
+		<panel name="MenuButtonBlue" />
+	</screen>
+	<screen name="AutoBouquetsMaker" position="fill" title="CrossEPG" flags="wfNoBorder" backgroundColor="transparent" >
 	    <panel name="CrossEPGDownloadBar" />
 	</screen>
-	<screen name="AutoBouquetsMaker_About" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_About" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="InfoPanel" />
 		<panel name="MenuMyInfoText" />
 		<panel name="OEA-Logo" />
 		<panel name="MenuAboutWidget" />
 		<panel name="MenuButtonRedSource" />
 	</screen>
-	<screen name="AutoBouquetsMaker_Log" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="AutoBouquetsMaker_Log" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="InfoPanel" />
 		<panel name="MenuMyInfoText" />
 		<panel name="MenuListLogWidget" />
 	</screen>
 	
 	<!-- ## Bluetooth Devices Manager ## -->
-	<screen name="BluetoothDevicesManager" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Bluetooth Devices Manager">
+	<screen name="BluetoothDevicesManager" position="fill" flags="wfNoBorder" backgroundColor="transparent" title="Bluetooth Devices Manager">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<widget name="devicelist" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1"/>
@@ -107,7 +127,7 @@
 	</screen>
 	
 	<!-- ## FirmwareUpgrade ## -->
-	<screen name="FirmwareUpgrade" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Firmware Upgrade">
+	<screen name="FirmwareUpgrade" position="fill" flags="wfNoBorder" backgroundColor="transparent" title="Firmware Upgrade">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuConfigWidget" />
@@ -115,7 +135,7 @@
 		<panel name="MenuButtonRedSource" />
 		<panel name="MenuButtonGreenSource" />
 	</screen>
-	<screen name="FUFilebrowser" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="FUFilebrowser" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />		
 		<widget source="status" render="Label" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
@@ -124,7 +144,7 @@
 	</screen>
 	
 	<!-- ## FPGA Update ## -->
-	<screen name="FPGAUpgrade" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="FPGAUpgrade" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<widget source="status" render="Label" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
@@ -136,7 +156,7 @@
 	</screen>
 	
 	<!-- ## Gigablue LED Setup ## -->
-	<screen name="LED_GigaSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Giga LED Setup" >
+	<screen name="LED_GigaSetup" position="fill" flags="wfNoBorder" backgroundColor="transparent" title="Giga LED Setup" >
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuConfigWidget" />
@@ -145,12 +165,12 @@
 	</screen>
 	
 	<!-- ## LCD4Linux ## -->
-	<screen name="LCDdisplayMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="LCD4linux - Config" >
+	<screen name="LCDdisplayMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent" title="LCD4linux - Config" >
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
         <panel name="MenuMenuWidget" />
 	</screen>
-	<screen name="LCDdisplayFile" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" title="Select File/Dir..." >
+	<screen name="LCDdisplayFile" position="fill" flags="wfNoBorder" backgroundColor="transparent" title="Select File/Dir..." >
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
         <widget source="File" render="Label" position="5,0" size="610,100" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="4"/>
@@ -160,143 +180,143 @@
 	</screen>
 	
 	<!-- ## OnDemand ## -->
-	<screen name="OnDemand_Screen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="OnDemand_Screen" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<widget name="PlayerList" position="280,265" size="590,600" transparent="1" scrollbarMode="showOnDemand" zPosition="1" />
 		<panel name="MenuMenuButton" />
 		<panel name="MenuInfoButton" />
 	</screen>	
-	<screen name="OnDemand_About" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="OnDemand_About" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="InfoPanel" />
 		<panel name="MenuMyInfoText" />
 		<panel name="OEA-Logo" />
 		<panel name="MenuAboutWidget" />
 		<panel name="MenuButtonRedSource" />
 	</screen>
-	<screen name="OnDemandScreenSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="OnDemandScreenSetup" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuConfigWidget" />
 		<panel name="MenuButtonRedSource" />
 		<panel name="MenuButtonGreenSource" />
 	</screen>
-	<screen name="BBCiMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="BBCiMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<eLabel text="BBC iPlayer" position="125,55" size="540,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<panel name="OnDemandBBCiPlayerLogo" />
 		<widget name="BBCiMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
-	<screen name="BBCiStreamsThumbCommon" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="BBCiStreamsThumbCommon" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 	    <panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemandBBCiPlayerLogo" />
 		<panel name="OnDemandThumbsCommon" />	
 	</screen>
-	<screen name="ITVplayer" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ITVplayer" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<eLabel text="ITV Player" position="125,55" size="540,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<panel name="OnDemandITVPlayerLogo" />
 		<widget name="ITVMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
-	<screen name="ITVStreamsThumbCommon" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ITVStreamsThumbCommon" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemandITVPlayerLogo" />
 		<panel name="OnDemandThumbsCommon" />
 	</screen>
-	<screen name="fourODMainMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="fourODMainMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<eLabel text="4OD" position="125,55" size="540,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<panel name="OnDemand4ODLogo" />
 		<widget name="fourODMainMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
-	<screen name="4ODStreamsThumbCommon" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="4ODStreamsThumbCommon" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemand4ODLogo" />
 		<panel name="OnDemandThumbsCommon" />
 	</screen>
-	<screen name="threeMainMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="threeMainMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<eLabel text="3 Player" position="125,55" size="540,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<panel name="OnDemand3PlayerLogo" />
 		<widget name="threeMainMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
-	<screen name="TV3StreamsThumbCommon" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TV3StreamsThumbCommon" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemand3PlayerLogo" />
 		<panel name="OnDemandThumbsCommon" />
 	</screen>
-	<screen name="iViewMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="iViewMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<eLabel text="ABC iView" position="125,55" size="540,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<panel name="OnDemandIVIEWPlayerLogo" />
 		<widget name="iViewMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
-	<screen name="ABCiViewStreamsThumbCommon" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ABCiViewStreamsThumbCommon" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemandIVIEWPlayerLogo" />
 		<panel name="OnDemandThumbsCommon" />
 	</screen>
-	<screen name="RTEMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="RTEMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<eLabel text="RTE Player" position="125,55" size="540,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<panel name="OnDemandRTEPlayerLogo" />
 		<widget name="RTEMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
-	<screen name="RTEStreamsThumbCommon" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="RTEStreamsThumbCommon" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemandRTEPlayerLogo" />
 		<panel name="OnDemandThumbsCommon" />
 	</screen>
-	<screen name="iRadioMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="iRadioMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<eLabel text="iRadio" position="125,55" size="540,38" font="youvix-r;32" foregroundColor="darkcolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="1"/>
 		<panel name="OnDemandiRadioPlayerLogo" />
 		<widget name="iRadioMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
-	<screen name="RadioFavStreamsThumbCommon" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="RadioFavStreamsThumbCommon" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemandiRadioPlayerLogo" />
 		<panel name="OnDemandThumbsCommon" />
 	</screen>
-	<screen name="shoutGenresMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="shoutGenresMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemandShoutcastLogo" />
 		<widget name="shoutGenresMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
-	<screen name="shoutSubGenresMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="shoutSubGenresMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemandShoutcastLogo" />
 		<widget name="shoutSubGenresMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
-	<screen name="ShoutStreamsThumbCommon" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ShoutStreamsThumbCommon" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemandShoutcastLogo" />
 		<panel name="OnDemandThumbsCommon" />
 	</screen>
-	<screen name="tuneinGenresMenu" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="tuneinGenresMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemandTuneINLogo" />
 		<widget name="tuneinGenresMenu" position="680,165" size="1160,750" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 	</screen>
-	<screen name="TuneinStreamsThumbCommon" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TuneinStreamsThumbCommon" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyOnDemandText" />
 		<panel name="OnDemandTuneINLogo" />
@@ -304,7 +324,7 @@
 	</screen>
 	
 	<!-- ## Remote Stream Channel Converter ## -->
-	<screen name="ServerEditor" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ServerEditor" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuConfigWidget" />
@@ -313,7 +333,7 @@
 		<panel name="MenuButtonYellowSource" />
 		<panel name="MenuButtonBlueSource" />
 	</screen>
-	<screen name="StreamingChannelFromServerScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="StreamingChannelFromServerScreen" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<widget source="statusbar" render="Label" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
@@ -325,7 +345,7 @@
 	</screen>
 	
 	<!-- ## TempFanControl ##-->
-	<screen name="TempFanControl" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TempFanControl" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyFansText" />
 		<widget name="config" position="680,165" size="1160,150" font="youvix-r;28" itemHeight="50" selectionPixmap="selectionbars/SelectionBar_H50x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
@@ -352,7 +372,7 @@
 	</screen>
 	
 	<!-- ## Transcoding Setup ## -->
-	<screen name="TranscodingSetup" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="TranscodingSetup" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMySetupText" />
 		<panel name="MenuConfigWidget" />
@@ -365,7 +385,7 @@
 	</screen>
 	
 	<!-- ## Tuner Server ## -->
-	<screen name="TunerServer" position="0,0" size="1920,1080" flags="wfNoBorder" title="" backgroundColor="transparent">
+	<screen name="TunerServer" position="fill" flags="wfNoBorder" title="" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyNetworkText" />
 		<widget name="lab1" position="80,765" size="590,150" font="youvix-r;22" foregroundColor="white" backgroundColor="menubackground2" transparent="1" halign="center" valign="center" zPosition="1" />
@@ -378,7 +398,7 @@
 	</screen>
 	
 	<!-- ## Xtrend FanControl ## -->
-	<screen name="FanSetupScreen" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="FanSetupScreen" position="fill" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyFansText" />
 		<panel name="MenuConfigWidget" />

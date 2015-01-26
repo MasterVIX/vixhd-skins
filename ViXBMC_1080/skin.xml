@@ -17,7 +17,7 @@
 	<include filename="/usr/share/enigma2/ViXBMC_1080/skin_ViXBMC_1080_EXT-Plugins.xml"/>
 	
 	<fonts>
-		<font name="Regular" filename="/usr/share/enigma2/ViXBMC_1080/fonts/Raleway-Channel.ttf" scale="110" />
+		<font name="Regular" filename="/usr/share/enigma2/ViXBMC_1080/fonts/Raleway-Channel.ttf" scale="100" />
 		<font name="menulist" filename="/usr/share/enigma2/ViXBMC_1080/fonts/Raleway-Channel.ttf" scale="100" />
 		<font name="channelselectionservice" filename="/usr/share/enigma2/ViXBMC_1080/fonts/mplus-2p-light.ttf" scale="100" />
 		<font name="channelselectionevent" filename="/usr/share/enigma2/ViXBMC_1080/fonts/mplus-2p-light.ttf" scale="100" />
@@ -27,11 +27,49 @@
 		<font name="clock" filename="/usr/share/enigma2/ViXBMC_1080/fonts/mplus-2p-light.ttf" scale="100" />
 		<font name="date" filename="/usr/share/enigma2/ViXBMC_1080/fonts/mplus-2p-light.ttf" scale="100" />
 		<font name="buttons" filename="/usr/share/enigma2/ViXBMC_1080/fonts/FreeSans.ttf" scale="100" />
-		<alias name="ChoiceList" font="menulist" size="40" height="60" />
-		<alias name="Body" font="menulist" size="40" height="60" />
-		<alias name="TextNormal" font="menulist" size="40" height="60" />
 		<font  name="Subtitlefont" filename="/usr/share/enigma2/ViXBMC_1080/fonts/Hero.otf" scale="100" />
+		<alias name="Body" font="menulist" size="42" height="60" />
+		<alias name="TextNormal" font="menulist" size="42" height="60" />
+		<alias name="ChoiceList" font="menulist" size="42" height="60" />
+		<alias name="FileList" font="menulist" size="42" height="60"/>
+		<alias name="FileListMulti" font="menulist" size="42" height="60"/>
+		<alias name="PluginBrowser0" font="menulist" size="38" height="75"/>
+		<alias name="PluginBrowser1" font="menulist" size="30"/>
+		<alias name="ServiceInfo" font="menulist" size="42" height="6"/>
+		<alias name="SelectionList" font="menulist" size="42" height="60"/>
+		<alias name="VirtualKeyboard" font="menulist" size="34" height="68"/>
+		<alias name="HelpMenuList" font="menulist" size="40" height="60"/>
+		<alias name="HelpMenuListExt0" font="menulist" size="32" height="75"/>
+		<alias name="HelpMenuListExt1" font="menulist" size="32"/>
 	</fonts>
+	
+	<parameters>
+		<parameter name="FileListIcon" value="10,7,53,38"/>
+		<parameter name="FileListName" value="80,3,900,60"/>
+		<parameter name="FileListMultiLock" value="10,5,50,50"/>
+		<parameter name="FileListMultiIcon" value="70,5,50,50"/>
+		<parameter name="FileListMultiName" value="130,3,1000,60"/>
+		<parameter name="ChoicelistIcon" value="10,4,67,48"/>
+		<parameter name="ChoicelistDash" value="0,4,1000,60"/>
+		<parameter name="ChoicelistName" value="80,4,1000,60"/>
+		<parameter name="PluginBrowserIcon" value="10,8,150,60"/>
+		<parameter name="PluginBrowserName" value="180,0,40"/>
+		<parameter name="PluginBrowserDescr" value="180,38,35"/>
+		<parameter name="PluginBrowserDownloadIcon" value="10,0,90,75"/>
+		<parameter name="PluginBrowserDownloadName" value="120,0,40"/>
+		<parameter name="PluginBrowserDownloadDescr" value="120,38,35"/>
+		<parameter name="ServiceInfo" value="0,0,450,50"/>
+		<parameter name="ServiceInfoLeft" value="0,0,450,50"/>
+		<parameter name="ServiceInfoRight" value="450,0,1000,60"/>
+		<parameter name="SelectionListLock" value="10,5,35,35"/>
+		<parameter name="SelectionListLockOff" value="10,5,35,35"/>
+		<parameter name="SelectionListDescr" value="60,4,1000,60"/>
+		<parameter name="ConfigListSeperator" value="300"/>
+		<parameter name="VirtualKeyboard" value="68,68"/>
+		<parameter name="HelpMenuListHlp" value="0,0,900,60"/>
+		<parameter name="HelpMenuListExtHlp0" value="0,0,900,60"/>
+		<parameter name="HelpMenuListExtHlp1" value="0,42,900,60"/>
+	</parameters>
 	
 	<subtitles>
 		<sub name="Subtitle_TTX" font="menulist;60" borderColor="#000000" borderWidth="3" />

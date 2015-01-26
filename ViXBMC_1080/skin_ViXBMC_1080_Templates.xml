@@ -331,7 +331,7 @@
 		<widget name="footer" position="420,773" size="1080,180" font="screentitle;30" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
 	</screen>
 	<screen name="SetupMenuHelpwindowWidget">
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="center,center" size="541,720" backgroundColor="menubackground" transparent="1" alphatest="blend" zPosition="2" />
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="420,700" size="541,720" backgroundColor="menubackground" transparent="0" alphatest="blend" zPosition="2" />
 	</screen>
 	<screen name="SetupMenuFootnoteWidget">
 		<widget name="footnote" position="1160,965" size="340,60" font="screentitle;34" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="right" valign="center" zPosition="2" />

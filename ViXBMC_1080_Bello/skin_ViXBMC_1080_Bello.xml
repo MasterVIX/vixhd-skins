@@ -400,7 +400,7 @@
 	<!-- ## CHOICEBOX ## -->
 	<screen name="ChoiceBox" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" zPosition="5" >
 		<panel name="SetupMenuPanel3" />
-		<widget name="list" position="420,210" size="1080,600" font="menulist;40" itemHeight="60" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
+		<widget name="list" position="420,210" size="1080,600" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
 		<widget name="text" position="420,800" size="1080,120" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
 	</screen>
 	
@@ -600,7 +600,21 @@
 	
 	<!-- ## EVENTVIEW ## -->
 	<screen name="EventView" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" zPosition="1" >
-		<panel name="EventViewSimple" />
+		<ePixmap pixmap="infobar/menubackground2.png" position="387,45" size="1146,1016" alphatest="blend" zPosition="-1"/>
+		<widget source="global.CurrentTime" render="Label" position="680,69" size="670,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1380,69" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget name="channel" position="420,139" size="600,60" font="screentitle;46" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
+		<widget source="Service" render="Picon" position="420,220" size="400,240" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="2">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=0,oneshot=1,startdelay=8000" position="830,230" size="670,60" font="infobar2;44" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
+		<widget name="datetime" position="830,310" size="670,50" font="infobar;38" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="center" valign="center" zPosition="2" />
+		<widget name="duration" position="830,370" size="670,50" font="infobar;38" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="center" valign="center" zPosition="2" />
+		<widget name="FullDescription" position="420,475" size="1080,470" font="infobar;38" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2" />	
 		<widget source="key_red" render="Label" position="420,963" size="270,60" font="buttons;34" foregroundColor="red" backgroundColor="menubackground" transparent="1" halign="center" valign="center" noWrap="1" zPosition="2" />
 		<widget source="key_green" render="Label" position="690,963" size="270,60" font="buttons;34" foregroundColor="green" backgroundColor="menubackground" transparent="1" halign="center" valign="center" noWrap="1" zPosition="2" />
         <widget source="key_yellow" position="960,963" size="270,60" font="buttons;34" foregroundColor="yellow" backgroundColor="menubackground" transparent="1" halign="center" valign="center" noWrap="1" zPosition="2" />
@@ -616,7 +630,7 @@
 		</widget>
 		<widget name="channel" position="420,139" size="600,60" font="screentitle;46" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
 		<widget source="Service" render="Picon" position="420,220" size="400,240" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="2">
-			<convert type="ServiceName">Reference</convert>
+			<convert type="MovieReference"/>
 		</widget>
 		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=0,oneshot=1,startdelay=8000" position="830,230" size="670,60" font="infobar2;44" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
 		<widget name="datetime" position="830,310" size="670,50" font="infobar;38" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="center" valign="center" zPosition="2" />
@@ -1424,14 +1438,14 @@
 	<screen name="PluginBrowser" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
 		<panel name="SetupMenuMenuButton" />
-		<widget name="list" position="420,210" size="1080,750" font="menulist;40" itemHeight="75" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="2" />
+		<widget name="list" position="420,210" size="1080,720" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="2" />
 		<panel name="SetupMenuRedButtonSource2" />
 		<panel name="SetupMenuGreenButtonSource2" />
 	</screen>
 	<screen name="PluginDownloadBrowser" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel3" />
-		<widget name="text" position="420,205" size="1080,750" font="screentitle;32" foregroundColor="maincolour" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="2" />
-		<widget name="list" position="420,205" size="1080,750" itemHeight="75" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+		<widget name="text" position="420,205" size="1080,720" font="screentitle;32" foregroundColor="maincolour" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="2" />
+		<widget name="list" position="420,205" size="1080,720" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	
 	<!-- ## POSITION SETUP ## -->
@@ -1798,7 +1812,7 @@
 	<screen name="TimerEditList" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
 		<panel name="SetupMenuInfoButton" />
-		<widget name="timerlist" position="420,210" size="1080,525" font="menulist;40" itemHeight="75" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
+		<widget name="timerlist" position="420,210" size="1080,525" itemHeight="75" rowSplit="40" setServiceNameFont="menulist;32" setFont="menulist;28" satPosLeft="300" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
 		<panel name="SetupMenuDescriptionWidget" />
 		<panel name="SetupMenuRedButton2" />
 		<panel name="SetupMenuGreenButtonSource2" />
@@ -1824,8 +1838,8 @@
 	<screen name="TimerSanityConflict" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
 		<widget name="list" position="420,210" size="1080,300" itemHeight="60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" zPosition="2" />
-		<widget name="timer2" position="420,510" size="1080,375" itemHeight="75" scrollbarMode="showNever" zPosition="2" />
-		<widget name="timer1" position="420,885" size="1080,75" itemHeight="75" scrollbarMode="showNever" zPosition="2" />
+		<widget name="timer2" position="420,510" size="1080,375" itemHeight="75" rowSplit="40" setServiceNameFont="menulist;32" setFont="menulist;28" satPosLeft="300" scrollbarMode="showNever" zPosition="2" />
+		<widget name="timer1" position="420,885" size="1080,75" itemHeight="75" rowSplit="40" setServiceNameFont="menulist;32" setFont="menulist;28" satPosLeft="300" scrollbarMode="showNever" zPosition="2" />
 		<panel name="SetupMenuRedButtonSource2" />
 		<panel name="SetupMenuYellowButton2" />
 		<panel name="SetupMenuBlueButton2" />
@@ -1869,7 +1883,7 @@
 		<ePixmap pixmap="infobar/keyboard.png" position="0,0" size="850,440" alphatest="blend" zPosition="1"/>
 		<widget name="header" position="20,10" size="825,20" font="menulist;20" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" zPosition="2" />
 		<widget name="text" position="20,16" size="825,60" font="screentitle;42" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" zPosition="2" />
-		<widget name="list" position="15,78" size="830,470" font="menulist;34" itemHeight="68" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" selectionDisabled="1" zPosition="2" />
+		<widget name="list" position="15,78" size="830,470" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" selectionDisabled="1" zPosition="2" />
 	</screen>
 	
 	<!-- ## ViX MENU ## -->

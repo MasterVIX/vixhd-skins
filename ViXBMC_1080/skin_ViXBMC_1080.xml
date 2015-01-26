@@ -460,7 +460,7 @@
 	<screen name="ChoiceBox" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" zPosition="5" >
 		<panel name="SetupMenuPanel3" />
 		<panel name="SetupMenuMenuWindowIcon" />
-		<widget name="list" position="420,210" size="1080,600" font="menulist;40" itemHeight="60" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
+		<widget name="list" position="420,210" size="1080,600" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
 		<widget name="text" position="420,800" size="1080,120" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
 	</screen>
 	
@@ -695,9 +695,28 @@
 	
 	<!-- ## EVENTVIEW ## -->
 	<screen name="EventView" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent" zPosition="1" >
-		<panel name="EventViewSimple" />
+		<eLabel position="407,76" size="1106,697" backgroundColor="outlinemenubackground" zPosition="-1" />
+		<eLabel position="410,79" size="966,60" backgroundColor="menubackground" zPosition="1" />
+		<widget source="global.CurrentTime" render="Label" position="630,79" size="570,60" font="date;42" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="right" valign="center" zPosition="2">
+			<convert type="ClockToText">Format:%A,%e %B %Y</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1230,79" size="130,60" font="clock;42" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" valign="center" zPosition="2">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<eLabel position="410,142" size="966,60" backgroundColor="menubackground" zPosition="1" />
+		<widget name="channel" position="420,139" size="600,60" font="screentitle;46" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
+		<eLabel position="1380,79" size="130,123" backgroundColor="menubackground" zPosition="1" />
+		<ePixmap position="1380,79" size="130,123" pixmap="menuicons/moviereel.png" alphatest="blend" zPosition="2"/>
+		<eLabel position="410,205" size="1100,565" backgroundColor="menubackground" zPosition="-1" />
+		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=0,oneshot=1,startdelay=8000" position="830,230" size="670,60" font="infobar2;44" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
+		<widget name="datetime" position="830,310" size="670,50" font="infobar;38" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="center" valign="center" zPosition="2" />
+		<widget name="duration" position="830,370" size="670,50" font="infobar;38" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="center" valign="center" zPosition="2" />
+		<widget name="FullDescription" position="420,475" size="1080,270" font="infobar;38" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="top" zPosition="2" />	
 		<eLabel position="407,770" size="1106,66" backgroundColor="outlinemenubackground" zPosition="-1" />
 		<eLabel position="410,773" size="1100,60" backgroundColor="menubackground" zPosition="1" />
+		<widget source="Service" render="Picon" position="420,220" size="400,240" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="2">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
 		<widget source="key_red" render="Label" position="420,773" size="270,60" font="buttons;34" foregroundColor="red" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2" />
 		<widget source="key_green" render="Label" position="690,773" size="270,60" font="buttons;34" foregroundColor="green" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2" />
         <widget source="key_yellow" render="Label" position="960,773" size="270,60" font="buttons;34" foregroundColor="yellow" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2" />
@@ -718,7 +737,7 @@
 		<ePixmap position="1380,79" size="130,123" pixmap="menuicons/moviereel.png" alphatest="blend" zPosition="2"/>
 		<eLabel position="410,205" size="1100,565" backgroundColor="menubackground" zPosition="-1" />
 		<widget source="Service" render="Picon" position="420,220" size="400,240" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="2">
-			<convert type="ServiceName">Reference</convert>
+			<convert type="MovieReference"/>
 		</widget>
 		<widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=0,oneshot=1,startdelay=8000" position="830,230" size="670,60" font="infobar2;44" foregroundColor="thirdcolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
 		<widget name="datetime" position="830,310" size="670,50" font="infobar;38" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="center" valign="center" zPosition="2" />
@@ -1264,24 +1283,24 @@
 	<screen name="NetworkInadyn" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
 		<panel name="SetupMenuMenuWindowIcon" />
-		<widget name="autostart" position="480,210" size="150,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labdisabled" position="640,210" size="200,60" font="menulist;40" backgroundColor="red" halign="center" valign="center" zPosition="2" />
-		<widget name="labactive" position="640,210" size="200,60" font="menulist;40" backgroundColor="green" halign="center" valign="center" zPosition="3" />
-		<widget name="status" position="1000,210" size="300,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="autostart" position="420,210" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="labdisabled" position="670,210" size="200,60" font="menulist;40" backgroundColor="red" halign="center" valign="center" zPosition="2" />
+		<widget name="labactive" position="670,210" size="200,60" font="menulist;40" backgroundColor="green" halign="center" valign="center" zPosition="3" />
+		<widget name="status" position="920,210" size="380,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
 		<widget name="labstop" position="1240,210" size="200,60" font="menulist;40" backgroundColor="red" valign="center" halign="center" zPosition="2" />
 		<widget name="labrun" position="1240,210" size="200,60" font="menulist;40" backgroundColor="green" valign="center" halign="center" zPosition="3"/>
-		<widget name="time" position="420,313" size="450,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labtime" position="820,313" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="username" position="420,363" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labuser" position="620,363" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="password" position="420,413" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labpass" position="620,413" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="alias" position="420,463" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labalias" position="620,463" size="800,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="time" position="420,313" size="450,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="labtime" position="880,313" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="username" position="420,363" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="labuser" position="630,363" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="password" position="420,413" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="labpass" position="630,413" size="400,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="alias" position="420,463" size="200,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="labalias" position="630,463" size="800,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
 		<widget name="sinactive" position="420,525" pixmap="icons/lock_off.png" size="50,50" alphatest="blend" zPosition="2" />
 		<widget name="sactive" position="420,525" pixmap="icons/lock_on.png" size="50,50" alphatest="blend" zPosition="3" />
-		<widget name="system" position="500,520" size="150,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
-		<widget name="labsys" position="650,520" size="500,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" valign="center" transparent="1" zPosition="2" />
+		<widget name="system" position="500,520" size="150,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
+		<widget name="labsys" position="650,520" size="500,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2" />
 		<panel name="SetupMenuMenuButton" />
 		<panel name="SetupMenuRedButtonSource2" />
 		<panel name="SetupMenuGreenButtonSource2" />
@@ -1689,7 +1708,7 @@
 		<panel name="SetupMenuPanel2" />
 		<panel name="SetupMenuMenuButton" />
 		<panel name="SetupMenuPluginWindowIcon" />
-		<widget name="list" position="420,210" size="1080,750" font="menulist;40" itemHeight="75" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="2" />
+		<widget name="list" position="420,210" size="1080,750" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="2" />
 		<panel name="SetupMenuRedButtonSource2" />
 		<panel name="SetupMenuGreenButtonSource2" />
 	</screen>
@@ -1697,7 +1716,7 @@
 		<panel name="SetupMenuPanel3" />
 		<panel name="SetupMenuPlugin2WindowIcon" />
 		<widget name="text" position="420,205" size="1080,750" font="screentitle;32" foregroundColor="maincolour" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="2" />
-		<widget name="list" position="420,205" size="1080,750" itemHeight="75" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
+		<widget name="list" position="420,205" size="1080,750" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" />
 	</screen>
 	
 	<!-- ## POSITION SETUP ## -->
@@ -2089,7 +2108,7 @@
 		<panel name="SetupMenuPanel2" />
 		<panel name="SetupMenuMenuWindowIcon" />
 		<panel name="SetupMenuInfoButton" />
-		<widget name="timerlist" position="420,210" size="1080,525" font="menulist;40" itemHeight="75" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
+		<widget name="timerlist" position="420,210" size="1080,525" itemHeight="75" rowSplit="40" setServiceNameFont="menulist;32" setFont="menulist;28" satPosLeft="300" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
 		<panel name="SetupMenuDescriptionWidget" />
 		<panel name="SetupMenuRedButton2" />
 		<panel name="SetupMenuGreenButtonSource2" />
@@ -2118,8 +2137,8 @@
 		<panel name="SetupMenuPanel2" />
 		<panel name="SetupMenuMenuWindowIcon" />
 		<widget name="list" position="420,210" size="1080,300" itemHeight="60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" scrollbarMode="showOnDemand" zPosition="2" />
-		<widget name="timer2" position="420,510" size="1080,375" itemHeight="75" scrollbarMode="showNever" zPosition="2" />
-		<widget name="timer1" position="420,885" size="1080,75" itemHeight="75" scrollbarMode="showNever" zPosition="2" />
+		<widget name="timer2" position="420,510" size="1080,375" itemHeight="75" rowSplit="40" setServiceNameFont="menulist;32" setFont="menulist;28" satPosLeft="300" scrollbarMode="showNever" zPosition="2" />
+		<widget name="timer1" position="420,885" size="1080,75" itemHeight="75" rowSplit="40" setServiceNameFont="menulist;32" setFont="menulist;28" satPosLeft="300" scrollbarMode="showNever" zPosition="2" />
 		<panel name="SetupMenuRedButtonSource2" />
 		<panel name="SetupMenuYellowButton2" />
 		<panel name="SetupMenuBlueButton2" />
@@ -2169,7 +2188,7 @@
 		<ePixmap position="688,3" size="130,123" pixmap="menuicons/keyboard.png" alphatest="blend" zPosition="2"/>
 		<widget name="header" position="10,10" size="750,20" font="menulist;20" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" noWrap="1" />
 		<widget name="text" position="10,66" size="825,60" font="screentitle;42" foregroundColor="secondcolour" backgroundColor="menubackground" transparent="1" noWrap="1" halign="left" />
-		<widget name="list" position="3,128" size="830,470" font="menulist;34" itemHeight="68" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" selectionDisabled="1" />
+		<widget name="list" position="3,128" size="830,470" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" selectionDisabled="1" />
 		<ePixmap position="480,407" size="276,60" pixmap="menuicons/openvix.png" alphatest="blend" zPosition="2"/>
 	</screen>
 	
