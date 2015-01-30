@@ -2140,7 +2140,7 @@
 		<panel name="BigMenuPanel" />
 		<panel name="MenuMyTimersText" />
 		<panel name="MenuInfoButton" />
-		<widget name="timerlist" position="680,165" size="1160,750" itemHeight="75" rowSplit="40" setServiceNameFont="youvix-r;32" setFont="youvix-r;28" satPosLeft="300" selectionPixmap="selectionbars/SelectionBar_H75x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+		<widget name="timerlist" position="680,165" size="1160,750" itemHeight="75" rowSplit="40" setEventNameFont="youvix-r;32" setServiceNameFont="youvix-r;32" setFont="youvix-r;28" satPosLeft="300" selectionPixmap="selectionbars/SelectionBar_H75x1160.png" foregroundColor="white" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
 		<panel name="MenuDescriptionWidget" />
 		<panel name="MenuButtonRed" />
 		<panel name="MenuButtonGreenSource" />

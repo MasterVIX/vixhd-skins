@@ -2108,7 +2108,7 @@
 		<panel name="SetupMenuPanel2" />
 		<panel name="SetupMenuMenuWindowIcon" />
 		<panel name="SetupMenuInfoButton" />
-		<widget name="timerlist" position="420,210" size="1080,525" itemHeight="75" rowSplit="40" setServiceNameFont="menulist;32" setFont="menulist;28" satPosLeft="300" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
+		<widget name="timerlist" position="420,210" size="1080,525" itemHeight="75" rowSplit="40" setEventNameFont="menulist;32" setServiceNameFont="menulist;32" setFont="menulist;28" satPosLeft="300" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="2" />
 		<panel name="SetupMenuDescriptionWidget" />
 		<panel name="SetupMenuRedButton2" />
 		<panel name="SetupMenuGreenButtonSource2" />
