@@ -1060,7 +1060,7 @@
 	<!-- ## NETWORK - FTP ## -->
 	<screen name="NetworkFtp" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="SetupMenuPanel2" />
-		<widget name="lab1" position="420,210" size="1080,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground1" transparent="1" halign="center" valign="center" zPosition="2" />
+		<widget name="lab1" position="420,210" size="1080,60" font="menulist;40" foregroundColor="maincolour" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="2" />
 		<widget name="lab2" position="520,300" size="400,60" font="menulist;38" foregroundColor="maincolour" backgroundColor="menubackground" halign="right" valign="center" transparent="1" zPosition="2" />
 		<widget name="labstop" position="1020,300" size="200,60" font="menulist;38" backgroundColor="red" valign="center" halign="center" zPosition="2" />
 		<widget name="labrun" position="1020,300" size="200,60" font="menulist;38" backgroundColor="green" valign="center" halign="center" zPosition="3" />
